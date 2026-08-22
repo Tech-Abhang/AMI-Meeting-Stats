@@ -1,0 +1,152 @@
+{
+  "total_files": 266120,
+  "missing_wav": 0,
+  "missing_txt": 0,
+  "parsed_filename_pct": "14.3%",
+  "split_mismatch_count": 0,
+  "mic_mismatch_count": 0,
+  "sid_mismatch_count": 0,
+  "count_by_mic_config": {
+    "ihm": 133060,
+    "sdm": 133060
+  },
+  "count_by_split": {
+    "dev": 26196,
+    "eval": 25286,
+    "train": 214638
+  },
+  "duration": {
+    "n": 38153,
+    "total_hours": 28.13,
+    "mean_s": 2.654,
+    "median_s": 1.7,
+    "stdev_s": 2.677,
+    "min_s": 0.02,
+    "max_s": 30.08,
+    "bucket_counts": {
+      "<1s (likely backchannel)": 13172,
+      "3-10s": 11586,
+      "1-3s": 12599,
+      ">10s": 796
+    },
+    "hours_by_split": {
+      "dev": 2.67,
+      "eval": 2.21,
+      "train": 23.25
+    },
+    "hours_by_mic_config": {
+      "sdm": 28.13
+    }
+  },
+  "speakers": {
+    "unique_speaker_ids": 55,
+    "utterances_per_speaker": {
+      "fee041": 719,
+      "fie038": 749,
+      "mio036": 808,
+      "mio086": 516,
+      "mio092": 339,
+      "mtd013pm": 1036,
+      "feo070": 328,
+      "fie088": 657,
+      "mee073": 411,
+      "meo015": 469,
+      "mtd009pm": 1266,
+      "fee029": 866,
+      "fee037": 813,
+      "fee049": 677,
+      "fee057": 1029,
+      "fee080": 273,
+      "fee083": 713,
+      "feo066": 494,
+      "fie081": 904,
+      "fio017": 552,
+      "fio041": 871,
+      "mee006": 602,
+      "mee011": 460,
+      "mee018": 461,
+      "mee025": 790,
+      "mee033": 904,
+      "mee045": 746,
+      "mee053": 937,
+      "mee061": 784,
+      "mee068": 155,
+      "mee075": 419,
+      "mee089": 475,
+      "mee095": 584,
+      "meo022": 676,
+      "meo082": 466,
+      "mie034": 500,
+      "mie080": 639,
+      "mio019": 775,
+      "mio022": 310,
+      "mio024": 663,
+      "mio043": 719,
+      "mio049": 257,
+      "mio055": 474,
+      "mio078": 493,
+      "mio098": 373,
+      "mio100": 352,
+      "mio104": 203,
+      "mtd017pm": 743,
+      "mtd021pm": 1414,
+      "mtd025pm": 1091,
+      "mtd029pm": 1340,
+      "mtd033pm": 1410,
+      "mtd037pm": 841,
+      "mtd041pm": 1088,
+      "mtd045pm": 1519
+    },
+    "unique_meetings": 168,
+    "meeting_series_distribution": {
+      "ES": 10933,
+      "IB": 1896,
+      "IS": 6218,
+      "TS": 11748,
+      "EN": 4318,
+      "IN": 3040
+    },
+    "gender_distribution_guess": {
+      "f": 9645,
+      "m": 28508
+    }
+  },
+  "text": {
+    "n_with_text": 266120,
+    "total_words": 1966908,
+    "mean_words_per_utt": 7.39,
+    "median_words_per_utt": 4.0
+  },
+  "speaker_leakage_across_splits": {
+    "dev_vs_train": [
+      "fie038",
+      "mio036"
+    ]
+  },
+  "enrollment_feasibility": {
+    "eligible_speakers": 56,
+    "total_speaker_conditions": 56,
+    "test_utt_pool": 6865,
+    "eligible_by_split": {
+      "dev": 6,
+      "eval": 5,
+      "train": 45
+    },
+    "total_by_split": {
+      "dev": 6,
+      "eval": 5,
+      "train": 45
+    }
+  },
+  "audio_verification_sample": {
+    "n_verified": 2000,
+    "sample_rates": {
+      "16000": 2000
+    },
+    "channels": {
+      "1": 2000
+    },
+    "mean_abs_diff_name_vs_actual_s": 0.0,
+    "max_abs_diff_name_vs_actual_s": 0.0001
+  }
+}
