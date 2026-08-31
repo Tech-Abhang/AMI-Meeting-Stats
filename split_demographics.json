@@ -1,0 +1,288 @@
+{
+  "resolved_root": "audio",
+  "ihm": {
+    "mic_folder": "ihm",
+    "total_wav_files": 133060,
+    "parse_ok_pct": 100.0,
+    "unique_speakers_total": 190,
+    "unique_speakers_by_split": {
+      "train": 155,
+      "dev": 21,
+      "eval": 16
+    },
+    "decode_failures": [],
+    "gender": {
+      "utterance_counts_by_split": {
+        "train": {
+          "Female": 29101,
+          "Male": 78218
+        },
+        "dev": {
+          "Female": 4542,
+          "Male": 8556
+        },
+        "eval": {
+          "Female": 5615,
+          "Male": 7028
+        }
+      },
+      "unique_speaker_counts_by_split": {
+        "train": {
+          "Female": 45,
+          "Male": 110
+        },
+        "dev": {
+          "Female": 8,
+          "Male": 13
+        },
+        "eval": {
+          "Female": 8,
+          "Male": 8
+        }
+      },
+      "utterance_counts_all_splits_combined": {
+        "Female": 39258,
+        "Male": 93802
+      },
+      "unique_speaker_counts_all_splits_combined": {
+        "Female": 60,
+        "Male": 130
+      }
+    },
+    "location": {
+      "utterance_counts_by_split": {
+        "train": {
+          "Edinburgh": 48278,
+          "Idiap": 29767,
+          "TNO": 29274
+        },
+        "dev": {
+          "Edinburgh": 2231,
+          "Idiap": 7095,
+          "TNO": 3772
+        },
+        "eval": {
+          "Edinburgh": 7789,
+          "Idiap": 2078,
+          "TNO": 2776
+        }
+      },
+      "unique_speaker_counts_by_split": {
+        "train": {
+          "Edinburgh": 75,
+          "Idiap": 48,
+          "TNO": 32
+        },
+        "dev": {
+          "Edinburgh": 4,
+          "Idiap": 13,
+          "TNO": 4
+        },
+        "eval": {
+          "Edinburgh": 8,
+          "Idiap": 4,
+          "TNO": 4
+        }
+      },
+      "utterance_counts_all_splits_combined": {
+        "Edinburgh": 58298,
+        "Idiap": 38940,
+        "TNO": 35822
+      },
+      "unique_speaker_counts_all_splits_combined": {
+        "Edinburgh": 87,
+        "Idiap": 63,
+        "TNO": 40
+      }
+    },
+    "language": {
+      "utterance_counts_by_split": {
+        "train": {
+          "English": 46331,
+          "Other": 31714,
+          "Dutch": 29274
+        },
+        "dev": {
+          "English": 4450,
+          "Other": 4876,
+          "Dutch": 3772
+        },
+        "eval": {
+          "English": 5994,
+          "Other": 3873,
+          "Dutch": 2776
+        }
+      },
+      "unique_speaker_counts_by_split": {
+        "train": {
+          "English": 71,
+          "Other": 52,
+          "Dutch": 32
+        },
+        "dev": {
+          "English": 8,
+          "Other": 9,
+          "Dutch": 4
+        },
+        "eval": {
+          "English": 6,
+          "Other": 6,
+          "Dutch": 4
+        }
+      },
+      "utterance_counts_all_splits_combined": {
+        "English": 56775,
+        "Other": 40463,
+        "Dutch": 35822
+      },
+      "unique_speaker_counts_all_splits_combined": {
+        "English": 84,
+        "Other": 66,
+        "Dutch": 40
+      }
+    }
+  },
+  "sdm": {
+    "mic_folder": "sdm",
+    "total_wav_files": 133060,
+    "parse_ok_pct": 100.0,
+    "unique_speakers_total": 190,
+    "unique_speakers_by_split": {
+      "train": 155,
+      "dev": 21,
+      "eval": 16
+    },
+    "decode_failures": [],
+    "gender": {
+      "utterance_counts_by_split": {
+        "train": {
+          "Female": 29101,
+          "Male": 78218
+        },
+        "dev": {
+          "Female": 4542,
+          "Male": 8556
+        },
+        "eval": {
+          "Female": 5615,
+          "Male": 7028
+        }
+      },
+      "unique_speaker_counts_by_split": {
+        "train": {
+          "Female": 45,
+          "Male": 110
+        },
+        "dev": {
+          "Female": 8,
+          "Male": 13
+        },
+        "eval": {
+          "Female": 8,
+          "Male": 8
+        }
+      },
+      "utterance_counts_all_splits_combined": {
+        "Female": 39258,
+        "Male": 93802
+      },
+      "unique_speaker_counts_all_splits_combined": {
+        "Female": 60,
+        "Male": 130
+      }
+    },
+    "location": {
+      "utterance_counts_by_split": {
+        "train": {
+          "Edinburgh": 48278,
+          "Idiap": 29767,
+          "TNO": 29274
+        },
+        "dev": {
+          "Edinburgh": 2231,
+          "Idiap": 7095,
+          "TNO": 3772
+        },
+        "eval": {
+          "Edinburgh": 7789,
+          "Idiap": 2078,
+          "TNO": 2776
+        }
+      },
+      "unique_speaker_counts_by_split": {
+        "train": {
+          "Edinburgh": 75,
+          "Idiap": 48,
+          "TNO": 32
+        },
+        "dev": {
+          "Edinburgh": 4,
+          "Idiap": 13,
+          "TNO": 4
+        },
+        "eval": {
+          "Edinburgh": 8,
+          "Idiap": 4,
+          "TNO": 4
+        }
+      },
+      "utterance_counts_all_splits_combined": {
+        "Edinburgh": 58298,
+        "Idiap": 38940,
+        "TNO": 35822
+      },
+      "unique_speaker_counts_all_splits_combined": {
+        "Edinburgh": 87,
+        "Idiap": 63,
+        "TNO": 40
+      }
+    },
+    "language": {
+      "utterance_counts_by_split": {
+        "train": {
+          "English": 46331,
+          "Other": 31714,
+          "Dutch": 29274
+        },
+        "dev": {
+          "English": 4450,
+          "Other": 4876,
+          "Dutch": 3772
+        },
+        "eval": {
+          "English": 5994,
+          "Other": 3873,
+          "Dutch": 2776
+        }
+      },
+      "unique_speaker_counts_by_split": {
+        "train": {
+          "English": 71,
+          "Other": 52,
+          "Dutch": 32
+        },
+        "dev": {
+          "English": 8,
+          "Other": 9,
+          "Dutch": 4
+        },
+        "eval": {
+          "English": 6,
+          "Other": 6,
+          "Dutch": 4
+        }
+      },
+      "utterance_counts_all_splits_combined": {
+        "English": 56775,
+        "Other": 40463,
+        "Dutch": 35822
+      },
+      "unique_speaker_counts_all_splits_combined": {
+        "English": 84,
+        "Other": 66,
+        "Dutch": 40
+      }
+    }
+  },
+  "cross_check_ihm_vs_sdm_speaker_counts_match": true
+}
