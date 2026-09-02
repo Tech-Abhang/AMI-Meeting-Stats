@@ -5,11 +5,11 @@
   "eval_female_speakers": 30,
   "train_male_speakers": 60,
   "train_female_speakers": 30,
-  "enroll_rows": 49018,
-  "test_rows": 40358,
+  "enroll_rows": 69197,
+  "test_rows": 138394,
   "test_rows_by_mic": {
-    "ihm": 20179,
-    "sdm": 20179
+    "ihm": 69197,
+    "sdm": 69197
   },
   "output_file": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/eval_enroll_test.xlsx"
 }
