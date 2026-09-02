@@ -1,0 +1,1402 @@
+{
+  "summary": {
+    "input_xlsx": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/eval_enroll_test.xlsx",
+    "need_enroll": 10,
+    "need_test": 10,
+    "total_speakers_checked": 100,
+    "feasible_count": 91,
+    "infeasible_count": 9,
+    "infeasible_speakers": [
+      "fee085",
+      "fee096",
+      "feo084",
+      "mee075",
+      "mee076",
+      "meo074",
+      "mio066",
+      "mio098",
+      "mio105"
+    ],
+    "infeasible_reasons_breakdown": {
+      "only 1 meeting total -- can't split at all": 9
+    }
+  },
+  "per_speaker": {
+    "fee019": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2005a",
+        "es2005b",
+        "es2005c"
+      ],
+      "test_side_meetings": [
+        "es2005d"
+      ],
+      "enroll_side_total": 553,
+      "test_side_total": 340
+    },
+    "fee021": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2006a",
+        "es2006b",
+        "es2006c"
+      ],
+      "test_side_meetings": [
+        "es2006d"
+      ],
+      "enroll_side_total": 567,
+      "test_side_total": 636
+    },
+    "fee036": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2009a",
+        "es2009b",
+        "es2009c"
+      ],
+      "test_side_meetings": [
+        "es2009d"
+      ],
+      "enroll_side_total": 497,
+      "test_side_total": 510
+    },
+    "fee039": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2010a",
+        "es2010b",
+        "es2010c"
+      ],
+      "test_side_meetings": [
+        "es2010d"
+      ],
+      "enroll_side_total": 308,
+      "test_side_total": 174
+    },
+    "fee040": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2010a",
+        "es2010b",
+        "es2010c"
+      ],
+      "test_side_meetings": [
+        "es2010d"
+      ],
+      "enroll_side_total": 307,
+      "test_side_total": 284
+    },
+    "fee041": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2011a",
+        "es2011b",
+        "es2011c"
+      ],
+      "test_side_meetings": [
+        "es2011d"
+      ],
+      "enroll_side_total": 471,
+      "test_side_total": 494
+    },
+    "fee043": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2011a",
+        "es2011b",
+        "es2011c"
+      ],
+      "test_side_meetings": [
+        "es2011d"
+      ],
+      "enroll_side_total": 459,
+      "test_side_total": 314
+    },
+    "fee047": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2012a",
+        "es2012b",
+        "es2012c"
+      ],
+      "test_side_meetings": [
+        "es2012d"
+      ],
+      "enroll_side_total": 242,
+      "test_side_total": 100
+    },
+    "fee050": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2013a",
+        "es2013b",
+        "es2013c"
+      ],
+      "test_side_meetings": [
+        "es2013d"
+      ],
+      "enroll_side_total": 247,
+      "test_side_total": 188
+    },
+    "fee051": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2013a",
+        "es2013b",
+        "es2013c"
+      ],
+      "test_side_meetings": [
+        "es2013d"
+      ],
+      "enroll_side_total": 285,
+      "test_side_total": 292
+    },
+    "fee052": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2013a",
+        "es2013b",
+        "es2013c"
+      ],
+      "test_side_meetings": [
+        "es2013d"
+      ],
+      "enroll_side_total": 375,
+      "test_side_total": 306
+    },
+    "fee057": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2015a",
+        "es2015b",
+        "es2015c"
+      ],
+      "test_side_meetings": [
+        "es2015d"
+      ],
+      "enroll_side_total": 707,
+      "test_side_total": 644
+    },
+    "fee060": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2015a",
+        "es2015b",
+        "es2015c"
+      ],
+      "test_side_meetings": [
+        "es2015d"
+      ],
+      "enroll_side_total": 481,
+      "test_side_total": 536
+    },
+    "fee083": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2005a",
+        "en2009b",
+        "en2009c"
+      ],
+      "test_side_meetings": [
+        "en2009d"
+      ],
+      "enroll_side_total": 1586,
+      "test_side_total": 1426
+    },
+    "fee085": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "en2005a"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 496,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 496,
+      "total_test_all_meetings": 992,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "fee096": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "en2009d"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 995,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 995,
+      "total_test_all_meetings": 1990,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "feo026": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2007a",
+        "es2007b",
+        "es2007c"
+      ],
+      "test_side_meetings": [
+        "es2007d"
+      ],
+      "enroll_side_total": 281,
+      "test_side_total": 104
+    },
+    "feo065": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2001a",
+        "en2001b",
+        "en2001d"
+      ],
+      "test_side_meetings": [
+        "en2001e"
+      ],
+      "enroll_side_total": 407,
+      "test_side_total": 102
+    },
+    "feo066": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2001a",
+        "en2001b",
+        "en2001d"
+      ],
+      "test_side_meetings": [
+        "en2001e"
+      ],
+      "enroll_side_total": 514,
+      "test_side_total": 372
+    },
+    "feo070": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2002a",
+        "en2002b"
+      ],
+      "test_side_meetings": [
+        "en2002d"
+      ],
+      "enroll_side_total": 427,
+      "test_side_total": 390
+    },
+    "feo072": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2002a",
+        "en2002b",
+        "en2002c"
+      ],
+      "test_side_meetings": [
+        "en2002d"
+      ],
+      "enroll_side_total": 1036,
+      "test_side_total": 650
+    },
+    "feo084": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "en2005a"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 58,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 58,
+      "total_test_all_meetings": 116,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "fie073": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1008a",
+        "is1008b",
+        "is1008c"
+      ],
+      "test_side_meetings": [
+        "is1008d"
+      ],
+      "enroll_side_total": 264,
+      "test_side_total": 192
+    },
+    "fie081": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1000a",
+        "is1000b",
+        "is1000c"
+      ],
+      "test_side_meetings": [
+        "is1000d"
+      ],
+      "enroll_side_total": 550,
+      "test_side_total": 708
+    },
+    "fio041": {
+      "n_meetings": 5,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1005",
+        "is1006a",
+        "is1006b",
+        "is1006c"
+      ],
+      "test_side_meetings": [
+        "is1006d"
+      ],
+      "enroll_side_total": 566,
+      "test_side_total": 610
+    },
+    "fio074": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1001a",
+        "is1001b",
+        "is1001c"
+      ],
+      "test_side_meetings": [
+        "is1001d"
+      ],
+      "enroll_side_total": 149,
+      "test_side_total": 168
+    },
+    "fio084": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1009a",
+        "is1009b",
+        "is1009c"
+      ],
+      "test_side_meetings": [
+        "is1009d"
+      ],
+      "enroll_side_total": 370,
+      "test_side_total": 244
+    },
+    "fio089": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1009a",
+        "is1009b",
+        "is1009c"
+      ],
+      "test_side_meetings": [
+        "is1009d"
+      ],
+      "enroll_side_total": 323,
+      "test_side_total": 484
+    },
+    "fio093": {
+      "n_meetings": 2,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ib4001"
+      ],
+      "test_side_meetings": [
+        "ib4002"
+      ],
+      "enroll_side_total": 96,
+      "test_side_total": 578
+    },
+    "ftd019uid": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3005a",
+        "ts3005b",
+        "ts3005c"
+      ],
+      "test_side_meetings": [
+        "ts3005d"
+      ],
+      "enroll_side_total": 603,
+      "test_side_total": 1070
+    },
+    "mee006": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2002a",
+        "es2002b",
+        "es2002c"
+      ],
+      "test_side_meetings": [
+        "es2002d"
+      ],
+      "enroll_side_total": 383,
+      "test_side_total": 438
+    },
+    "mee009": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c"
+      ],
+      "test_side_meetings": [
+        "es2003d"
+      ],
+      "enroll_side_total": 524,
+      "test_side_total": 546
+    },
+    "mee010": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c"
+      ],
+      "test_side_meetings": [
+        "es2003d"
+      ],
+      "enroll_side_total": 220,
+      "test_side_total": 150
+    },
+    "mee011": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c"
+      ],
+      "test_side_meetings": [
+        "es2003d"
+      ],
+      "enroll_side_total": 311,
+      "test_side_total": 298
+    },
+    "mee012": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c"
+      ],
+      "test_side_meetings": [
+        "es2003d"
+      ],
+      "enroll_side_total": 380,
+      "test_side_total": 526
+    },
+    "mee017": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2005a",
+        "es2005b",
+        "es2005c"
+      ],
+      "test_side_meetings": [
+        "es2005d"
+      ],
+      "enroll_side_total": 630,
+      "test_side_total": 404
+    },
+    "mee025": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2007a",
+        "es2007b",
+        "es2007c"
+      ],
+      "test_side_meetings": [
+        "es2007d"
+      ],
+      "enroll_side_total": 603,
+      "test_side_total": 374
+    },
+    "mee027": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2007a",
+        "es2007b",
+        "es2007c"
+      ],
+      "test_side_meetings": [
+        "es2007d"
+      ],
+      "enroll_side_total": 379,
+      "test_side_total": 252
+    },
+    "mee031": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2008a",
+        "es2008b",
+        "es2008c"
+      ],
+      "test_side_meetings": [
+        "es2008d"
+      ],
+      "enroll_side_total": 337,
+      "test_side_total": 236
+    },
+    "mee033": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2009a",
+        "es2009b",
+        "es2009c"
+      ],
+      "test_side_meetings": [
+        "es2009d"
+      ],
+      "enroll_side_total": 656,
+      "test_side_total": 496
+    },
+    "mee035": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2009a",
+        "es2009b",
+        "es2009c"
+      ],
+      "test_side_meetings": [
+        "es2009d"
+      ],
+      "enroll_side_total": 200,
+      "test_side_total": 212
+    },
+    "mee048": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2012a",
+        "es2012b",
+        "es2012c"
+      ],
+      "test_side_meetings": [
+        "es2012d"
+      ],
+      "enroll_side_total": 275,
+      "test_side_total": 108
+    },
+    "mee054": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2014a",
+        "es2014b",
+        "es2014c"
+      ],
+      "test_side_meetings": [
+        "es2014d"
+      ],
+      "enroll_side_total": 464,
+      "test_side_total": 392
+    },
+    "mee056": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2014a",
+        "es2014b",
+        "es2014c"
+      ],
+      "test_side_meetings": [
+        "es2014d"
+      ],
+      "enroll_side_total": 392,
+      "test_side_total": 752
+    },
+    "mee068": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2001a",
+        "en2001b",
+        "en2001d"
+      ],
+      "test_side_meetings": [
+        "en2001e"
+      ],
+      "enroll_side_total": 370,
+      "test_side_total": 238
+    },
+    "mee071": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2002a",
+        "en2002b",
+        "en2002c"
+      ],
+      "test_side_meetings": [
+        "en2002d"
+      ],
+      "enroll_side_total": 950,
+      "test_side_total": 580
+    },
+    "mee075": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "en2003a"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 419,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 419,
+      "total_test_all_meetings": 838,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "mee076": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "en2003a"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 174,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 174,
+      "total_test_all_meetings": 348,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "mee089": {
+      "n_meetings": 2,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2006a"
+      ],
+      "test_side_meetings": [
+        "en2006b"
+      ],
+      "enroll_side_total": 265,
+      "test_side_total": 420
+    },
+    "mee095": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "en2009b",
+        "en2009c"
+      ],
+      "test_side_meetings": [
+        "en2009d"
+      ],
+      "enroll_side_total": 584,
+      "test_side_total": 616
+    },
+    "meo020": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2005a",
+        "es2005b",
+        "es2005c"
+      ],
+      "test_side_meetings": [
+        "es2005d"
+      ],
+      "enroll_side_total": 295,
+      "test_side_total": 318
+    },
+    "meo062": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "es2016a",
+        "es2016b",
+        "es2016c"
+      ],
+      "test_side_meetings": [
+        "es2016d"
+      ],
+      "enroll_side_total": 424,
+      "test_side_total": 284
+    },
+    "meo074": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "en2003a"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 206,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 206,
+      "total_test_all_meetings": 412,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "mie034": {
+      "n_meetings": 2,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1013"
+      ],
+      "test_side_meetings": [
+        "in1016"
+      ],
+      "enroll_side_total": 500,
+      "test_side_total": 930
+    },
+    "mie080": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1005",
+        "is1002b",
+        "is1002c"
+      ],
+      "test_side_meetings": [
+        "is1002d"
+      ],
+      "enroll_side_total": 838,
+      "test_side_total": 342
+    },
+    "mie083": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1002b",
+        "is1002c"
+      ],
+      "test_side_meetings": [
+        "is1002d"
+      ],
+      "enroll_side_total": 421,
+      "test_side_total": 200
+    },
+    "mie085": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1008a",
+        "is1008b",
+        "is1008c"
+      ],
+      "test_side_meetings": [
+        "is1008d"
+      ],
+      "enroll_side_total": 191,
+      "test_side_total": 204
+    },
+    "mio005": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1003a",
+        "is1003c"
+      ],
+      "test_side_meetings": [
+        "is1003d"
+      ],
+      "enroll_side_total": 272,
+      "test_side_total": 598
+    },
+    "mio019": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1004a",
+        "is1004b",
+        "is1004c"
+      ],
+      "test_side_meetings": [
+        "is1004d"
+      ],
+      "enroll_side_total": 479,
+      "test_side_total": 592
+    },
+    "mio020": {
+      "n_meetings": 5,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1014",
+        "is1001a",
+        "is1001b",
+        "is1001c"
+      ],
+      "test_side_meetings": [
+        "is1001d"
+      ],
+      "enroll_side_total": 716,
+      "test_side_total": 78
+    },
+    "mio022": {
+      "n_meetings": 5,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1002",
+        "is1004a",
+        "is1004b",
+        "is1004c"
+      ],
+      "test_side_meetings": [
+        "is1004d"
+      ],
+      "enroll_side_total": 658,
+      "test_side_total": 444
+    },
+    "mio024": {
+      "n_meetings": 2,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1001"
+      ],
+      "test_side_meetings": [
+        "in1014"
+      ],
+      "enroll_side_total": 407,
+      "test_side_total": 512
+    },
+    "mio025": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1007a",
+        "is1007b"
+      ],
+      "test_side_meetings": [
+        "is1007c"
+      ],
+      "enroll_side_total": 314,
+      "test_side_total": 596
+    },
+    "mio040": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1006a",
+        "is1006b",
+        "is1006c"
+      ],
+      "test_side_meetings": [
+        "is1006d"
+      ],
+      "enroll_side_total": 342,
+      "test_side_total": 338
+    },
+    "mio046": {
+      "n_meetings": 2,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ib4010"
+      ],
+      "test_side_meetings": [
+        "ib4011"
+      ],
+      "enroll_side_total": 345,
+      "test_side_total": 540
+    },
+    "mio049": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1007a",
+        "is1007b"
+      ],
+      "test_side_meetings": [
+        "is1007c"
+      ],
+      "enroll_side_total": 166,
+      "test_side_total": 182
+    },
+    "mio050": {
+      "n_meetings": 6,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1002",
+        "in1016",
+        "is1000a",
+        "is1000b",
+        "is1000c"
+      ],
+      "test_side_meetings": [
+        "is1000d"
+      ],
+      "enroll_side_total": 1002,
+      "test_side_total": 446
+    },
+    "mio055": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1005a",
+        "is1005b"
+      ],
+      "test_side_meetings": [
+        "is1005c"
+      ],
+      "enroll_side_total": 286,
+      "test_side_total": 376
+    },
+    "mio066": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "in1001"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 451,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 451,
+      "total_test_all_meetings": 902,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "mio075": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1007a",
+        "is1007b"
+      ],
+      "test_side_meetings": [
+        "is1007c"
+      ],
+      "enroll_side_total": 152,
+      "test_side_total": 288
+    },
+    "mio077": {
+      "n_meetings": 5,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1007",
+        "in1012",
+        "is1005a",
+        "is1005b"
+      ],
+      "test_side_meetings": [
+        "is1005c"
+      ],
+      "enroll_side_total": 954,
+      "test_side_total": 332
+    },
+    "mio082": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1000a",
+        "is1000b",
+        "is1000c"
+      ],
+      "test_side_meetings": [
+        "is1000d"
+      ],
+      "enroll_side_total": 561,
+      "test_side_total": 736
+    },
+    "mio086": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "is1008a",
+        "is1008b",
+        "is1008c"
+      ],
+      "test_side_meetings": [
+        "is1008d"
+      ],
+      "enroll_side_total": 348,
+      "test_side_total": 336
+    },
+    "mio097": {
+      "n_meetings": 3,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1007",
+        "in1012"
+      ],
+      "test_side_meetings": [
+        "in1013"
+      ],
+      "enroll_side_total": 586,
+      "test_side_total": 1256
+    },
+    "mio098": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "in1007"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 373,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 373,
+      "total_test_all_meetings": 746,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "mio100": {
+      "n_meetings": 2,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "in1008"
+      ],
+      "test_side_meetings": [
+        "in1009"
+      ],
+      "enroll_side_total": 265,
+      "test_side_total": 174
+    },
+    "mio105": {
+      "n_meetings": 1,
+      "feasible": false,
+      "best_enroll_side_meetings": [
+        "in1013"
+      ],
+      "best_test_side_meetings": [],
+      "best_enroll_side_total": 57,
+      "best_test_side_total": 0,
+      "total_enroll_all_meetings": 57,
+      "total_test_all_meetings": 114,
+      "reason": "only 1 meeting total -- can't split at all"
+    },
+    "mtd0010id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3003a",
+        "ts3003b",
+        "ts3003c"
+      ],
+      "test_side_meetings": [
+        "ts3003d"
+      ],
+      "enroll_side_total": 145,
+      "test_side_total": 250
+    },
+    "mtd012me": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3003a",
+        "ts3003b",
+        "ts3003c"
+      ],
+      "test_side_meetings": [
+        "ts3003d"
+      ],
+      "enroll_side_total": 420,
+      "test_side_total": 464
+    },
+    "mtd014id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3004a",
+        "ts3004b",
+        "ts3004c"
+      ],
+      "test_side_meetings": [
+        "ts3004d"
+      ],
+      "enroll_side_total": 558,
+      "test_side_total": 518
+    },
+    "mtd020me": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3005a",
+        "ts3005b",
+        "ts3005c"
+      ],
+      "test_side_meetings": [
+        "ts3005d"
+      ],
+      "enroll_side_total": 687,
+      "test_side_total": 788
+    },
+    "mtd021pm": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3006a",
+        "ts3006b",
+        "ts3006c"
+      ],
+      "test_side_meetings": [
+        "ts3006d"
+      ],
+      "enroll_side_total": 972,
+      "test_side_total": 884
+    },
+    "mtd023uid": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3006a",
+        "ts3006b",
+        "ts3006c"
+      ],
+      "test_side_meetings": [
+        "ts3006d"
+      ],
+      "enroll_side_total": 557,
+      "test_side_total": 614
+    },
+    "mtd025pm": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3007a",
+        "ts3007b",
+        "ts3007c"
+      ],
+      "test_side_meetings": [
+        "ts3007d"
+      ],
+      "enroll_side_total": 670,
+      "test_side_total": 842
+    },
+    "mtd027id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3007a",
+        "ts3007b",
+        "ts3007c"
+      ],
+      "test_side_meetings": [
+        "ts3007d"
+      ],
+      "enroll_side_total": 498,
+      "test_side_total": 734
+    },
+    "mtd029pm": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c"
+      ],
+      "test_side_meetings": [
+        "ts3008d"
+      ],
+      "enroll_side_total": 935,
+      "test_side_total": 810
+    },
+    "mtd030id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c"
+      ],
+      "test_side_meetings": [
+        "ts3008d"
+      ],
+      "enroll_side_total": 291,
+      "test_side_total": 530
+    },
+    "mtd031uid": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c"
+      ],
+      "test_side_meetings": [
+        "ts3008d"
+      ],
+      "enroll_side_total": 525,
+      "test_side_total": 404
+    },
+    "mtd032me": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c"
+      ],
+      "test_side_meetings": [
+        "ts3008d"
+      ],
+      "enroll_side_total": 592,
+      "test_side_total": 746
+    },
+    "mtd033pm": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c"
+      ],
+      "test_side_meetings": [
+        "ts3009d"
+      ],
+      "enroll_side_total": 1021,
+      "test_side_total": 778
+    },
+    "mtd034id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c"
+      ],
+      "test_side_meetings": [
+        "ts3009d"
+      ],
+      "enroll_side_total": 758,
+      "test_side_total": 746
+    },
+    "mtd035uid": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c"
+      ],
+      "test_side_meetings": [
+        "ts3009d"
+      ],
+      "enroll_side_total": 518,
+      "test_side_total": 402
+    },
+    "mtd036me": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c"
+      ],
+      "test_side_meetings": [
+        "ts3009d"
+      ],
+      "enroll_side_total": 776,
+      "test_side_total": 446
+    },
+    "mtd037pm": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3010a",
+        "ts3010b",
+        "ts3010c"
+      ],
+      "test_side_meetings": [
+        "ts3010d"
+      ],
+      "enroll_side_total": 583,
+      "test_side_total": 516
+    },
+    "mtd041pm": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3011a",
+        "ts3011b",
+        "ts3011c"
+      ],
+      "test_side_meetings": [
+        "ts3011d"
+      ],
+      "enroll_side_total": 768,
+      "test_side_total": 640
+    },
+    "mtd042id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3011a",
+        "ts3011b",
+        "ts3011c"
+      ],
+      "test_side_meetings": [
+        "ts3011d"
+      ],
+      "enroll_side_total": 728,
+      "test_side_total": 500
+    },
+    "mtd044me": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3011a",
+        "ts3011b",
+        "ts3011c"
+      ],
+      "test_side_meetings": [
+        "ts3011d"
+      ],
+      "enroll_side_total": 194,
+      "test_side_total": 154
+    },
+    "mtd046id": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3012a",
+        "ts3012b",
+        "ts3012c"
+      ],
+      "test_side_meetings": [
+        "ts3012d"
+      ],
+      "enroll_side_total": 616,
+      "test_side_total": 494
+    },
+    "mtd047uid": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3012a",
+        "ts3012b",
+        "ts3012c"
+      ],
+      "test_side_meetings": [
+        "ts3012d"
+      ],
+      "enroll_side_total": 431,
+      "test_side_total": 292
+    },
+    "mtd048me": {
+      "n_meetings": 4,
+      "feasible": true,
+      "enroll_side_meetings": [
+        "ts3012a",
+        "ts3012b",
+        "ts3012c"
+      ],
+      "test_side_meetings": [
+        "ts3012d"
+      ],
+      "enroll_side_total": 544,
+      "test_side_total": 520
+    }
+  }
+}
