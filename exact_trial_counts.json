@@ -1,1306 +1,4544 @@
 {
   "summary": {
-    "input_xlsx": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/eval_enroll_test.xlsx",
-    "test_rows_read": 138393,
-    "n_speakers": 100,
-    "enroll_vs_test_cross_check": {
-      "checked": true,
-      "mismatches_found": 0
+    "input_xlsx": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/eval_xlsx_out/eval_enroll_test2.xlsx",
+    "enroll_rows_read": 27186,
+    "test_rows_read": 77562,
+    "n_speakers": 91,
+    "disjointness_check": {
+      "fully_disjoint_for_every_speaker": true,
+      "speakers_with_enroll_test_meeting_overlap": 0,
+      "speakers_only_in_enroll": [],
+      "speakers_only_in_test": []
     },
     "positive_pairs": {
-      "total": 82490836,
-      "component_ihm_enroll_to_ihm_test": 41245136,
-      "component_ihm_enroll_to_sdm_test": 41245700
+      "total": 27301776,
+      "component_ihm_enroll_to_ihm_test": 13650888,
+      "component_ihm_enroll_to_sdm_test": 13650888,
+      "speakers_with_nonzero_same_meeting_exclusion": []
     },
     "negative_pairs": {
-      "total": 5460865048,
-      "raw_no_meeting_filter": 5499647848,
-      "excluded_by_meeting_overlap": 38782800,
+      "total": 1224707432,
+      "raw_no_meeting_filter": 1226349828,
+      "excluded_by_meeting_overlap": 1642396,
       "by_gender": {
         "Female": {
-          "n_speakers": 30,
-          "n_pairs": 435,
-          "raw_no_meeting_filter": 776824900,
-          "surviving_negative_pairs": 768927084,
-          "excluded_by_meeting_overlap": 7897816
+          "n_speakers": 27,
+          "n_pairs": 351,
+          "raw_no_meeting_filter": 160026042,
+          "surviving_negative_pairs": 159966192,
+          "excluded_by_meeting_overlap": 59850
         },
         "Male": {
-          "n_speakers": 70,
-          "n_pairs": 2415,
-          "raw_no_meeting_filter": 4722822948,
-          "surviving_negative_pairs": 4691937964,
-          "excluded_by_meeting_overlap": 30884984
+          "n_speakers": 64,
+          "n_pairs": 2016,
+          "raw_no_meeting_filter": 1066323786,
+          "surviving_negative_pairs": 1064741240,
+          "excluded_by_meeting_overlap": 1582546
         }
       },
-      "teammate_pair_count": 65,
-      "stranger_pair_count": 2785
+      "teammate_pair_count": 8,
+      "stranger_pair_count": 2359
     },
-    "grand_total_trial_pairs": 5543355884,
-    "positive_to_negative_ratio": "1 : 66.2"
+    "grand_total_trial_pairs": 1252009208,
+    "positive_to_negative_ratio": "1 : 44.9"
   },
   "positive_pairs_per_speaker": {
     "fee019": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 723,
-      "test_total_ihm_plus_sdm": 1446,
-      "positive_pairs": 698696,
-      "component_ihm_enroll_to_ihm_test": 349348,
-      "component_ihm_enroll_to_sdm_test": 349348
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 229,
+      "test_total_ihm_plus_sdm": 988,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 226252,
+      "component_ihm_enroll_to_ihm_test": 113126,
+      "component_ihm_enroll_to_sdm_test": 113126,
+      "unique_meetings": [
+        "es2005a",
+        "es2005b",
+        "es2005c",
+        "es2005d"
+      ],
+      "enroll_meetings": [
+        "es2005a",
+        "es2005b"
+      ],
+      "test_meetings": [
+        "es2005c",
+        "es2005d"
+      ],
+      "meeting_utterance_counts": {
+        "es2005a": {
+          "ihm": 33,
+          "sdm": 0,
+          "total_utterances": 33,
+          "side": "enroll"
+        },
+        "es2005b": {
+          "ihm": 196,
+          "sdm": 0,
+          "total_utterances": 196,
+          "side": "enroll"
+        },
+        "es2005c": {
+          "ihm": 324,
+          "sdm": 324,
+          "total_utterances": 648,
+          "side": "test"
+        },
+        "es2005d": {
+          "ihm": 170,
+          "sdm": 170,
+          "total_utterances": 340,
+          "side": "test"
+        }
+      }
     },
     "fee021": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 885,
-      "test_total_ihm_plus_sdm": 1770,
-      "positive_pairs": 1140080,
-      "component_ihm_enroll_to_ihm_test": 570040,
-      "component_ihm_enroll_to_sdm_test": 570040
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 346,
+      "test_total_ihm_plus_sdm": 1078,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 372988,
+      "component_ihm_enroll_to_ihm_test": 186494,
+      "component_ihm_enroll_to_sdm_test": 186494,
+      "unique_meetings": [
+        "es2006a",
+        "es2006b",
+        "es2006c",
+        "es2006d"
+      ],
+      "enroll_meetings": [
+        "es2006a",
+        "es2006b"
+      ],
+      "test_meetings": [
+        "es2006c",
+        "es2006d"
+      ],
+      "meeting_utterance_counts": {
+        "es2006a": {
+          "ihm": 132,
+          "sdm": 0,
+          "total_utterances": 132,
+          "side": "enroll"
+        },
+        "es2006b": {
+          "ihm": 214,
+          "sdm": 0,
+          "total_utterances": 214,
+          "side": "enroll"
+        },
+        "es2006c": {
+          "ihm": 221,
+          "sdm": 221,
+          "total_utterances": 442,
+          "side": "test"
+        },
+        "es2006d": {
+          "ihm": 318,
+          "sdm": 318,
+          "total_utterances": 636,
+          "side": "test"
+        }
+      }
     },
     "fee036": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 752,
-      "test_total_ihm_plus_sdm": 1504,
-      "positive_pairs": 832836,
-      "component_ihm_enroll_to_ihm_test": 416418,
-      "component_ihm_enroll_to_sdm_test": 416418
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 311,
+      "test_total_ihm_plus_sdm": 882,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 274302,
+      "component_ihm_enroll_to_ihm_test": 137151,
+      "component_ihm_enroll_to_sdm_test": 137151,
+      "unique_meetings": [
+        "es2009a",
+        "es2009b",
+        "es2009c",
+        "es2009d"
+      ],
+      "enroll_meetings": [
+        "es2009a",
+        "es2009b"
+      ],
+      "test_meetings": [
+        "es2009c",
+        "es2009d"
+      ],
+      "meeting_utterance_counts": {
+        "es2009a": {
+          "ihm": 179,
+          "sdm": 0,
+          "total_utterances": 179,
+          "side": "enroll"
+        },
+        "es2009b": {
+          "ihm": 132,
+          "sdm": 0,
+          "total_utterances": 132,
+          "side": "enroll"
+        },
+        "es2009c": {
+          "ihm": 186,
+          "sdm": 186,
+          "total_utterances": 372,
+          "side": "test"
+        },
+        "es2009d": {
+          "ihm": 255,
+          "sdm": 255,
+          "total_utterances": 510,
+          "side": "test"
+        }
+      }
     },
     "fee039": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 395,
-      "test_total_ihm_plus_sdm": 790,
-      "positive_pairs": 217904,
-      "component_ihm_enroll_to_ihm_test": 108952,
-      "component_ihm_enroll_to_sdm_test": 108952
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 156,
+      "test_total_ihm_plus_sdm": 478,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 74568,
+      "component_ihm_enroll_to_ihm_test": 37284,
+      "component_ihm_enroll_to_sdm_test": 37284,
+      "unique_meetings": [
+        "es2010a",
+        "es2010b",
+        "es2010c",
+        "es2010d"
+      ],
+      "enroll_meetings": [
+        "es2010a",
+        "es2010b"
+      ],
+      "test_meetings": [
+        "es2010c",
+        "es2010d"
+      ],
+      "meeting_utterance_counts": {
+        "es2010a": {
+          "ihm": 32,
+          "sdm": 0,
+          "total_utterances": 32,
+          "side": "enroll"
+        },
+        "es2010b": {
+          "ihm": 124,
+          "sdm": 0,
+          "total_utterances": 124,
+          "side": "enroll"
+        },
+        "es2010c": {
+          "ihm": 152,
+          "sdm": 152,
+          "total_utterances": 304,
+          "side": "test"
+        },
+        "es2010d": {
+          "ihm": 87,
+          "sdm": 87,
+          "total_utterances": 174,
+          "side": "test"
+        }
+      }
     },
     "fee040": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 449,
-      "test_total_ihm_plus_sdm": 898,
-      "positive_pairs": 285656,
-      "component_ihm_enroll_to_ihm_test": 142828,
-      "component_ihm_enroll_to_sdm_test": 142828
-    },
-    "fee047": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 292,
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 157,
       "test_total_ihm_plus_sdm": 584,
-      "positive_pairs": 114800,
-      "component_ihm_enroll_to_ihm_test": 57400,
-      "component_ihm_enroll_to_sdm_test": 57400
-    },
-    "fee050": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 341,
-      "test_total_ihm_plus_sdm": 682,
-      "positive_pairs": 164272,
-      "component_ihm_enroll_to_ihm_test": 82136,
-      "component_ihm_enroll_to_sdm_test": 82136
-    },
-    "fee051": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 431,
-      "test_total_ihm_plus_sdm": 862,
-      "positive_pairs": 256368,
-      "component_ihm_enroll_to_ihm_test": 128184,
-      "component_ihm_enroll_to_sdm_test": 128184
-    },
-    "fee052": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 528,
-      "test_total_ihm_plus_sdm": 1056,
-      "positive_pairs": 395636,
-      "component_ihm_enroll_to_ihm_test": 197818,
-      "component_ihm_enroll_to_sdm_test": 197818
-    },
-    "fee057": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1029,
-      "test_total_ihm_plus_sdm": 2058,
-      "positive_pairs": 1555424,
-      "component_ihm_enroll_to_ihm_test": 777712,
-      "component_ihm_enroll_to_sdm_test": 777712
-    },
-    "fee060": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 749,
-      "test_total_ihm_plus_sdm": 1498,
-      "positive_pairs": 778296,
-      "component_ihm_enroll_to_ihm_test": 389148,
-      "component_ihm_enroll_to_sdm_test": 389148
-    },
-    "fee083": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 2299,
-      "test_total_ihm_plus_sdm": 4598,
-      "positive_pairs": 7855492,
-      "component_ihm_enroll_to_ihm_test": 3927746,
-      "component_ihm_enroll_to_sdm_test": 3927746
-    },
-    "fee085": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 496,
-      "test_total_ihm_plus_sdm": 992,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "fee096": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 995,
-      "test_total_ihm_plus_sdm": 1990,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "feo026": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 333,
-      "test_total_ihm_plus_sdm": 666,
-      "positive_pairs": 157304,
-      "component_ihm_enroll_to_ihm_test": 78652,
-      "component_ihm_enroll_to_sdm_test": 78652
-    },
-    "feo065": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 458,
-      "test_total_ihm_plus_sdm": 916,
-      "positive_pairs": 287556,
-      "component_ihm_enroll_to_ihm_test": 143778,
-      "component_ihm_enroll_to_sdm_test": 143778
-    },
-    "feo066": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 700,
-      "test_total_ihm_plus_sdm": 1400,
-      "positive_pairs": 707356,
-      "component_ihm_enroll_to_ihm_test": 353678,
-      "component_ihm_enroll_to_sdm_test": 353678
-    },
-    "feo084": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 58,
-      "test_total_ihm_plus_sdm": 116,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "fie081": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 904,
-      "test_total_ihm_plus_sdm": 1808,
-      "positive_pairs": 1168912,
-      "component_ihm_enroll_to_ihm_test": 584456,
-      "component_ihm_enroll_to_sdm_test": 584456
-    },
-    "fio041": {
-      "n_meetings": 5,
-      "enroll_total_ihm": 871,
-      "test_total_ihm_plus_sdm": 1742,
-      "positive_pairs": 1166652,
-      "component_ihm_enroll_to_ihm_test": 583326,
-      "component_ihm_enroll_to_sdm_test": 583326
-    },
-    "fio074": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 233,
-      "test_total_ihm_plus_sdm": 466,
-      "positive_pairs": 72544,
-      "component_ihm_enroll_to_ihm_test": 36272,
-      "component_ihm_enroll_to_sdm_test": 36272
-    },
-    "ftd019uid": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1138,
-      "test_total_ihm_plus_sdm": 2276,
-      "positive_pairs": 1737740,
-      "component_ihm_enroll_to_ihm_test": 868870,
-      "component_ihm_enroll_to_sdm_test": 868870
-    },
-    "mee006": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 602,
-      "test_total_ihm_plus_sdm": 1204,
-      "positive_pairs": 506368,
-      "component_ihm_enroll_to_ihm_test": 253184,
-      "component_ihm_enroll_to_sdm_test": 253184
-    },
-    "mee009": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 797,
-      "test_total_ihm_plus_sdm": 1594,
-      "positive_pairs": 919380,
-      "component_ihm_enroll_to_ihm_test": 459690,
-      "component_ihm_enroll_to_sdm_test": 459690
-    },
-    "mee010": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 295,
-      "test_total_ihm_plus_sdm": 590,
-      "positive_pairs": 119300,
-      "component_ihm_enroll_to_ihm_test": 59650,
-      "component_ihm_enroll_to_sdm_test": 59650
-    },
-    "mee011": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 460,
-      "test_total_ihm_plus_sdm": 920,
-      "positive_pairs": 300156,
-      "component_ihm_enroll_to_ihm_test": 150078,
-      "component_ihm_enroll_to_sdm_test": 150078
-    },
-    "mee012": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 643,
-      "test_total_ihm_plus_sdm": 1286,
-      "positive_pairs": 576352,
-      "component_ihm_enroll_to_ihm_test": 288176,
-      "component_ihm_enroll_to_sdm_test": 288176
-    },
-    "mee017": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 832,
-      "test_total_ihm_plus_sdm": 1664,
-      "positive_pairs": 961116,
-      "component_ihm_enroll_to_ihm_test": 480558,
-      "component_ihm_enroll_to_sdm_test": 480558
-    },
-    "mee025": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 790,
-      "test_total_ihm_plus_sdm": 1580,
-      "positive_pairs": 924044,
-      "component_ihm_enroll_to_ihm_test": 462022,
-      "component_ihm_enroll_to_sdm_test": 462022
-    },
-    "mee027": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 505,
-      "test_total_ihm_plus_sdm": 1010,
-      "positive_pairs": 372680,
-      "component_ihm_enroll_to_ihm_test": 186340,
-      "component_ihm_enroll_to_sdm_test": 186340
-    },
-    "mee031": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 455,
-      "test_total_ihm_plus_sdm": 910,
-      "positive_pairs": 297880,
-      "component_ihm_enroll_to_ihm_test": 148940,
-      "component_ihm_enroll_to_sdm_test": 148940
-    },
-    "mee033": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 904,
-      "test_total_ihm_plus_sdm": 1808,
-      "positive_pairs": 1219108,
-      "component_ihm_enroll_to_ihm_test": 609554,
-      "component_ihm_enroll_to_sdm_test": 609554
-    },
-    "mee035": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 306,
-      "test_total_ihm_plus_sdm": 612,
-      "positive_pairs": 137396,
-      "component_ihm_enroll_to_ihm_test": 68698,
-      "component_ihm_enroll_to_sdm_test": 68698
-    },
-    "mee048": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 329,
-      "test_total_ihm_plus_sdm": 658,
-      "positive_pairs": 153476,
-      "component_ihm_enroll_to_ihm_test": 76738,
-      "component_ihm_enroll_to_sdm_test": 76738
-    },
-    "mee054": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 660,
-      "test_total_ihm_plus_sdm": 1320,
-      "positive_pairs": 619180,
-      "component_ihm_enroll_to_ihm_test": 309590,
-      "component_ihm_enroll_to_sdm_test": 309590
-    },
-    "mee056": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 768,
-      "test_total_ihm_plus_sdm": 1536,
-      "positive_pairs": 779372,
-      "component_ihm_enroll_to_ihm_test": 389686,
-      "component_ihm_enroll_to_sdm_test": 389686
-    },
-    "mee068": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 489,
-      "test_total_ihm_plus_sdm": 978,
-      "positive_pairs": 351156,
-      "component_ihm_enroll_to_ihm_test": 175578,
-      "component_ihm_enroll_to_sdm_test": 175578
-    },
-    "mee075": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 419,
-      "test_total_ihm_plus_sdm": 838,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "mee076": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 174,
-      "test_total_ihm_plus_sdm": 348,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "mee089": {
-      "n_meetings": 2,
-      "enroll_total_ihm": 475,
-      "test_total_ihm_plus_sdm": 950,
-      "positive_pairs": 222600,
-      "component_ihm_enroll_to_ihm_test": 111300,
-      "component_ihm_enroll_to_sdm_test": 111300
-    },
-    "mee095": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 892,
-      "test_total_ihm_plus_sdm": 1784,
-      "positive_pairs": 1045168,
-      "component_ihm_enroll_to_ihm_test": 522584,
-      "component_ihm_enroll_to_sdm_test": 522584
-    },
-    "meo020": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 454,
-      "test_total_ihm_plus_sdm": 908,
-      "positive_pairs": 281792,
-      "component_ihm_enroll_to_ihm_test": 140896,
-      "component_ihm_enroll_to_sdm_test": 140896
-    },
-    "meo062": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 566,
-      "test_total_ihm_plus_sdm": 1132,
-      "positive_pairs": 464308,
-      "component_ihm_enroll_to_ihm_test": 232154,
-      "component_ihm_enroll_to_sdm_test": 232154
-    },
-    "meo074": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 206,
-      "test_total_ihm_plus_sdm": 412,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "mie034": {
-      "n_meetings": 2,
-      "enroll_total_ihm": 965,
-      "test_total_ihm_plus_sdm": 1930,
-      "positive_pairs": 930000,
-      "component_ihm_enroll_to_ihm_test": 465000,
-      "component_ihm_enroll_to_sdm_test": 465000
-    },
-    "mie080": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1009,
-      "test_total_ihm_plus_sdm": 2018,
-      "positive_pairs": 1484660,
-      "component_ihm_enroll_to_ihm_test": 742330,
-      "component_ihm_enroll_to_sdm_test": 742330
-    },
-    "mie083": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 521,
-      "test_total_ihm_plus_sdm": 1042,
-      "positive_pairs": 343616,
-      "component_ihm_enroll_to_ihm_test": 171808,
-      "component_ihm_enroll_to_sdm_test": 171808
-    },
-    "mio005": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 571,
-      "test_total_ihm_plus_sdm": 1142,
-      "positive_pairs": 385840,
-      "component_ihm_enroll_to_ihm_test": 192920,
-      "component_ihm_enroll_to_sdm_test": 192920
-    },
-    "mio019": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 775,
-      "test_total_ihm_plus_sdm": 1550,
-      "positive_pairs": 844624,
-      "component_ihm_enroll_to_ihm_test": 422312,
-      "component_ihm_enroll_to_sdm_test": 422312
-    },
-    "mio020": {
-      "n_meetings": 5,
-      "enroll_total_ihm": 755,
-      "test_total_ihm_plus_sdm": 1510,
-      "positive_pairs": 690100,
-      "component_ihm_enroll_to_ihm_test": 345050,
-      "component_ihm_enroll_to_sdm_test": 345050
-    },
-    "mio022": {
-      "n_meetings": 5,
-      "enroll_total_ihm": 880,
-      "test_total_ihm_plus_sdm": 1760,
-      "positive_pairs": 1163072,
-      "component_ihm_enroll_to_ihm_test": 581536,
-      "component_ihm_enroll_to_sdm_test": 581536
-    },
-    "mio024": {
-      "n_meetings": 2,
-      "enroll_total_ihm": 663,
-      "test_total_ihm_plus_sdm": 1326,
-      "positive_pairs": 416768,
-      "component_ihm_enroll_to_ihm_test": 208384,
-      "component_ihm_enroll_to_sdm_test": 208384
-    },
-    "mio025": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 612,
-      "test_total_ihm_plus_sdm": 1224,
-      "positive_pairs": 472740,
-      "component_ihm_enroll_to_ihm_test": 236370,
-      "component_ihm_enroll_to_sdm_test": 236370
-    },
-    "mio040": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 511,
-      "test_total_ihm_plus_sdm": 1022,
-      "positive_pairs": 379500,
-      "component_ihm_enroll_to_ihm_test": 189750,
-      "component_ihm_enroll_to_sdm_test": 189750
-    },
-    "mio049": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 257,
-      "test_total_ihm_plus_sdm": 514,
-      "positive_pairs": 87404,
-      "component_ihm_enroll_to_ihm_test": 43702,
-      "component_ihm_enroll_to_sdm_test": 43702
-    },
-    "mio050": {
-      "n_meetings": 6,
-      "enroll_total_ihm": 1225,
-      "test_total_ihm_plus_sdm": 2450,
-      "positive_pairs": 2380160,
-      "component_ihm_enroll_to_ihm_test": 1190080,
-      "component_ihm_enroll_to_sdm_test": 1190080
-    },
-    "mio055": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 474,
-      "test_total_ihm_plus_sdm": 948,
-      "positive_pairs": 287264,
-      "component_ihm_enroll_to_ihm_test": 143632,
-      "component_ihm_enroll_to_sdm_test": 143632
-    },
-    "mio066": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 451,
-      "test_total_ihm_plus_sdm": 902,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "mio075": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 296,
-      "test_total_ihm_plus_sdm": 592,
-      "positive_pairs": 108540,
-      "component_ihm_enroll_to_ihm_test": 54270,
-      "component_ihm_enroll_to_sdm_test": 54270
-    },
-    "mio077": {
-      "n_meetings": 5,
-      "enroll_total_ihm": 1120,
-      "test_total_ihm_plus_sdm": 2240,
-      "positive_pairs": 1882412,
-      "component_ihm_enroll_to_ihm_test": 941206,
-      "component_ihm_enroll_to_sdm_test": 941206
-    },
-    "mio082": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 929,
-      "test_total_ihm_plus_sdm": 1858,
-      "positive_pairs": 1237616,
-      "component_ihm_enroll_to_ihm_test": 618808,
-      "component_ihm_enroll_to_sdm_test": 618808
-    },
-    "mio097": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 1214,
-      "test_total_ihm_plus_sdm": 2428,
-      "positive_pairs": 1809952,
-      "component_ihm_enroll_to_ihm_test": 904976,
-      "component_ihm_enroll_to_sdm_test": 904976
-    },
-    "mio098": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 373,
-      "test_total_ihm_plus_sdm": 746,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "mio100": {
-      "n_meetings": 2,
-      "enroll_total_ihm": 352,
-      "test_total_ihm_plus_sdm": 704,
-      "positive_pairs": 92220,
-      "component_ihm_enroll_to_ihm_test": 46110,
-      "component_ihm_enroll_to_sdm_test": 46110
-    },
-    "mio105": {
-      "n_meetings": 1,
-      "enroll_total_ihm": 57,
-      "test_total_ihm_plus_sdm": 114,
-      "positive_pairs": 0,
-      "component_ihm_enroll_to_ihm_test": 0,
-      "component_ihm_enroll_to_sdm_test": 0
-    },
-    "mtd020me": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1081,
-      "test_total_ihm_plus_sdm": 2162,
-      "positive_pairs": 1659752,
-      "component_ihm_enroll_to_ihm_test": 829876,
-      "component_ihm_enroll_to_sdm_test": 829876
-    },
-    "mtd021pm": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1414,
-      "test_total_ihm_plus_sdm": 2828,
-      "positive_pairs": 2945220,
-      "component_ihm_enroll_to_ihm_test": 1472610,
-      "component_ihm_enroll_to_sdm_test": 1472610
-    },
-    "mtd023uid": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 864,
-      "test_total_ihm_plus_sdm": 1728,
-      "positive_pairs": 1065956,
-      "component_ihm_enroll_to_ihm_test": 532978,
-      "component_ihm_enroll_to_sdm_test": 532978
-    },
-    "mtd025pm": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1091,
-      "test_total_ihm_plus_sdm": 2182,
-      "positive_pairs": 1708376,
-      "component_ihm_enroll_to_ihm_test": 854188,
-      "component_ihm_enroll_to_sdm_test": 854188
-    },
-    "mtd027id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 865,
-      "test_total_ihm_plus_sdm": 1730,
-      "positive_pairs": 1042268,
-      "component_ihm_enroll_to_ihm_test": 521134,
-      "component_ihm_enroll_to_sdm_test": 521134
-    },
-    "mtd029pm": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1340,
-      "test_total_ihm_plus_sdm": 2680,
-      "positive_pairs": 2645736,
-      "component_ihm_enroll_to_ihm_test": 1322868,
-      "component_ihm_enroll_to_sdm_test": 1322868
-    },
-    "mtd030id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 556,
-      "test_total_ihm_plus_sdm": 1112,
-      "positive_pairs": 395832,
-      "component_ihm_enroll_to_ihm_test": 197916,
-      "component_ihm_enroll_to_sdm_test": 197916
-    },
-    "mtd031uid": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 727,
-      "test_total_ihm_plus_sdm": 1454,
-      "positive_pairs": 782432,
-      "component_ihm_enroll_to_ihm_test": 391216,
-      "component_ihm_enroll_to_sdm_test": 391216
-    },
-    "mtd032me": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 965,
-      "test_total_ihm_plus_sdm": 1930,
-      "positive_pairs": 1333132,
-      "component_ihm_enroll_to_ihm_test": 666566,
-      "component_ihm_enroll_to_sdm_test": 666566
-    },
-    "mtd033pm": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1410,
-      "test_total_ihm_plus_sdm": 2820,
-      "positive_pairs": 2964564,
-      "component_ihm_enroll_to_ihm_test": 1482282,
-      "component_ihm_enroll_to_sdm_test": 1482282
-    },
-    "mtd034id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1131,
-      "test_total_ihm_plus_sdm": 2262,
-      "positive_pairs": 1856804,
-      "component_ihm_enroll_to_ihm_test": 928402,
-      "component_ihm_enroll_to_sdm_test": 928402
-    },
-    "mtd035uid": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 719,
-      "test_total_ihm_plus_sdm": 1438,
-      "positive_pairs": 745976,
-      "component_ihm_enroll_to_ihm_test": 372988,
-      "component_ihm_enroll_to_sdm_test": 372988
-    },
-    "mtd036me": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 999,
-      "test_total_ihm_plus_sdm": 1998,
-      "positive_pairs": 1449836,
-      "component_ihm_enroll_to_ihm_test": 724918,
-      "component_ihm_enroll_to_sdm_test": 724918
-    },
-    "mtd037pm": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 841,
-      "test_total_ihm_plus_sdm": 1682,
-      "positive_pairs": 1028360,
-      "component_ihm_enroll_to_ihm_test": 514180,
-      "component_ihm_enroll_to_sdm_test": 514180
-    },
-    "mtd041pm": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1088,
-      "test_total_ihm_plus_sdm": 2176,
-      "positive_pairs": 1757180,
-      "component_ihm_enroll_to_ihm_test": 878590,
-      "component_ihm_enroll_to_sdm_test": 878590
-    },
-    "mtd042id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 978,
-      "test_total_ihm_plus_sdm": 1956,
-      "positive_pairs": 1382356,
-      "component_ihm_enroll_to_ihm_test": 691178,
-      "component_ihm_enroll_to_sdm_test": 691178
-    },
-    "mtd044me": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 271,
-      "test_total_ihm_plus_sdm": 542,
-      "positive_pairs": 102676,
-      "component_ihm_enroll_to_ihm_test": 51338,
-      "component_ihm_enroll_to_sdm_test": 51338
-    },
-    "mtd046id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 863,
-      "test_total_ihm_plus_sdm": 1726,
-      "positive_pairs": 1018612,
-      "component_ihm_enroll_to_ihm_test": 509306,
-      "component_ihm_enroll_to_sdm_test": 509306
-    },
-    "mtd047uid": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 577,
-      "test_total_ihm_plus_sdm": 1154,
-      "positive_pairs": 468648,
-      "component_ihm_enroll_to_ihm_test": 234324,
-      "component_ihm_enroll_to_sdm_test": 234324
-    },
-    "mtd048me": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 804,
-      "test_total_ihm_plus_sdm": 1608,
-      "positive_pairs": 919740,
-      "component_ihm_enroll_to_ihm_test": 459870,
-      "component_ihm_enroll_to_sdm_test": 459870
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 91688,
+      "component_ihm_enroll_to_ihm_test": 45844,
+      "component_ihm_enroll_to_sdm_test": 45844,
+      "unique_meetings": [
+        "es2010a",
+        "es2010b",
+        "es2010c",
+        "es2010d"
+      ],
+      "enroll_meetings": [
+        "es2010a",
+        "es2010b"
+      ],
+      "test_meetings": [
+        "es2010c",
+        "es2010d"
+      ],
+      "meeting_utterance_counts": {
+        "es2010a": {
+          "ihm": 35,
+          "sdm": 0,
+          "total_utterances": 35,
+          "side": "enroll"
+        },
+        "es2010b": {
+          "ihm": 122,
+          "sdm": 0,
+          "total_utterances": 122,
+          "side": "enroll"
+        },
+        "es2010c": {
+          "ihm": 150,
+          "sdm": 150,
+          "total_utterances": 300,
+          "side": "test"
+        },
+        "es2010d": {
+          "ihm": 142,
+          "sdm": 142,
+          "total_utterances": 284,
+          "side": "test"
+        }
+      }
     },
     "fee041": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 718,
-      "test_total_ihm_plus_sdm": 1437,
-      "positive_pairs": 761144,
-      "component_ihm_enroll_to_ihm_test": 380290,
-      "component_ihm_enroll_to_sdm_test": 380854
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 301,
+      "test_total_ihm_plus_sdm": 834,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 251034,
+      "component_ihm_enroll_to_ihm_test": 125517,
+      "component_ihm_enroll_to_sdm_test": 125517,
+      "unique_meetings": [
+        "es2011a",
+        "es2011b",
+        "es2011c",
+        "es2011d"
+      ],
+      "enroll_meetings": [
+        "es2011a",
+        "es2011b"
+      ],
+      "test_meetings": [
+        "es2011c",
+        "es2011d"
+      ],
+      "meeting_utterance_counts": {
+        "es2011a": {
+          "ihm": 154,
+          "sdm": 0,
+          "total_utterances": 154,
+          "side": "enroll"
+        },
+        "es2011b": {
+          "ihm": 147,
+          "sdm": 0,
+          "total_utterances": 147,
+          "side": "enroll"
+        },
+        "es2011c": {
+          "ihm": 170,
+          "sdm": 170,
+          "total_utterances": 340,
+          "side": "test"
+        },
+        "es2011d": {
+          "ihm": 247,
+          "sdm": 247,
+          "total_utterances": 494,
+          "side": "test"
+        }
+      }
     },
     "fee043": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 616,
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 269,
+      "test_total_ihm_plus_sdm": 694,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 186686,
+      "component_ihm_enroll_to_ihm_test": 93343,
+      "component_ihm_enroll_to_sdm_test": 93343,
+      "unique_meetings": [
+        "es2011a",
+        "es2011b",
+        "es2011c",
+        "es2011d"
+      ],
+      "enroll_meetings": [
+        "es2011a",
+        "es2011b"
+      ],
+      "test_meetings": [
+        "es2011c",
+        "es2011d"
+      ],
+      "meeting_utterance_counts": {
+        "es2011a": {
+          "ihm": 100,
+          "sdm": 0,
+          "total_utterances": 100,
+          "side": "enroll"
+        },
+        "es2011b": {
+          "ihm": 169,
+          "sdm": 0,
+          "total_utterances": 169,
+          "side": "enroll"
+        },
+        "es2011c": {
+          "ihm": 190,
+          "sdm": 190,
+          "total_utterances": 380,
+          "side": "test"
+        },
+        "es2011d": {
+          "ihm": 157,
+          "sdm": 157,
+          "total_utterances": 314,
+          "side": "test"
+        }
+      }
+    },
+    "fee047": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 106,
+      "test_total_ihm_plus_sdm": 372,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 39432,
+      "component_ihm_enroll_to_ihm_test": 19716,
+      "component_ihm_enroll_to_sdm_test": 19716,
+      "unique_meetings": [
+        "es2012a",
+        "es2012b",
+        "es2012c",
+        "es2012d"
+      ],
+      "enroll_meetings": [
+        "es2012a",
+        "es2012b"
+      ],
+      "test_meetings": [
+        "es2012c",
+        "es2012d"
+      ],
+      "meeting_utterance_counts": {
+        "es2012a": {
+          "ihm": 28,
+          "sdm": 0,
+          "total_utterances": 28,
+          "side": "enroll"
+        },
+        "es2012b": {
+          "ihm": 78,
+          "sdm": 0,
+          "total_utterances": 78,
+          "side": "enroll"
+        },
+        "es2012c": {
+          "ihm": 136,
+          "sdm": 136,
+          "total_utterances": 272,
+          "side": "test"
+        },
+        "es2012d": {
+          "ihm": 50,
+          "sdm": 50,
+          "total_utterances": 100,
+          "side": "test"
+        }
+      }
+    },
+    "fee050": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 121,
+      "test_total_ihm_plus_sdm": 440,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 53240,
+      "component_ihm_enroll_to_ihm_test": 26620,
+      "component_ihm_enroll_to_sdm_test": 26620,
+      "unique_meetings": [
+        "es2013a",
+        "es2013b",
+        "es2013c",
+        "es2013d"
+      ],
+      "enroll_meetings": [
+        "es2013a",
+        "es2013b"
+      ],
+      "test_meetings": [
+        "es2013c",
+        "es2013d"
+      ],
+      "meeting_utterance_counts": {
+        "es2013a": {
+          "ihm": 28,
+          "sdm": 0,
+          "total_utterances": 28,
+          "side": "enroll"
+        },
+        "es2013b": {
+          "ihm": 93,
+          "sdm": 0,
+          "total_utterances": 93,
+          "side": "enroll"
+        },
+        "es2013c": {
+          "ihm": 126,
+          "sdm": 126,
+          "total_utterances": 252,
+          "side": "test"
+        },
+        "es2013d": {
+          "ihm": 94,
+          "sdm": 94,
+          "total_utterances": 188,
+          "side": "test"
+        }
+      }
+    },
+    "fee051": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 126,
+      "test_total_ihm_plus_sdm": 610,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 76860,
+      "component_ihm_enroll_to_ihm_test": 38430,
+      "component_ihm_enroll_to_sdm_test": 38430,
+      "unique_meetings": [
+        "es2013a",
+        "es2013b",
+        "es2013c",
+        "es2013d"
+      ],
+      "enroll_meetings": [
+        "es2013a",
+        "es2013b"
+      ],
+      "test_meetings": [
+        "es2013c",
+        "es2013d"
+      ],
+      "meeting_utterance_counts": {
+        "es2013a": {
+          "ihm": 24,
+          "sdm": 0,
+          "total_utterances": 24,
+          "side": "enroll"
+        },
+        "es2013b": {
+          "ihm": 102,
+          "sdm": 0,
+          "total_utterances": 102,
+          "side": "enroll"
+        },
+        "es2013c": {
+          "ihm": 159,
+          "sdm": 159,
+          "total_utterances": 318,
+          "side": "test"
+        },
+        "es2013d": {
+          "ihm": 146,
+          "sdm": 146,
+          "total_utterances": 292,
+          "side": "test"
+        }
+      }
+    },
+    "fee052": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 215,
+      "test_total_ihm_plus_sdm": 626,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 134590,
+      "component_ihm_enroll_to_ihm_test": 67295,
+      "component_ihm_enroll_to_sdm_test": 67295,
+      "unique_meetings": [
+        "es2013a",
+        "es2013b",
+        "es2013c",
+        "es2013d"
+      ],
+      "enroll_meetings": [
+        "es2013a",
+        "es2013b"
+      ],
+      "test_meetings": [
+        "es2013c",
+        "es2013d"
+      ],
+      "meeting_utterance_counts": {
+        "es2013a": {
+          "ihm": 41,
+          "sdm": 0,
+          "total_utterances": 41,
+          "side": "enroll"
+        },
+        "es2013b": {
+          "ihm": 174,
+          "sdm": 0,
+          "total_utterances": 174,
+          "side": "enroll"
+        },
+        "es2013c": {
+          "ihm": 160,
+          "sdm": 160,
+          "total_utterances": 320,
+          "side": "test"
+        },
+        "es2013d": {
+          "ihm": 153,
+          "sdm": 153,
+          "total_utterances": 306,
+          "side": "test"
+        }
+      }
+    },
+    "fee057": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 413,
       "test_total_ihm_plus_sdm": 1232,
-      "positive_pairs": 560292,
-      "component_ihm_enroll_to_ihm_test": 280146,
-      "component_ihm_enroll_to_sdm_test": 280146
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 508816,
+      "component_ihm_enroll_to_ihm_test": 254408,
+      "component_ihm_enroll_to_sdm_test": 254408,
+      "unique_meetings": [
+        "es2015a",
+        "es2015b",
+        "es2015c",
+        "es2015d"
+      ],
+      "enroll_meetings": [
+        "es2015a",
+        "es2015b"
+      ],
+      "test_meetings": [
+        "es2015c",
+        "es2015d"
+      ],
+      "meeting_utterance_counts": {
+        "es2015a": {
+          "ihm": 153,
+          "sdm": 0,
+          "total_utterances": 153,
+          "side": "enroll"
+        },
+        "es2015b": {
+          "ihm": 260,
+          "sdm": 0,
+          "total_utterances": 260,
+          "side": "enroll"
+        },
+        "es2015c": {
+          "ihm": 294,
+          "sdm": 294,
+          "total_utterances": 588,
+          "side": "test"
+        },
+        "es2015d": {
+          "ihm": 322,
+          "sdm": 322,
+          "total_utterances": 644,
+          "side": "test"
+        }
+      }
     },
-    "fie073": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 360,
-      "test_total_ihm_plus_sdm": 720,
-      "positive_pairs": 183932,
-      "component_ihm_enroll_to_ihm_test": 91966,
-      "component_ihm_enroll_to_sdm_test": 91966
+    "fee060": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 318,
+      "test_total_ihm_plus_sdm": 862,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 274116,
+      "component_ihm_enroll_to_ihm_test": 137058,
+      "component_ihm_enroll_to_sdm_test": 137058,
+      "unique_meetings": [
+        "es2015a",
+        "es2015b",
+        "es2015c",
+        "es2015d"
+      ],
+      "enroll_meetings": [
+        "es2015a",
+        "es2015b"
+      ],
+      "test_meetings": [
+        "es2015c",
+        "es2015d"
+      ],
+      "meeting_utterance_counts": {
+        "es2015a": {
+          "ihm": 52,
+          "sdm": 0,
+          "total_utterances": 52,
+          "side": "enroll"
+        },
+        "es2015b": {
+          "ihm": 266,
+          "sdm": 0,
+          "total_utterances": 266,
+          "side": "enroll"
+        },
+        "es2015c": {
+          "ihm": 163,
+          "sdm": 163,
+          "total_utterances": 326,
+          "side": "test"
+        },
+        "es2015d": {
+          "ihm": 268,
+          "sdm": 268,
+          "total_utterances": 536,
+          "side": "test"
+        }
+      }
     },
-    "fio093": {
-      "n_meetings": 2,
-      "enroll_total_ihm": 385,
-      "test_total_ihm_plus_sdm": 770,
-      "positive_pairs": 110976,
-      "component_ihm_enroll_to_ihm_test": 55488,
-      "component_ihm_enroll_to_sdm_test": 55488
+    "fee083": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 1043,
+      "test_total_ihm_plus_sdm": 2512,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 2620016,
+      "component_ihm_enroll_to_ihm_test": 1310008,
+      "component_ihm_enroll_to_sdm_test": 1310008,
+      "unique_meetings": [
+        "en2005a",
+        "en2009b",
+        "en2009c",
+        "en2009d"
+      ],
+      "enroll_meetings": [
+        "en2005a",
+        "en2009b"
+      ],
+      "test_meetings": [
+        "en2009c",
+        "en2009d"
+      ],
+      "meeting_utterance_counts": {
+        "en2005a": {
+          "ihm": 594,
+          "sdm": 0,
+          "total_utterances": 594,
+          "side": "enroll"
+        },
+        "en2009b": {
+          "ihm": 449,
+          "sdm": 0,
+          "total_utterances": 449,
+          "side": "enroll"
+        },
+        "en2009c": {
+          "ihm": 543,
+          "sdm": 543,
+          "total_utterances": 1086,
+          "side": "test"
+        },
+        "en2009d": {
+          "ihm": 713,
+          "sdm": 713,
+          "total_utterances": 1426,
+          "side": "test"
+        }
+      }
     },
-    "mie085": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 293,
-      "test_total_ihm_plus_sdm": 586,
-      "positive_pairs": 124584,
-      "component_ihm_enroll_to_ihm_test": 62292,
-      "component_ihm_enroll_to_sdm_test": 62292
+    "feo026": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 143,
+      "test_total_ihm_plus_sdm": 380,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 54340,
+      "component_ihm_enroll_to_ihm_test": 27170,
+      "component_ihm_enroll_to_sdm_test": 27170,
+      "unique_meetings": [
+        "es2007a",
+        "es2007b",
+        "es2007c",
+        "es2007d"
+      ],
+      "enroll_meetings": [
+        "es2007a",
+        "es2007b"
+      ],
+      "test_meetings": [
+        "es2007c",
+        "es2007d"
+      ],
+      "meeting_utterance_counts": {
+        "es2007a": {
+          "ihm": 60,
+          "sdm": 0,
+          "total_utterances": 60,
+          "side": "enroll"
+        },
+        "es2007b": {
+          "ihm": 83,
+          "sdm": 0,
+          "total_utterances": 83,
+          "side": "enroll"
+        },
+        "es2007c": {
+          "ihm": 138,
+          "sdm": 138,
+          "total_utterances": 276,
+          "side": "test"
+        },
+        "es2007d": {
+          "ihm": 52,
+          "sdm": 52,
+          "total_utterances": 104,
+          "side": "test"
+        }
+      }
     },
-    "mio046": {
-      "n_meetings": 2,
-      "enroll_total_ihm": 615,
-      "test_total_ihm_plus_sdm": 1230,
-      "positive_pairs": 372600,
-      "component_ihm_enroll_to_ihm_test": 186300,
-      "component_ihm_enroll_to_sdm_test": 186300
+    "feo065": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 339,
+      "test_total_ihm_plus_sdm": 238,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 80682,
+      "component_ihm_enroll_to_ihm_test": 40341,
+      "component_ihm_enroll_to_sdm_test": 40341,
+      "unique_meetings": [
+        "en2001a",
+        "en2001b",
+        "en2001d",
+        "en2001e"
+      ],
+      "enroll_meetings": [
+        "en2001a",
+        "en2001b"
+      ],
+      "test_meetings": [
+        "en2001d",
+        "en2001e"
+      ],
+      "meeting_utterance_counts": {
+        "en2001a": {
+          "ihm": 144,
+          "sdm": 0,
+          "total_utterances": 144,
+          "side": "enroll"
+        },
+        "en2001b": {
+          "ihm": 195,
+          "sdm": 0,
+          "total_utterances": 195,
+          "side": "enroll"
+        },
+        "en2001d": {
+          "ihm": 68,
+          "sdm": 68,
+          "total_utterances": 136,
+          "side": "test"
+        },
+        "en2001e": {
+          "ihm": 51,
+          "sdm": 51,
+          "total_utterances": 102,
+          "side": "test"
+        }
+      }
     },
-    "mio086": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 516,
-      "test_total_ihm_plus_sdm": 1032,
-      "positive_pairs": 391100,
-      "component_ihm_enroll_to_ihm_test": 195550,
-      "component_ihm_enroll_to_sdm_test": 195550
-    },
-    "mtd014id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 817,
-      "test_total_ihm_plus_sdm": 1634,
-      "positive_pairs": 942644,
-      "component_ihm_enroll_to_ihm_test": 471322,
-      "component_ihm_enroll_to_sdm_test": 471322
+    "feo066": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 437,
+      "test_total_ihm_plus_sdm": 526,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 229862,
+      "component_ihm_enroll_to_ihm_test": 114931,
+      "component_ihm_enroll_to_sdm_test": 114931,
+      "unique_meetings": [
+        "en2001a",
+        "en2001b",
+        "en2001d",
+        "en2001e"
+      ],
+      "enroll_meetings": [
+        "en2001a",
+        "en2001b"
+      ],
+      "test_meetings": [
+        "en2001d",
+        "en2001e"
+      ],
+      "meeting_utterance_counts": {
+        "en2001a": {
+          "ihm": 206,
+          "sdm": 0,
+          "total_utterances": 206,
+          "side": "enroll"
+        },
+        "en2001b": {
+          "ihm": 231,
+          "sdm": 0,
+          "total_utterances": 231,
+          "side": "enroll"
+        },
+        "en2001d": {
+          "ihm": 77,
+          "sdm": 77,
+          "total_utterances": 154,
+          "side": "test"
+        },
+        "en2001e": {
+          "ihm": 186,
+          "sdm": 186,
+          "total_utterances": 372,
+          "side": "test"
+        }
+      }
     },
     "feo070": {
-      "n_meetings": 3,
-      "enroll_total_ihm": 622,
-      "test_total_ihm_plus_sdm": 1244,
-      "positive_pairs": 489468,
-      "component_ihm_enroll_to_ihm_test": 244734,
-      "component_ihm_enroll_to_sdm_test": 244734
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 294,
+      "test_total_ihm_plus_sdm": 656,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 192864,
+      "component_ihm_enroll_to_ihm_test": 96432,
+      "component_ihm_enroll_to_sdm_test": 96432,
+      "unique_meetings": [
+        "en2002a",
+        "en2002b",
+        "en2002d"
+      ],
+      "enroll_meetings": [
+        "en2002a"
+      ],
+      "test_meetings": [
+        "en2002b",
+        "en2002d"
+      ],
+      "meeting_utterance_counts": {
+        "en2002a": {
+          "ihm": 294,
+          "sdm": 0,
+          "total_utterances": 294,
+          "side": "enroll"
+        },
+        "en2002b": {
+          "ihm": 133,
+          "sdm": 133,
+          "total_utterances": 266,
+          "side": "test"
+        },
+        "en2002d": {
+          "ihm": 195,
+          "sdm": 195,
+          "total_utterances": 390,
+          "side": "test"
+        }
+      }
     },
     "feo072": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1361,
-      "test_total_ihm_plus_sdm": 2722,
-      "positive_pairs": 2732900,
-      "component_ihm_enroll_to_ihm_test": 1366450,
-      "component_ihm_enroll_to_sdm_test": 1366450
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 611,
+      "test_total_ihm_plus_sdm": 1500,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 916500,
+      "component_ihm_enroll_to_ihm_test": 458250,
+      "component_ihm_enroll_to_sdm_test": 458250,
+      "unique_meetings": [
+        "en2002a",
+        "en2002b",
+        "en2002c",
+        "en2002d"
+      ],
+      "enroll_meetings": [
+        "en2002a",
+        "en2002b"
+      ],
+      "test_meetings": [
+        "en2002c",
+        "en2002d"
+      ],
+      "meeting_utterance_counts": {
+        "en2002a": {
+          "ihm": 386,
+          "sdm": 0,
+          "total_utterances": 386,
+          "side": "enroll"
+        },
+        "en2002b": {
+          "ihm": 225,
+          "sdm": 0,
+          "total_utterances": 225,
+          "side": "enroll"
+        },
+        "en2002c": {
+          "ihm": 425,
+          "sdm": 425,
+          "total_utterances": 850,
+          "side": "test"
+        },
+        "en2002d": {
+          "ihm": 325,
+          "sdm": 325,
+          "total_utterances": 650,
+          "side": "test"
+        }
+      }
+    },
+    "fie073": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 135,
+      "test_total_ihm_plus_sdm": 450,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 60750,
+      "component_ihm_enroll_to_ihm_test": 30375,
+      "component_ihm_enroll_to_sdm_test": 30375,
+      "unique_meetings": [
+        "is1008a",
+        "is1008b",
+        "is1008c",
+        "is1008d"
+      ],
+      "enroll_meetings": [
+        "is1008a",
+        "is1008b"
+      ],
+      "test_meetings": [
+        "is1008c",
+        "is1008d"
+      ],
+      "meeting_utterance_counts": {
+        "is1008a": {
+          "ihm": 31,
+          "sdm": 0,
+          "total_utterances": 31,
+          "side": "enroll"
+        },
+        "is1008b": {
+          "ihm": 104,
+          "sdm": 0,
+          "total_utterances": 104,
+          "side": "enroll"
+        },
+        "is1008c": {
+          "ihm": 129,
+          "sdm": 129,
+          "total_utterances": 258,
+          "side": "test"
+        },
+        "is1008d": {
+          "ihm": 96,
+          "sdm": 96,
+          "total_utterances": 192,
+          "side": "test"
+        }
+      }
+    },
+    "fie081": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 358,
+      "test_total_ihm_plus_sdm": 1092,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 390936,
+      "component_ihm_enroll_to_ihm_test": 195468,
+      "component_ihm_enroll_to_sdm_test": 195468,
+      "unique_meetings": [
+        "is1000a",
+        "is1000b",
+        "is1000c",
+        "is1000d"
+      ],
+      "enroll_meetings": [
+        "is1000a",
+        "is1000b"
+      ],
+      "test_meetings": [
+        "is1000c",
+        "is1000d"
+      ],
+      "meeting_utterance_counts": {
+        "is1000a": {
+          "ihm": 122,
+          "sdm": 0,
+          "total_utterances": 122,
+          "side": "enroll"
+        },
+        "is1000b": {
+          "ihm": 236,
+          "sdm": 0,
+          "total_utterances": 236,
+          "side": "enroll"
+        },
+        "is1000c": {
+          "ihm": 192,
+          "sdm": 192,
+          "total_utterances": 384,
+          "side": "test"
+        },
+        "is1000d": {
+          "ihm": 354,
+          "sdm": 354,
+          "total_utterances": 708,
+          "side": "test"
+        }
+      }
+    },
+    "fio041": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 3,
+      "enroll_total_ihm": 248,
+      "test_total_ihm_plus_sdm": 1246,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 309008,
+      "component_ihm_enroll_to_ihm_test": 154504,
+      "component_ihm_enroll_to_sdm_test": 154504,
+      "unique_meetings": [
+        "in1005",
+        "is1006a",
+        "is1006b",
+        "is1006c",
+        "is1006d"
+      ],
+      "enroll_meetings": [
+        "in1005",
+        "is1006a"
+      ],
+      "test_meetings": [
+        "is1006b",
+        "is1006c",
+        "is1006d"
+      ],
+      "meeting_utterance_counts": {
+        "in1005": {
+          "ihm": 146,
+          "sdm": 0,
+          "total_utterances": 146,
+          "side": "enroll"
+        },
+        "is1006a": {
+          "ihm": 102,
+          "sdm": 0,
+          "total_utterances": 102,
+          "side": "enroll"
+        },
+        "is1006b": {
+          "ihm": 157,
+          "sdm": 157,
+          "total_utterances": 314,
+          "side": "test"
+        },
+        "is1006c": {
+          "ihm": 161,
+          "sdm": 161,
+          "total_utterances": 322,
+          "side": "test"
+        },
+        "is1006d": {
+          "ihm": 305,
+          "sdm": 305,
+          "total_utterances": 610,
+          "side": "test"
+        }
+      }
+    },
+    "fio074": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 113,
+      "test_total_ihm_plus_sdm": 240,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 27120,
+      "component_ihm_enroll_to_ihm_test": 13560,
+      "component_ihm_enroll_to_sdm_test": 13560,
+      "unique_meetings": [
+        "is1001a",
+        "is1001b",
+        "is1001c",
+        "is1001d"
+      ],
+      "enroll_meetings": [
+        "is1001a",
+        "is1001b"
+      ],
+      "test_meetings": [
+        "is1001c",
+        "is1001d"
+      ],
+      "meeting_utterance_counts": {
+        "is1001a": {
+          "ihm": 16,
+          "sdm": 0,
+          "total_utterances": 16,
+          "side": "enroll"
+        },
+        "is1001b": {
+          "ihm": 97,
+          "sdm": 0,
+          "total_utterances": 97,
+          "side": "enroll"
+        },
+        "is1001c": {
+          "ihm": 36,
+          "sdm": 36,
+          "total_utterances": 72,
+          "side": "test"
+        },
+        "is1001d": {
+          "ihm": 84,
+          "sdm": 84,
+          "total_utterances": 168,
+          "side": "test"
+        }
+      }
     },
     "fio084": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 492,
-      "test_total_ihm_plus_sdm": 984,
-      "positive_pairs": 344460,
-      "component_ihm_enroll_to_ihm_test": 172230,
-      "component_ihm_enroll_to_sdm_test": 172230
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 215,
+      "test_total_ihm_plus_sdm": 554,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 119110,
+      "component_ihm_enroll_to_ihm_test": 59555,
+      "component_ihm_enroll_to_sdm_test": 59555,
+      "unique_meetings": [
+        "is1009a",
+        "is1009b",
+        "is1009c",
+        "is1009d"
+      ],
+      "enroll_meetings": [
+        "is1009a",
+        "is1009b"
+      ],
+      "test_meetings": [
+        "is1009c",
+        "is1009d"
+      ],
+      "meeting_utterance_counts": {
+        "is1009a": {
+          "ihm": 45,
+          "sdm": 0,
+          "total_utterances": 45,
+          "side": "enroll"
+        },
+        "is1009b": {
+          "ihm": 170,
+          "sdm": 0,
+          "total_utterances": 170,
+          "side": "enroll"
+        },
+        "is1009c": {
+          "ihm": 155,
+          "sdm": 155,
+          "total_utterances": 310,
+          "side": "test"
+        },
+        "is1009d": {
+          "ihm": 122,
+          "sdm": 122,
+          "total_utterances": 244,
+          "side": "test"
+        }
+      }
     },
     "fio089": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 565,
-      "test_total_ihm_plus_sdm": 1130,
-      "positive_pairs": 439184,
-      "component_ihm_enroll_to_ihm_test": 219592,
-      "component_ihm_enroll_to_sdm_test": 219592
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 241,
+      "test_total_ihm_plus_sdm": 648,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 156168,
+      "component_ihm_enroll_to_ihm_test": 78084,
+      "component_ihm_enroll_to_sdm_test": 78084,
+      "unique_meetings": [
+        "is1009a",
+        "is1009b",
+        "is1009c",
+        "is1009d"
+      ],
+      "enroll_meetings": [
+        "is1009a",
+        "is1009b"
+      ],
+      "test_meetings": [
+        "is1009c",
+        "is1009d"
+      ],
+      "meeting_utterance_counts": {
+        "is1009a": {
+          "ihm": 69,
+          "sdm": 0,
+          "total_utterances": 69,
+          "side": "enroll"
+        },
+        "is1009b": {
+          "ihm": 172,
+          "sdm": 0,
+          "total_utterances": 172,
+          "side": "enroll"
+        },
+        "is1009c": {
+          "ihm": 82,
+          "sdm": 82,
+          "total_utterances": 164,
+          "side": "test"
+        },
+        "is1009d": {
+          "ihm": 242,
+          "sdm": 242,
+          "total_utterances": 484,
+          "side": "test"
+        }
+      }
+    },
+    "fio093": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 1,
+      "enroll_total_ihm": 96,
+      "test_total_ihm_plus_sdm": 578,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 55488,
+      "component_ihm_enroll_to_ihm_test": 27744,
+      "component_ihm_enroll_to_sdm_test": 27744,
+      "unique_meetings": [
+        "ib4001",
+        "ib4002"
+      ],
+      "enroll_meetings": [
+        "ib4001"
+      ],
+      "test_meetings": [
+        "ib4002"
+      ],
+      "meeting_utterance_counts": {
+        "ib4001": {
+          "ihm": 96,
+          "sdm": 0,
+          "total_utterances": 96,
+          "side": "enroll"
+        },
+        "ib4002": {
+          "ihm": 289,
+          "sdm": 289,
+          "total_utterances": 578,
+          "side": "test"
+        }
+      }
+    },
+    "ftd019uid": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 369,
+      "test_total_ihm_plus_sdm": 1538,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 567522,
+      "component_ihm_enroll_to_ihm_test": 283761,
+      "component_ihm_enroll_to_sdm_test": 283761,
+      "unique_meetings": [
+        "ts3005a",
+        "ts3005b",
+        "ts3005c",
+        "ts3005d"
+      ],
+      "enroll_meetings": [
+        "ts3005a",
+        "ts3005b"
+      ],
+      "test_meetings": [
+        "ts3005c",
+        "ts3005d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3005a": {
+          "ihm": 92,
+          "sdm": 0,
+          "total_utterances": 92,
+          "side": "enroll"
+        },
+        "ts3005b": {
+          "ihm": 277,
+          "sdm": 0,
+          "total_utterances": 277,
+          "side": "enroll"
+        },
+        "ts3005c": {
+          "ihm": 234,
+          "sdm": 234,
+          "total_utterances": 468,
+          "side": "test"
+        },
+        "ts3005d": {
+          "ihm": 535,
+          "sdm": 535,
+          "total_utterances": 1070,
+          "side": "test"
+        }
+      }
+    },
+    "mee006": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 206,
+      "test_total_ihm_plus_sdm": 792,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 163152,
+      "component_ihm_enroll_to_ihm_test": 81576,
+      "component_ihm_enroll_to_sdm_test": 81576,
+      "unique_meetings": [
+        "es2002a",
+        "es2002b",
+        "es2002c",
+        "es2002d"
+      ],
+      "enroll_meetings": [
+        "es2002a",
+        "es2002b"
+      ],
+      "test_meetings": [
+        "es2002c",
+        "es2002d"
+      ],
+      "meeting_utterance_counts": {
+        "es2002a": {
+          "ihm": 37,
+          "sdm": 0,
+          "total_utterances": 37,
+          "side": "enroll"
+        },
+        "es2002b": {
+          "ihm": 169,
+          "sdm": 0,
+          "total_utterances": 169,
+          "side": "enroll"
+        },
+        "es2002c": {
+          "ihm": 177,
+          "sdm": 177,
+          "total_utterances": 354,
+          "side": "test"
+        },
+        "es2002d": {
+          "ihm": 219,
+          "sdm": 219,
+          "total_utterances": 438,
+          "side": "test"
+        }
+      }
+    },
+    "mee009": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 329,
+      "test_total_ihm_plus_sdm": 936,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 307944,
+      "component_ihm_enroll_to_ihm_test": 153972,
+      "component_ihm_enroll_to_sdm_test": 153972,
+      "unique_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c",
+        "es2003d"
+      ],
+      "enroll_meetings": [
+        "es2003a",
+        "es2003b"
+      ],
+      "test_meetings": [
+        "es2003c",
+        "es2003d"
+      ],
+      "meeting_utterance_counts": {
+        "es2003a": {
+          "ihm": 98,
+          "sdm": 0,
+          "total_utterances": 98,
+          "side": "enroll"
+        },
+        "es2003b": {
+          "ihm": 231,
+          "sdm": 0,
+          "total_utterances": 231,
+          "side": "enroll"
+        },
+        "es2003c": {
+          "ihm": 195,
+          "sdm": 195,
+          "total_utterances": 390,
+          "side": "test"
+        },
+        "es2003d": {
+          "ihm": 273,
+          "sdm": 273,
+          "total_utterances": 546,
+          "side": "test"
+        }
+      }
+    },
+    "mee010": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 90,
+      "test_total_ihm_plus_sdm": 410,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 36900,
+      "component_ihm_enroll_to_ihm_test": 18450,
+      "component_ihm_enroll_to_sdm_test": 18450,
+      "unique_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c",
+        "es2003d"
+      ],
+      "enroll_meetings": [
+        "es2003a",
+        "es2003b"
+      ],
+      "test_meetings": [
+        "es2003c",
+        "es2003d"
+      ],
+      "meeting_utterance_counts": {
+        "es2003a": {
+          "ihm": 25,
+          "sdm": 0,
+          "total_utterances": 25,
+          "side": "enroll"
+        },
+        "es2003b": {
+          "ihm": 65,
+          "sdm": 0,
+          "total_utterances": 65,
+          "side": "enroll"
+        },
+        "es2003c": {
+          "ihm": 130,
+          "sdm": 130,
+          "total_utterances": 260,
+          "side": "test"
+        },
+        "es2003d": {
+          "ihm": 75,
+          "sdm": 75,
+          "total_utterances": 150,
+          "side": "test"
+        }
+      }
+    },
+    "mee011": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 157,
+      "test_total_ihm_plus_sdm": 606,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 95142,
+      "component_ihm_enroll_to_ihm_test": 47571,
+      "component_ihm_enroll_to_sdm_test": 47571,
+      "unique_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c",
+        "es2003d"
+      ],
+      "enroll_meetings": [
+        "es2003a",
+        "es2003b"
+      ],
+      "test_meetings": [
+        "es2003c",
+        "es2003d"
+      ],
+      "meeting_utterance_counts": {
+        "es2003a": {
+          "ihm": 38,
+          "sdm": 0,
+          "total_utterances": 38,
+          "side": "enroll"
+        },
+        "es2003b": {
+          "ihm": 119,
+          "sdm": 0,
+          "total_utterances": 119,
+          "side": "enroll"
+        },
+        "es2003c": {
+          "ihm": 154,
+          "sdm": 154,
+          "total_utterances": 308,
+          "side": "test"
+        },
+        "es2003d": {
+          "ihm": 149,
+          "sdm": 149,
+          "total_utterances": 298,
+          "side": "test"
+        }
+      }
+    },
+    "mee012": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 222,
+      "test_total_ihm_plus_sdm": 842,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 186924,
+      "component_ihm_enroll_to_ihm_test": 93462,
+      "component_ihm_enroll_to_sdm_test": 93462,
+      "unique_meetings": [
+        "es2003a",
+        "es2003b",
+        "es2003c",
+        "es2003d"
+      ],
+      "enroll_meetings": [
+        "es2003a",
+        "es2003b"
+      ],
+      "test_meetings": [
+        "es2003c",
+        "es2003d"
+      ],
+      "meeting_utterance_counts": {
+        "es2003a": {
+          "ihm": 54,
+          "sdm": 0,
+          "total_utterances": 54,
+          "side": "enroll"
+        },
+        "es2003b": {
+          "ihm": 168,
+          "sdm": 0,
+          "total_utterances": 168,
+          "side": "enroll"
+        },
+        "es2003c": {
+          "ihm": 158,
+          "sdm": 158,
+          "total_utterances": 316,
+          "side": "test"
+        },
+        "es2003d": {
+          "ihm": 263,
+          "sdm": 263,
+          "total_utterances": 526,
+          "side": "test"
+        }
+      }
+    },
+    "mee017": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 331,
+      "test_total_ihm_plus_sdm": 1002,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 331662,
+      "component_ihm_enroll_to_ihm_test": 165831,
+      "component_ihm_enroll_to_sdm_test": 165831,
+      "unique_meetings": [
+        "es2005a",
+        "es2005b",
+        "es2005c",
+        "es2005d"
+      ],
+      "enroll_meetings": [
+        "es2005a",
+        "es2005b"
+      ],
+      "test_meetings": [
+        "es2005c",
+        "es2005d"
+      ],
+      "meeting_utterance_counts": {
+        "es2005a": {
+          "ihm": 50,
+          "sdm": 0,
+          "total_utterances": 50,
+          "side": "enroll"
+        },
+        "es2005b": {
+          "ihm": 281,
+          "sdm": 0,
+          "total_utterances": 281,
+          "side": "enroll"
+        },
+        "es2005c": {
+          "ihm": 299,
+          "sdm": 299,
+          "total_utterances": 598,
+          "side": "test"
+        },
+        "es2005d": {
+          "ihm": 202,
+          "sdm": 202,
+          "total_utterances": 404,
+          "side": "test"
+        }
+      }
+    },
+    "mee025": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 343,
+      "test_total_ihm_plus_sdm": 894,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 306642,
+      "component_ihm_enroll_to_ihm_test": 153321,
+      "component_ihm_enroll_to_sdm_test": 153321,
+      "unique_meetings": [
+        "es2007a",
+        "es2007b",
+        "es2007c",
+        "es2007d"
+      ],
+      "enroll_meetings": [
+        "es2007a",
+        "es2007b"
+      ],
+      "test_meetings": [
+        "es2007c",
+        "es2007d"
+      ],
+      "meeting_utterance_counts": {
+        "es2007a": {
+          "ihm": 153,
+          "sdm": 0,
+          "total_utterances": 153,
+          "side": "enroll"
+        },
+        "es2007b": {
+          "ihm": 190,
+          "sdm": 0,
+          "total_utterances": 190,
+          "side": "enroll"
+        },
+        "es2007c": {
+          "ihm": 260,
+          "sdm": 260,
+          "total_utterances": 520,
+          "side": "test"
+        },
+        "es2007d": {
+          "ihm": 187,
+          "sdm": 187,
+          "total_utterances": 374,
+          "side": "test"
+        }
+      }
+    },
+    "mee027": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 201,
+      "test_total_ihm_plus_sdm": 608,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 122208,
+      "component_ihm_enroll_to_ihm_test": 61104,
+      "component_ihm_enroll_to_sdm_test": 61104,
+      "unique_meetings": [
+        "es2007a",
+        "es2007b",
+        "es2007c",
+        "es2007d"
+      ],
+      "enroll_meetings": [
+        "es2007a",
+        "es2007b"
+      ],
+      "test_meetings": [
+        "es2007c",
+        "es2007d"
+      ],
+      "meeting_utterance_counts": {
+        "es2007a": {
+          "ihm": 79,
+          "sdm": 0,
+          "total_utterances": 79,
+          "side": "enroll"
+        },
+        "es2007b": {
+          "ihm": 122,
+          "sdm": 0,
+          "total_utterances": 122,
+          "side": "enroll"
+        },
+        "es2007c": {
+          "ihm": 178,
+          "sdm": 178,
+          "total_utterances": 356,
+          "side": "test"
+        },
+        "es2007d": {
+          "ihm": 126,
+          "sdm": 126,
+          "total_utterances": 252,
+          "side": "test"
+        }
+      }
+    },
+    "mee031": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 181,
+      "test_total_ihm_plus_sdm": 548,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 99188,
+      "component_ihm_enroll_to_ihm_test": 49594,
+      "component_ihm_enroll_to_sdm_test": 49594,
+      "unique_meetings": [
+        "es2008a",
+        "es2008b",
+        "es2008c",
+        "es2008d"
+      ],
+      "enroll_meetings": [
+        "es2008a",
+        "es2008b"
+      ],
+      "test_meetings": [
+        "es2008c",
+        "es2008d"
+      ],
+      "meeting_utterance_counts": {
+        "es2008a": {
+          "ihm": 49,
+          "sdm": 0,
+          "total_utterances": 49,
+          "side": "enroll"
+        },
+        "es2008b": {
+          "ihm": 132,
+          "sdm": 0,
+          "total_utterances": 132,
+          "side": "enroll"
+        },
+        "es2008c": {
+          "ihm": 156,
+          "sdm": 156,
+          "total_utterances": 312,
+          "side": "test"
+        },
+        "es2008d": {
+          "ihm": 118,
+          "sdm": 118,
+          "total_utterances": 236,
+          "side": "test"
+        }
+      }
+    },
+    "mee033": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 443,
+      "test_total_ihm_plus_sdm": 922,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 408446,
+      "component_ihm_enroll_to_ihm_test": 204223,
+      "component_ihm_enroll_to_sdm_test": 204223,
+      "unique_meetings": [
+        "es2009a",
+        "es2009b",
+        "es2009c",
+        "es2009d"
+      ],
+      "enroll_meetings": [
+        "es2009a",
+        "es2009b"
+      ],
+      "test_meetings": [
+        "es2009c",
+        "es2009d"
+      ],
+      "meeting_utterance_counts": {
+        "es2009a": {
+          "ihm": 258,
+          "sdm": 0,
+          "total_utterances": 258,
+          "side": "enroll"
+        },
+        "es2009b": {
+          "ihm": 185,
+          "sdm": 0,
+          "total_utterances": 185,
+          "side": "enroll"
+        },
+        "es2009c": {
+          "ihm": 213,
+          "sdm": 213,
+          "total_utterances": 426,
+          "side": "test"
+        },
+        "es2009d": {
+          "ihm": 248,
+          "sdm": 248,
+          "total_utterances": 496,
+          "side": "test"
+        }
+      }
+    },
+    "mee035": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 119,
+      "test_total_ihm_plus_sdm": 374,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 44506,
+      "component_ihm_enroll_to_ihm_test": 22253,
+      "component_ihm_enroll_to_sdm_test": 22253,
+      "unique_meetings": [
+        "es2009a",
+        "es2009b",
+        "es2009c",
+        "es2009d"
+      ],
+      "enroll_meetings": [
+        "es2009a",
+        "es2009b"
+      ],
+      "test_meetings": [
+        "es2009c",
+        "es2009d"
+      ],
+      "meeting_utterance_counts": {
+        "es2009a": {
+          "ihm": 65,
+          "sdm": 0,
+          "total_utterances": 65,
+          "side": "enroll"
+        },
+        "es2009b": {
+          "ihm": 54,
+          "sdm": 0,
+          "total_utterances": 54,
+          "side": "enroll"
+        },
+        "es2009c": {
+          "ihm": 81,
+          "sdm": 81,
+          "total_utterances": 162,
+          "side": "test"
+        },
+        "es2009d": {
+          "ihm": 106,
+          "sdm": 106,
+          "total_utterances": 212,
+          "side": "test"
+        }
+      }
+    },
+    "mee048": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 180,
+      "test_total_ihm_plus_sdm": 298,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 53640,
+      "component_ihm_enroll_to_ihm_test": 26820,
+      "component_ihm_enroll_to_sdm_test": 26820,
+      "unique_meetings": [
+        "es2012a",
+        "es2012b",
+        "es2012c",
+        "es2012d"
+      ],
+      "enroll_meetings": [
+        "es2012a",
+        "es2012b"
+      ],
+      "test_meetings": [
+        "es2012c",
+        "es2012d"
+      ],
+      "meeting_utterance_counts": {
+        "es2012a": {
+          "ihm": 49,
+          "sdm": 0,
+          "total_utterances": 49,
+          "side": "enroll"
+        },
+        "es2012b": {
+          "ihm": 131,
+          "sdm": 0,
+          "total_utterances": 131,
+          "side": "enroll"
+        },
+        "es2012c": {
+          "ihm": 95,
+          "sdm": 95,
+          "total_utterances": 190,
+          "side": "test"
+        },
+        "es2012d": {
+          "ihm": 54,
+          "sdm": 54,
+          "total_utterances": 108,
+          "side": "test"
+        }
+      }
+    },
+    "mee054": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 255,
+      "test_total_ihm_plus_sdm": 810,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 206550,
+      "component_ihm_enroll_to_ihm_test": 103275,
+      "component_ihm_enroll_to_sdm_test": 103275,
+      "unique_meetings": [
+        "es2014a",
+        "es2014b",
+        "es2014c",
+        "es2014d"
+      ],
+      "enroll_meetings": [
+        "es2014a",
+        "es2014b"
+      ],
+      "test_meetings": [
+        "es2014c",
+        "es2014d"
+      ],
+      "meeting_utterance_counts": {
+        "es2014a": {
+          "ihm": 52,
+          "sdm": 0,
+          "total_utterances": 52,
+          "side": "enroll"
+        },
+        "es2014b": {
+          "ihm": 203,
+          "sdm": 0,
+          "total_utterances": 203,
+          "side": "enroll"
+        },
+        "es2014c": {
+          "ihm": 209,
+          "sdm": 209,
+          "total_utterances": 418,
+          "side": "test"
+        },
+        "es2014d": {
+          "ihm": 196,
+          "sdm": 196,
+          "total_utterances": 392,
+          "side": "test"
+        }
+      }
+    },
+    "mee056": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 231,
+      "test_total_ihm_plus_sdm": 1074,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 248094,
+      "component_ihm_enroll_to_ihm_test": 124047,
+      "component_ihm_enroll_to_sdm_test": 124047,
+      "unique_meetings": [
+        "es2014a",
+        "es2014b",
+        "es2014c",
+        "es2014d"
+      ],
+      "enroll_meetings": [
+        "es2014a",
+        "es2014b"
+      ],
+      "test_meetings": [
+        "es2014c",
+        "es2014d"
+      ],
+      "meeting_utterance_counts": {
+        "es2014a": {
+          "ihm": 60,
+          "sdm": 0,
+          "total_utterances": 60,
+          "side": "enroll"
+        },
+        "es2014b": {
+          "ihm": 171,
+          "sdm": 0,
+          "total_utterances": 171,
+          "side": "enroll"
+        },
+        "es2014c": {
+          "ihm": 161,
+          "sdm": 161,
+          "total_utterances": 322,
+          "side": "test"
+        },
+        "es2014d": {
+          "ihm": 376,
+          "sdm": 376,
+          "total_utterances": 752,
+          "side": "test"
+        }
+      }
+    },
+    "mee068": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 229,
+      "test_total_ihm_plus_sdm": 520,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 119080,
+      "component_ihm_enroll_to_ihm_test": 59540,
+      "component_ihm_enroll_to_sdm_test": 59540,
+      "unique_meetings": [
+        "en2001a",
+        "en2001b",
+        "en2001d",
+        "en2001e"
+      ],
+      "enroll_meetings": [
+        "en2001a",
+        "en2001b"
+      ],
+      "test_meetings": [
+        "en2001d",
+        "en2001e"
+      ],
+      "meeting_utterance_counts": {
+        "en2001a": {
+          "ihm": 155,
+          "sdm": 0,
+          "total_utterances": 155,
+          "side": "enroll"
+        },
+        "en2001b": {
+          "ihm": 74,
+          "sdm": 0,
+          "total_utterances": 74,
+          "side": "enroll"
+        },
+        "en2001d": {
+          "ihm": 141,
+          "sdm": 141,
+          "total_utterances": 282,
+          "side": "test"
+        },
+        "en2001e": {
+          "ihm": 119,
+          "sdm": 119,
+          "total_utterances": 238,
+          "side": "test"
+        }
+      }
     },
     "mee071": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 1240,
-      "test_total_ihm_plus_sdm": 2480,
-      "positive_pairs": 2215108,
-      "component_ihm_enroll_to_ihm_test": 1107554,
-      "component_ihm_enroll_to_sdm_test": 1107554
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 467,
+      "test_total_ihm_plus_sdm": 1546,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 721982,
+      "component_ihm_enroll_to_ihm_test": 360991,
+      "component_ihm_enroll_to_sdm_test": 360991,
+      "unique_meetings": [
+        "en2002a",
+        "en2002b",
+        "en2002c",
+        "en2002d"
+      ],
+      "enroll_meetings": [
+        "en2002a",
+        "en2002b"
+      ],
+      "test_meetings": [
+        "en2002c",
+        "en2002d"
+      ],
+      "meeting_utterance_counts": {
+        "en2002a": {
+          "ihm": 276,
+          "sdm": 0,
+          "total_utterances": 276,
+          "side": "enroll"
+        },
+        "en2002b": {
+          "ihm": 191,
+          "sdm": 0,
+          "total_utterances": 191,
+          "side": "enroll"
+        },
+        "en2002c": {
+          "ihm": 483,
+          "sdm": 483,
+          "total_utterances": 966,
+          "side": "test"
+        },
+        "en2002d": {
+          "ihm": 290,
+          "sdm": 290,
+          "total_utterances": 580,
+          "side": "test"
+        }
+      }
+    },
+    "mee089": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 1,
+      "enroll_total_ihm": 265,
+      "test_total_ihm_plus_sdm": 420,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 111300,
+      "component_ihm_enroll_to_ihm_test": 55650,
+      "component_ihm_enroll_to_sdm_test": 55650,
+      "unique_meetings": [
+        "en2006a",
+        "en2006b"
+      ],
+      "enroll_meetings": [
+        "en2006a"
+      ],
+      "test_meetings": [
+        "en2006b"
+      ],
+      "meeting_utterance_counts": {
+        "en2006a": {
+          "ihm": 265,
+          "sdm": 0,
+          "total_utterances": 265,
+          "side": "enroll"
+        },
+        "en2006b": {
+          "ihm": 210,
+          "sdm": 210,
+          "total_utterances": 420,
+          "side": "test"
+        }
+      }
+    },
+    "mee095": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 230,
+      "test_total_ihm_plus_sdm": 1324,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 304520,
+      "component_ihm_enroll_to_ihm_test": 152260,
+      "component_ihm_enroll_to_sdm_test": 152260,
+      "unique_meetings": [
+        "en2009b",
+        "en2009c",
+        "en2009d"
+      ],
+      "enroll_meetings": [
+        "en2009b"
+      ],
+      "test_meetings": [
+        "en2009c",
+        "en2009d"
+      ],
+      "meeting_utterance_counts": {
+        "en2009b": {
+          "ihm": 230,
+          "sdm": 0,
+          "total_utterances": 230,
+          "side": "enroll"
+        },
+        "en2009c": {
+          "ihm": 354,
+          "sdm": 354,
+          "total_utterances": 708,
+          "side": "test"
+        },
+        "en2009d": {
+          "ihm": 308,
+          "sdm": 308,
+          "total_utterances": 616,
+          "side": "test"
+        }
+      }
+    },
+    "meo020": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 152,
+      "test_total_ihm_plus_sdm": 604,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 91808,
+      "component_ihm_enroll_to_ihm_test": 45904,
+      "component_ihm_enroll_to_sdm_test": 45904,
+      "unique_meetings": [
+        "es2005a",
+        "es2005b",
+        "es2005c",
+        "es2005d"
+      ],
+      "enroll_meetings": [
+        "es2005a",
+        "es2005b"
+      ],
+      "test_meetings": [
+        "es2005c",
+        "es2005d"
+      ],
+      "meeting_utterance_counts": {
+        "es2005a": {
+          "ihm": 13,
+          "sdm": 0,
+          "total_utterances": 13,
+          "side": "enroll"
+        },
+        "es2005b": {
+          "ihm": 139,
+          "sdm": 0,
+          "total_utterances": 139,
+          "side": "enroll"
+        },
+        "es2005c": {
+          "ihm": 143,
+          "sdm": 143,
+          "total_utterances": 286,
+          "side": "test"
+        },
+        "es2005d": {
+          "ihm": 159,
+          "sdm": 159,
+          "total_utterances": 318,
+          "side": "test"
+        }
+      }
+    },
+    "meo062": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 222,
+      "test_total_ihm_plus_sdm": 688,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 152736,
+      "component_ihm_enroll_to_ihm_test": 76368,
+      "component_ihm_enroll_to_sdm_test": 76368,
+      "unique_meetings": [
+        "es2016a",
+        "es2016b",
+        "es2016c",
+        "es2016d"
+      ],
+      "enroll_meetings": [
+        "es2016a",
+        "es2016b"
+      ],
+      "test_meetings": [
+        "es2016c",
+        "es2016d"
+      ],
+      "meeting_utterance_counts": {
+        "es2016a": {
+          "ihm": 75,
+          "sdm": 0,
+          "total_utterances": 75,
+          "side": "enroll"
+        },
+        "es2016b": {
+          "ihm": 147,
+          "sdm": 0,
+          "total_utterances": 147,
+          "side": "enroll"
+        },
+        "es2016c": {
+          "ihm": 202,
+          "sdm": 202,
+          "total_utterances": 404,
+          "side": "test"
+        },
+        "es2016d": {
+          "ihm": 142,
+          "sdm": 142,
+          "total_utterances": 284,
+          "side": "test"
+        }
+      }
+    },
+    "mie034": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 1,
+      "enroll_total_ihm": 500,
+      "test_total_ihm_plus_sdm": 930,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 465000,
+      "component_ihm_enroll_to_ihm_test": 232500,
+      "component_ihm_enroll_to_sdm_test": 232500,
+      "unique_meetings": [
+        "in1013",
+        "in1016"
+      ],
+      "enroll_meetings": [
+        "in1013"
+      ],
+      "test_meetings": [
+        "in1016"
+      ],
+      "meeting_utterance_counts": {
+        "in1013": {
+          "ihm": 500,
+          "sdm": 0,
+          "total_utterances": 500,
+          "side": "enroll"
+        },
+        "in1016": {
+          "ihm": 465,
+          "sdm": 465,
+          "total_utterances": 930,
+          "side": "test"
+        }
+      }
+    },
+    "mie080": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 597,
+      "test_total_ihm_plus_sdm": 824,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 491928,
+      "component_ihm_enroll_to_ihm_test": 245964,
+      "component_ihm_enroll_to_sdm_test": 245964,
+      "unique_meetings": [
+        "in1005",
+        "is1002b",
+        "is1002c",
+        "is1002d"
+      ],
+      "enroll_meetings": [
+        "in1005",
+        "is1002b"
+      ],
+      "test_meetings": [
+        "is1002c",
+        "is1002d"
+      ],
+      "meeting_utterance_counts": {
+        "in1005": {
+          "ihm": 370,
+          "sdm": 0,
+          "total_utterances": 370,
+          "side": "enroll"
+        },
+        "is1002b": {
+          "ihm": 227,
+          "sdm": 0,
+          "total_utterances": 227,
+          "side": "enroll"
+        },
+        "is1002c": {
+          "ihm": 241,
+          "sdm": 241,
+          "total_utterances": 482,
+          "side": "test"
+        },
+        "is1002d": {
+          "ihm": 171,
+          "sdm": 171,
+          "total_utterances": 342,
+          "side": "test"
+        }
+      }
+    },
+    "mie083": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 233,
+      "test_total_ihm_plus_sdm": 576,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 134208,
+      "component_ihm_enroll_to_ihm_test": 67104,
+      "component_ihm_enroll_to_sdm_test": 67104,
+      "unique_meetings": [
+        "is1002b",
+        "is1002c",
+        "is1002d"
+      ],
+      "enroll_meetings": [
+        "is1002b"
+      ],
+      "test_meetings": [
+        "is1002c",
+        "is1002d"
+      ],
+      "meeting_utterance_counts": {
+        "is1002b": {
+          "ihm": 233,
+          "sdm": 0,
+          "total_utterances": 233,
+          "side": "enroll"
+        },
+        "is1002c": {
+          "ihm": 188,
+          "sdm": 188,
+          "total_utterances": 376,
+          "side": "test"
+        },
+        "is1002d": {
+          "ihm": 100,
+          "sdm": 100,
+          "total_utterances": 200,
+          "side": "test"
+        }
+      }
+    },
+    "mie085": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 113,
+      "test_total_ihm_plus_sdm": 360,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 40680,
+      "component_ihm_enroll_to_ihm_test": 20340,
+      "component_ihm_enroll_to_sdm_test": 20340,
+      "unique_meetings": [
+        "is1008a",
+        "is1008b",
+        "is1008c",
+        "is1008d"
+      ],
+      "enroll_meetings": [
+        "is1008a",
+        "is1008b"
+      ],
+      "test_meetings": [
+        "is1008c",
+        "is1008d"
+      ],
+      "meeting_utterance_counts": {
+        "is1008a": {
+          "ihm": 38,
+          "sdm": 0,
+          "total_utterances": 38,
+          "side": "enroll"
+        },
+        "is1008b": {
+          "ihm": 75,
+          "sdm": 0,
+          "total_utterances": 75,
+          "side": "enroll"
+        },
+        "is1008c": {
+          "ihm": 78,
+          "sdm": 78,
+          "total_utterances": 156,
+          "side": "test"
+        },
+        "is1008d": {
+          "ihm": 102,
+          "sdm": 102,
+          "total_utterances": 204,
+          "side": "test"
+        }
+      }
+    },
+    "mio005": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 78,
+      "test_total_ihm_plus_sdm": 986,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 76908,
+      "component_ihm_enroll_to_ihm_test": 38454,
+      "component_ihm_enroll_to_sdm_test": 38454,
+      "unique_meetings": [
+        "is1003a",
+        "is1003c",
+        "is1003d"
+      ],
+      "enroll_meetings": [
+        "is1003a"
+      ],
+      "test_meetings": [
+        "is1003c",
+        "is1003d"
+      ],
+      "meeting_utterance_counts": {
+        "is1003a": {
+          "ihm": 78,
+          "sdm": 0,
+          "total_utterances": 78,
+          "side": "enroll"
+        },
+        "is1003c": {
+          "ihm": 194,
+          "sdm": 194,
+          "total_utterances": 388,
+          "side": "test"
+        },
+        "is1003d": {
+          "ihm": 299,
+          "sdm": 299,
+          "total_utterances": 598,
+          "side": "test"
+        }
+      }
+    },
+    "mio019": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 261,
+      "test_total_ihm_plus_sdm": 1028,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 268308,
+      "component_ihm_enroll_to_ihm_test": 134154,
+      "component_ihm_enroll_to_sdm_test": 134154,
+      "unique_meetings": [
+        "is1004a",
+        "is1004b",
+        "is1004c",
+        "is1004d"
+      ],
+      "enroll_meetings": [
+        "is1004a",
+        "is1004b"
+      ],
+      "test_meetings": [
+        "is1004c",
+        "is1004d"
+      ],
+      "meeting_utterance_counts": {
+        "is1004a": {
+          "ihm": 63,
+          "sdm": 0,
+          "total_utterances": 63,
+          "side": "enroll"
+        },
+        "is1004b": {
+          "ihm": 198,
+          "sdm": 0,
+          "total_utterances": 198,
+          "side": "enroll"
+        },
+        "is1004c": {
+          "ihm": 218,
+          "sdm": 218,
+          "total_utterances": 436,
+          "side": "test"
+        },
+        "is1004d": {
+          "ihm": 296,
+          "sdm": 296,
+          "total_utterances": 592,
+          "side": "test"
+        }
+      }
+    },
+    "mio020": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 3,
+      "enroll_total_ihm": 475,
+      "test_total_ihm_plus_sdm": 560,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 266000,
+      "component_ihm_enroll_to_ihm_test": 133000,
+      "component_ihm_enroll_to_sdm_test": 133000,
+      "unique_meetings": [
+        "in1014",
+        "is1001a",
+        "is1001b",
+        "is1001c",
+        "is1001d"
+      ],
+      "enroll_meetings": [
+        "in1014",
+        "is1001a"
+      ],
+      "test_meetings": [
+        "is1001b",
+        "is1001c",
+        "is1001d"
+      ],
+      "meeting_utterance_counts": {
+        "in1014": {
+          "ihm": 438,
+          "sdm": 0,
+          "total_utterances": 438,
+          "side": "enroll"
+        },
+        "is1001a": {
+          "ihm": 37,
+          "sdm": 0,
+          "total_utterances": 37,
+          "side": "enroll"
+        },
+        "is1001b": {
+          "ihm": 145,
+          "sdm": 145,
+          "total_utterances": 290,
+          "side": "test"
+        },
+        "is1001c": {
+          "ihm": 96,
+          "sdm": 96,
+          "total_utterances": 192,
+          "side": "test"
+        },
+        "is1001d": {
+          "ihm": 39,
+          "sdm": 39,
+          "total_utterances": 78,
+          "side": "test"
+        }
+      }
+    },
+    "mio022": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 3,
+      "enroll_total_ihm": 360,
+      "test_total_ihm_plus_sdm": 1040,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 374400,
+      "component_ihm_enroll_to_ihm_test": 187200,
+      "component_ihm_enroll_to_sdm_test": 187200,
+      "unique_meetings": [
+        "in1002",
+        "is1004a",
+        "is1004b",
+        "is1004c",
+        "is1004d"
+      ],
+      "enroll_meetings": [
+        "in1002",
+        "is1004a"
+      ],
+      "test_meetings": [
+        "is1004b",
+        "is1004c",
+        "is1004d"
+      ],
+      "meeting_utterance_counts": {
+        "in1002": {
+          "ihm": 310,
+          "sdm": 0,
+          "total_utterances": 310,
+          "side": "enroll"
+        },
+        "is1004a": {
+          "ihm": 50,
+          "sdm": 0,
+          "total_utterances": 50,
+          "side": "enroll"
+        },
+        "is1004b": {
+          "ihm": 132,
+          "sdm": 132,
+          "total_utterances": 264,
+          "side": "test"
+        },
+        "is1004c": {
+          "ihm": 166,
+          "sdm": 166,
+          "total_utterances": 332,
+          "side": "test"
+        },
+        "is1004d": {
+          "ihm": 222,
+          "sdm": 222,
+          "total_utterances": 444,
+          "side": "test"
+        }
+      }
+    },
+    "mio024": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 1,
+      "enroll_total_ihm": 407,
+      "test_total_ihm_plus_sdm": 512,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 208384,
+      "component_ihm_enroll_to_ihm_test": 104192,
+      "component_ihm_enroll_to_sdm_test": 104192,
+      "unique_meetings": [
+        "in1001",
+        "in1014"
+      ],
+      "enroll_meetings": [
+        "in1001"
+      ],
+      "test_meetings": [
+        "in1014"
+      ],
+      "meeting_utterance_counts": {
+        "in1001": {
+          "ihm": 407,
+          "sdm": 0,
+          "total_utterances": 407,
+          "side": "enroll"
+        },
+        "in1014": {
+          "ihm": 256,
+          "sdm": 256,
+          "total_utterances": 512,
+          "side": "test"
+        }
+      }
+    },
+    "mio025": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 163,
+      "test_total_ihm_plus_sdm": 898,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 146374,
+      "component_ihm_enroll_to_ihm_test": 73187,
+      "component_ihm_enroll_to_sdm_test": 73187,
+      "unique_meetings": [
+        "is1007a",
+        "is1007b",
+        "is1007c"
+      ],
+      "enroll_meetings": [
+        "is1007a"
+      ],
+      "test_meetings": [
+        "is1007b",
+        "is1007c"
+      ],
+      "meeting_utterance_counts": {
+        "is1007a": {
+          "ihm": 163,
+          "sdm": 0,
+          "total_utterances": 163,
+          "side": "enroll"
+        },
+        "is1007b": {
+          "ihm": 151,
+          "sdm": 151,
+          "total_utterances": 302,
+          "side": "test"
+        },
+        "is1007c": {
+          "ihm": 298,
+          "sdm": 298,
+          "total_utterances": 596,
+          "side": "test"
+        }
+      }
+    },
+    "mio040": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 214,
+      "test_total_ihm_plus_sdm": 594,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 127116,
+      "component_ihm_enroll_to_ihm_test": 63558,
+      "component_ihm_enroll_to_sdm_test": 63558,
+      "unique_meetings": [
+        "is1006a",
+        "is1006b",
+        "is1006c",
+        "is1006d"
+      ],
+      "enroll_meetings": [
+        "is1006a",
+        "is1006b"
+      ],
+      "test_meetings": [
+        "is1006c",
+        "is1006d"
+      ],
+      "meeting_utterance_counts": {
+        "is1006a": {
+          "ihm": 65,
+          "sdm": 0,
+          "total_utterances": 65,
+          "side": "enroll"
+        },
+        "is1006b": {
+          "ihm": 149,
+          "sdm": 0,
+          "total_utterances": 149,
+          "side": "enroll"
+        },
+        "is1006c": {
+          "ihm": 128,
+          "sdm": 128,
+          "total_utterances": 256,
+          "side": "test"
+        },
+        "is1006d": {
+          "ihm": 169,
+          "sdm": 169,
+          "total_utterances": 338,
+          "side": "test"
+        }
+      }
+    },
+    "mio046": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 1,
+      "enroll_total_ihm": 345,
+      "test_total_ihm_plus_sdm": 540,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 186300,
+      "component_ihm_enroll_to_ihm_test": 93150,
+      "component_ihm_enroll_to_sdm_test": 93150,
+      "unique_meetings": [
+        "ib4010",
+        "ib4011"
+      ],
+      "enroll_meetings": [
+        "ib4010"
+      ],
+      "test_meetings": [
+        "ib4011"
+      ],
+      "meeting_utterance_counts": {
+        "ib4010": {
+          "ihm": 345,
+          "sdm": 0,
+          "total_utterances": 345,
+          "side": "enroll"
+        },
+        "ib4011": {
+          "ihm": 270,
+          "sdm": 270,
+          "total_utterances": 540,
+          "side": "test"
+        }
+      }
+    },
+    "mio049": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 71,
+      "test_total_ihm_plus_sdm": 372,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 26412,
+      "component_ihm_enroll_to_ihm_test": 13206,
+      "component_ihm_enroll_to_sdm_test": 13206,
+      "unique_meetings": [
+        "is1007a",
+        "is1007b",
+        "is1007c"
+      ],
+      "enroll_meetings": [
+        "is1007a"
+      ],
+      "test_meetings": [
+        "is1007b",
+        "is1007c"
+      ],
+      "meeting_utterance_counts": {
+        "is1007a": {
+          "ihm": 71,
+          "sdm": 0,
+          "total_utterances": 71,
+          "side": "enroll"
+        },
+        "is1007b": {
+          "ihm": 95,
+          "sdm": 95,
+          "total_utterances": 190,
+          "side": "test"
+        },
+        "is1007c": {
+          "ihm": 91,
+          "sdm": 91,
+          "total_utterances": 182,
+          "side": "test"
+        }
+      }
+    },
+    "mio050": {
+      "n_enroll_meetings": 3,
+      "n_test_meetings": 3,
+      "enroll_total_ihm": 706,
+      "test_total_ihm_plus_sdm": 1038,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 732828,
+      "component_ihm_enroll_to_ihm_test": 366414,
+      "component_ihm_enroll_to_sdm_test": 366414,
+      "unique_meetings": [
+        "in1002",
+        "in1016",
+        "is1000a",
+        "is1000b",
+        "is1000c",
+        "is1000d"
+      ],
+      "enroll_meetings": [
+        "in1002",
+        "in1016",
+        "is1000a"
+      ],
+      "test_meetings": [
+        "is1000b",
+        "is1000c",
+        "is1000d"
+      ],
+      "meeting_utterance_counts": {
+        "in1002": {
+          "ihm": 183,
+          "sdm": 0,
+          "total_utterances": 183,
+          "side": "enroll"
+        },
+        "in1016": {
+          "ihm": 414,
+          "sdm": 0,
+          "total_utterances": 414,
+          "side": "enroll"
+        },
+        "is1000a": {
+          "ihm": 109,
+          "sdm": 0,
+          "total_utterances": 109,
+          "side": "enroll"
+        },
+        "is1000b": {
+          "ihm": 137,
+          "sdm": 137,
+          "total_utterances": 274,
+          "side": "test"
+        },
+        "is1000c": {
+          "ihm": 159,
+          "sdm": 159,
+          "total_utterances": 318,
+          "side": "test"
+        },
+        "is1000d": {
+          "ihm": 223,
+          "sdm": 223,
+          "total_utterances": 446,
+          "side": "test"
+        }
+      }
+    },
+    "mio055": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 94,
+      "test_total_ihm_plus_sdm": 760,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 71440,
+      "component_ihm_enroll_to_ihm_test": 35720,
+      "component_ihm_enroll_to_sdm_test": 35720,
+      "unique_meetings": [
+        "is1005a",
+        "is1005b",
+        "is1005c"
+      ],
+      "enroll_meetings": [
+        "is1005a"
+      ],
+      "test_meetings": [
+        "is1005b",
+        "is1005c"
+      ],
+      "meeting_utterance_counts": {
+        "is1005a": {
+          "ihm": 94,
+          "sdm": 0,
+          "total_utterances": 94,
+          "side": "enroll"
+        },
+        "is1005b": {
+          "ihm": 192,
+          "sdm": 192,
+          "total_utterances": 384,
+          "side": "test"
+        },
+        "is1005c": {
+          "ihm": 188,
+          "sdm": 188,
+          "total_utterances": 376,
+          "side": "test"
+        }
+      }
+    },
+    "mio075": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 53,
+      "test_total_ihm_plus_sdm": 486,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 25758,
+      "component_ihm_enroll_to_ihm_test": 12879,
+      "component_ihm_enroll_to_sdm_test": 12879,
+      "unique_meetings": [
+        "is1007a",
+        "is1007b",
+        "is1007c"
+      ],
+      "enroll_meetings": [
+        "is1007a"
+      ],
+      "test_meetings": [
+        "is1007b",
+        "is1007c"
+      ],
+      "meeting_utterance_counts": {
+        "is1007a": {
+          "ihm": 53,
+          "sdm": 0,
+          "total_utterances": 53,
+          "side": "enroll"
+        },
+        "is1007b": {
+          "ihm": 99,
+          "sdm": 99,
+          "total_utterances": 198,
+          "side": "test"
+        },
+        "is1007c": {
+          "ihm": 144,
+          "sdm": 144,
+          "total_utterances": 288,
+          "side": "test"
+        }
+      }
+    },
+    "mio077": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 3,
+      "enroll_total_ihm": 705,
+      "test_total_ihm_plus_sdm": 830,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 585150,
+      "component_ihm_enroll_to_ihm_test": 292575,
+      "component_ihm_enroll_to_sdm_test": 292575,
+      "unique_meetings": [
+        "in1007",
+        "in1012",
+        "is1005a",
+        "is1005b",
+        "is1005c"
+      ],
+      "enroll_meetings": [
+        "in1007",
+        "in1012"
+      ],
+      "test_meetings": [
+        "is1005a",
+        "is1005b",
+        "is1005c"
+      ],
+      "meeting_utterance_counts": {
+        "in1007": {
+          "ihm": 370,
+          "sdm": 0,
+          "total_utterances": 370,
+          "side": "enroll"
+        },
+        "in1012": {
+          "ihm": 335,
+          "sdm": 0,
+          "total_utterances": 335,
+          "side": "enroll"
+        },
+        "is1005a": {
+          "ihm": 72,
+          "sdm": 72,
+          "total_utterances": 144,
+          "side": "test"
+        },
+        "is1005b": {
+          "ihm": 177,
+          "sdm": 177,
+          "total_utterances": 354,
+          "side": "test"
+        },
+        "is1005c": {
+          "ihm": 166,
+          "sdm": 166,
+          "total_utterances": 332,
+          "side": "test"
+        }
+      }
+    },
+    "mio082": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 425,
+      "test_total_ihm_plus_sdm": 1008,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 428400,
+      "component_ihm_enroll_to_ihm_test": 214200,
+      "component_ihm_enroll_to_sdm_test": 214200,
+      "unique_meetings": [
+        "is1000a",
+        "is1000b",
+        "is1000c",
+        "is1000d"
+      ],
+      "enroll_meetings": [
+        "is1000a",
+        "is1000b"
+      ],
+      "test_meetings": [
+        "is1000c",
+        "is1000d"
+      ],
+      "meeting_utterance_counts": {
+        "is1000a": {
+          "ihm": 212,
+          "sdm": 0,
+          "total_utterances": 212,
+          "side": "enroll"
+        },
+        "is1000b": {
+          "ihm": 213,
+          "sdm": 0,
+          "total_utterances": 213,
+          "side": "enroll"
+        },
+        "is1000c": {
+          "ihm": 136,
+          "sdm": 136,
+          "total_utterances": 272,
+          "side": "test"
+        },
+        "is1000d": {
+          "ihm": 368,
+          "sdm": 368,
+          "total_utterances": 736,
+          "side": "test"
+        }
+      }
+    },
+    "mio086": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 269,
+      "test_total_ihm_plus_sdm": 494,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 132886,
+      "component_ihm_enroll_to_ihm_test": 66443,
+      "component_ihm_enroll_to_sdm_test": 66443,
+      "unique_meetings": [
+        "is1008a",
+        "is1008b",
+        "is1008c",
+        "is1008d"
+      ],
+      "enroll_meetings": [
+        "is1008a",
+        "is1008b"
+      ],
+      "test_meetings": [
+        "is1008c",
+        "is1008d"
+      ],
+      "meeting_utterance_counts": {
+        "is1008a": {
+          "ihm": 129,
+          "sdm": 0,
+          "total_utterances": 129,
+          "side": "enroll"
+        },
+        "is1008b": {
+          "ihm": 140,
+          "sdm": 0,
+          "total_utterances": 140,
+          "side": "enroll"
+        },
+        "is1008c": {
+          "ihm": 79,
+          "sdm": 79,
+          "total_utterances": 158,
+          "side": "test"
+        },
+        "is1008d": {
+          "ihm": 168,
+          "sdm": 168,
+          "total_utterances": 336,
+          "side": "test"
+        }
+      }
+    },
+    "mio097": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 256,
+      "test_total_ihm_plus_sdm": 1916,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 490496,
+      "component_ihm_enroll_to_ihm_test": 245248,
+      "component_ihm_enroll_to_sdm_test": 245248,
+      "unique_meetings": [
+        "in1007",
+        "in1012",
+        "in1013"
+      ],
+      "enroll_meetings": [
+        "in1007"
+      ],
+      "test_meetings": [
+        "in1012",
+        "in1013"
+      ],
+      "meeting_utterance_counts": {
+        "in1007": {
+          "ihm": 256,
+          "sdm": 0,
+          "total_utterances": 256,
+          "side": "enroll"
+        },
+        "in1012": {
+          "ihm": 330,
+          "sdm": 330,
+          "total_utterances": 660,
+          "side": "test"
+        },
+        "in1013": {
+          "ihm": 628,
+          "sdm": 628,
+          "total_utterances": 1256,
+          "side": "test"
+        }
+      }
+    },
+    "mio100": {
+      "n_enroll_meetings": 1,
+      "n_test_meetings": 1,
+      "enroll_total_ihm": 265,
+      "test_total_ihm_plus_sdm": 174,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 46110,
+      "component_ihm_enroll_to_ihm_test": 23055,
+      "component_ihm_enroll_to_sdm_test": 23055,
+      "unique_meetings": [
+        "in1008",
+        "in1009"
+      ],
+      "enroll_meetings": [
+        "in1008"
+      ],
+      "test_meetings": [
+        "in1009"
+      ],
+      "meeting_utterance_counts": {
+        "in1008": {
+          "ihm": 265,
+          "sdm": 0,
+          "total_utterances": 265,
+          "side": "enroll"
+        },
+        "in1009": {
+          "ihm": 87,
+          "sdm": 87,
+          "total_utterances": 174,
+          "side": "test"
+        }
+      }
     },
     "mtd0010id": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 270,
-      "test_total_ihm_plus_sdm": 540,
-      "positive_pairs": 97852,
-      "component_ihm_enroll_to_ihm_test": 48926,
-      "component_ihm_enroll_to_sdm_test": 48926
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 77,
+      "test_total_ihm_plus_sdm": 386,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 29722,
+      "component_ihm_enroll_to_ihm_test": 14861,
+      "component_ihm_enroll_to_sdm_test": 14861,
+      "unique_meetings": [
+        "ts3003a",
+        "ts3003b",
+        "ts3003c",
+        "ts3003d"
+      ],
+      "enroll_meetings": [
+        "ts3003a",
+        "ts3003b"
+      ],
+      "test_meetings": [
+        "ts3003c",
+        "ts3003d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3003a": {
+          "ihm": 19,
+          "sdm": 0,
+          "total_utterances": 19,
+          "side": "enroll"
+        },
+        "ts3003b": {
+          "ihm": 58,
+          "sdm": 0,
+          "total_utterances": 58,
+          "side": "enroll"
+        },
+        "ts3003c": {
+          "ihm": 68,
+          "sdm": 68,
+          "total_utterances": 136,
+          "side": "test"
+        },
+        "ts3003d": {
+          "ihm": 125,
+          "sdm": 125,
+          "total_utterances": 250,
+          "side": "test"
+        }
+      }
     },
     "mtd012me": {
-      "n_meetings": 4,
-      "enroll_total_ihm": 652,
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 293,
+      "test_total_ihm_plus_sdm": 718,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 210374,
+      "component_ihm_enroll_to_ihm_test": 105187,
+      "component_ihm_enroll_to_sdm_test": 105187,
+      "unique_meetings": [
+        "ts3003a",
+        "ts3003b",
+        "ts3003c",
+        "ts3003d"
+      ],
+      "enroll_meetings": [
+        "ts3003a",
+        "ts3003b"
+      ],
+      "test_meetings": [
+        "ts3003c",
+        "ts3003d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3003a": {
+          "ihm": 87,
+          "sdm": 0,
+          "total_utterances": 87,
+          "side": "enroll"
+        },
+        "ts3003b": {
+          "ihm": 206,
+          "sdm": 0,
+          "total_utterances": 206,
+          "side": "enroll"
+        },
+        "ts3003c": {
+          "ihm": 127,
+          "sdm": 127,
+          "total_utterances": 254,
+          "side": "test"
+        },
+        "ts3003d": {
+          "ihm": 232,
+          "sdm": 232,
+          "total_utterances": 464,
+          "side": "test"
+        }
+      }
+    },
+    "mtd014id": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 279,
+      "test_total_ihm_plus_sdm": 1076,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 300204,
+      "component_ihm_enroll_to_ihm_test": 150102,
+      "component_ihm_enroll_to_sdm_test": 150102,
+      "unique_meetings": [
+        "ts3004a",
+        "ts3004b",
+        "ts3004c",
+        "ts3004d"
+      ],
+      "enroll_meetings": [
+        "ts3004a",
+        "ts3004b"
+      ],
+      "test_meetings": [
+        "ts3004c",
+        "ts3004d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3004a": {
+          "ihm": 61,
+          "sdm": 0,
+          "total_utterances": 61,
+          "side": "enroll"
+        },
+        "ts3004b": {
+          "ihm": 218,
+          "sdm": 0,
+          "total_utterances": 218,
+          "side": "enroll"
+        },
+        "ts3004c": {
+          "ihm": 279,
+          "sdm": 279,
+          "total_utterances": 558,
+          "side": "test"
+        },
+        "ts3004d": {
+          "ihm": 259,
+          "sdm": 259,
+          "total_utterances": 518,
+          "side": "test"
+        }
+      }
+    },
+    "mtd020me": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 429,
       "test_total_ihm_plus_sdm": 1304,
-      "positive_pairs": 610292,
-      "component_ihm_enroll_to_ihm_test": 305146,
-      "component_ihm_enroll_to_sdm_test": 305146
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 559416,
+      "component_ihm_enroll_to_ihm_test": 279708,
+      "component_ihm_enroll_to_sdm_test": 279708,
+      "unique_meetings": [
+        "ts3005a",
+        "ts3005b",
+        "ts3005c",
+        "ts3005d"
+      ],
+      "enroll_meetings": [
+        "ts3005a",
+        "ts3005b"
+      ],
+      "test_meetings": [
+        "ts3005c",
+        "ts3005d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3005a": {
+          "ihm": 103,
+          "sdm": 0,
+          "total_utterances": 103,
+          "side": "enroll"
+        },
+        "ts3005b": {
+          "ihm": 326,
+          "sdm": 0,
+          "total_utterances": 326,
+          "side": "enroll"
+        },
+        "ts3005c": {
+          "ihm": 258,
+          "sdm": 258,
+          "total_utterances": 516,
+          "side": "test"
+        },
+        "ts3005d": {
+          "ihm": 394,
+          "sdm": 394,
+          "total_utterances": 788,
+          "side": "test"
+        }
+      }
+    },
+    "mtd021pm": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 634,
+      "test_total_ihm_plus_sdm": 1560,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 989040,
+      "component_ihm_enroll_to_ihm_test": 494520,
+      "component_ihm_enroll_to_sdm_test": 494520,
+      "unique_meetings": [
+        "ts3006a",
+        "ts3006b",
+        "ts3006c",
+        "ts3006d"
+      ],
+      "enroll_meetings": [
+        "ts3006a",
+        "ts3006b"
+      ],
+      "test_meetings": [
+        "ts3006c",
+        "ts3006d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3006a": {
+          "ihm": 227,
+          "sdm": 0,
+          "total_utterances": 227,
+          "side": "enroll"
+        },
+        "ts3006b": {
+          "ihm": 407,
+          "sdm": 0,
+          "total_utterances": 407,
+          "side": "enroll"
+        },
+        "ts3006c": {
+          "ihm": 338,
+          "sdm": 338,
+          "total_utterances": 676,
+          "side": "test"
+        },
+        "ts3006d": {
+          "ihm": 442,
+          "sdm": 442,
+          "total_utterances": 884,
+          "side": "test"
+        }
+      }
+    },
+    "mtd023uid": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 297,
+      "test_total_ihm_plus_sdm": 1134,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 336798,
+      "component_ihm_enroll_to_ihm_test": 168399,
+      "component_ihm_enroll_to_sdm_test": 168399,
+      "unique_meetings": [
+        "ts3006a",
+        "ts3006b",
+        "ts3006c",
+        "ts3006d"
+      ],
+      "enroll_meetings": [
+        "ts3006a",
+        "ts3006b"
+      ],
+      "test_meetings": [
+        "ts3006c",
+        "ts3006d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3006a": {
+          "ihm": 87,
+          "sdm": 0,
+          "total_utterances": 87,
+          "side": "enroll"
+        },
+        "ts3006b": {
+          "ihm": 210,
+          "sdm": 0,
+          "total_utterances": 210,
+          "side": "enroll"
+        },
+        "ts3006c": {
+          "ihm": 260,
+          "sdm": 260,
+          "total_utterances": 520,
+          "side": "test"
+        },
+        "ts3006d": {
+          "ihm": 307,
+          "sdm": 307,
+          "total_utterances": 614,
+          "side": "test"
+        }
+      }
+    },
+    "mtd025pm": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 434,
+      "test_total_ihm_plus_sdm": 1314,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 570276,
+      "component_ihm_enroll_to_ihm_test": 285138,
+      "component_ihm_enroll_to_sdm_test": 285138,
+      "unique_meetings": [
+        "ts3007a",
+        "ts3007b",
+        "ts3007c",
+        "ts3007d"
+      ],
+      "enroll_meetings": [
+        "ts3007a",
+        "ts3007b"
+      ],
+      "test_meetings": [
+        "ts3007c",
+        "ts3007d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3007a": {
+          "ihm": 284,
+          "sdm": 0,
+          "total_utterances": 284,
+          "side": "enroll"
+        },
+        "ts3007b": {
+          "ihm": 150,
+          "sdm": 0,
+          "total_utterances": 150,
+          "side": "enroll"
+        },
+        "ts3007c": {
+          "ihm": 236,
+          "sdm": 236,
+          "total_utterances": 472,
+          "side": "test"
+        },
+        "ts3007d": {
+          "ihm": 421,
+          "sdm": 421,
+          "total_utterances": 842,
+          "side": "test"
+        }
+      }
+    },
+    "mtd027id": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 266,
+      "test_total_ihm_plus_sdm": 1198,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 318668,
+      "component_ihm_enroll_to_ihm_test": 159334,
+      "component_ihm_enroll_to_sdm_test": 159334,
+      "unique_meetings": [
+        "ts3007a",
+        "ts3007b",
+        "ts3007c",
+        "ts3007d"
+      ],
+      "enroll_meetings": [
+        "ts3007a",
+        "ts3007b"
+      ],
+      "test_meetings": [
+        "ts3007c",
+        "ts3007d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3007a": {
+          "ihm": 93,
+          "sdm": 0,
+          "total_utterances": 93,
+          "side": "enroll"
+        },
+        "ts3007b": {
+          "ihm": 173,
+          "sdm": 0,
+          "total_utterances": 173,
+          "side": "enroll"
+        },
+        "ts3007c": {
+          "ihm": 232,
+          "sdm": 232,
+          "total_utterances": 464,
+          "side": "test"
+        },
+        "ts3007d": {
+          "ihm": 367,
+          "sdm": 367,
+          "total_utterances": 734,
+          "side": "test"
+        }
+      }
+    },
+    "mtd029pm": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 624,
+      "test_total_ihm_plus_sdm": 1432,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 893568,
+      "component_ihm_enroll_to_ihm_test": 446784,
+      "component_ihm_enroll_to_sdm_test": 446784,
+      "unique_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c",
+        "ts3008d"
+      ],
+      "enroll_meetings": [
+        "ts3008a",
+        "ts3008b"
+      ],
+      "test_meetings": [
+        "ts3008c",
+        "ts3008d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3008a": {
+          "ihm": 219,
+          "sdm": 0,
+          "total_utterances": 219,
+          "side": "enroll"
+        },
+        "ts3008b": {
+          "ihm": 405,
+          "sdm": 0,
+          "total_utterances": 405,
+          "side": "enroll"
+        },
+        "ts3008c": {
+          "ihm": 311,
+          "sdm": 311,
+          "total_utterances": 622,
+          "side": "test"
+        },
+        "ts3008d": {
+          "ihm": 405,
+          "sdm": 405,
+          "total_utterances": 810,
+          "side": "test"
+        }
+      }
+    },
+    "mtd030id": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 106,
+      "test_total_ihm_plus_sdm": 900,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 95400,
+      "component_ihm_enroll_to_ihm_test": 47700,
+      "component_ihm_enroll_to_sdm_test": 47700,
+      "unique_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c",
+        "ts3008d"
+      ],
+      "enroll_meetings": [
+        "ts3008a",
+        "ts3008b"
+      ],
+      "test_meetings": [
+        "ts3008c",
+        "ts3008d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3008a": {
+          "ihm": 29,
+          "sdm": 0,
+          "total_utterances": 29,
+          "side": "enroll"
+        },
+        "ts3008b": {
+          "ihm": 77,
+          "sdm": 0,
+          "total_utterances": 77,
+          "side": "enroll"
+        },
+        "ts3008c": {
+          "ihm": 185,
+          "sdm": 185,
+          "total_utterances": 370,
+          "side": "test"
+        },
+        "ts3008d": {
+          "ihm": 265,
+          "sdm": 265,
+          "total_utterances": 530,
+          "side": "test"
+        }
+      }
+    },
+    "mtd031uid": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 309,
+      "test_total_ihm_plus_sdm": 836,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 258324,
+      "component_ihm_enroll_to_ihm_test": 129162,
+      "component_ihm_enroll_to_sdm_test": 129162,
+      "unique_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c",
+        "ts3008d"
+      ],
+      "enroll_meetings": [
+        "ts3008a",
+        "ts3008b"
+      ],
+      "test_meetings": [
+        "ts3008c",
+        "ts3008d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3008a": {
+          "ihm": 122,
+          "sdm": 0,
+          "total_utterances": 122,
+          "side": "enroll"
+        },
+        "ts3008b": {
+          "ihm": 187,
+          "sdm": 0,
+          "total_utterances": 187,
+          "side": "enroll"
+        },
+        "ts3008c": {
+          "ihm": 216,
+          "sdm": 216,
+          "total_utterances": 432,
+          "side": "test"
+        },
+        "ts3008d": {
+          "ihm": 202,
+          "sdm": 202,
+          "total_utterances": 404,
+          "side": "test"
+        }
+      }
+    },
+    "mtd032me": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 343,
+      "test_total_ihm_plus_sdm": 1244,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 426692,
+      "component_ihm_enroll_to_ihm_test": 213346,
+      "component_ihm_enroll_to_sdm_test": 213346,
+      "unique_meetings": [
+        "ts3008a",
+        "ts3008b",
+        "ts3008c",
+        "ts3008d"
+      ],
+      "enroll_meetings": [
+        "ts3008a",
+        "ts3008b"
+      ],
+      "test_meetings": [
+        "ts3008c",
+        "ts3008d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3008a": {
+          "ihm": 123,
+          "sdm": 0,
+          "total_utterances": 123,
+          "side": "enroll"
+        },
+        "ts3008b": {
+          "ihm": 220,
+          "sdm": 0,
+          "total_utterances": 220,
+          "side": "enroll"
+        },
+        "ts3008c": {
+          "ihm": 249,
+          "sdm": 249,
+          "total_utterances": 498,
+          "side": "test"
+        },
+        "ts3008d": {
+          "ihm": 373,
+          "sdm": 373,
+          "total_utterances": 746,
+          "side": "test"
+        }
+      }
+    },
+    "mtd033pm": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 644,
+      "test_total_ihm_plus_sdm": 1532,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 986608,
+      "component_ihm_enroll_to_ihm_test": 493304,
+      "component_ihm_enroll_to_sdm_test": 493304,
+      "unique_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c",
+        "ts3009d"
+      ],
+      "enroll_meetings": [
+        "ts3009a",
+        "ts3009b"
+      ],
+      "test_meetings": [
+        "ts3009c",
+        "ts3009d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3009a": {
+          "ihm": 272,
+          "sdm": 0,
+          "total_utterances": 272,
+          "side": "enroll"
+        },
+        "ts3009b": {
+          "ihm": 372,
+          "sdm": 0,
+          "total_utterances": 372,
+          "side": "enroll"
+        },
+        "ts3009c": {
+          "ihm": 377,
+          "sdm": 377,
+          "total_utterances": 754,
+          "side": "test"
+        },
+        "ts3009d": {
+          "ihm": 389,
+          "sdm": 389,
+          "total_utterances": 778,
+          "side": "test"
+        }
+      }
+    },
+    "mtd034id": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 423,
+      "test_total_ihm_plus_sdm": 1416,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 598968,
+      "component_ihm_enroll_to_ihm_test": 299484,
+      "component_ihm_enroll_to_sdm_test": 299484,
+      "unique_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c",
+        "ts3009d"
+      ],
+      "enroll_meetings": [
+        "ts3009a",
+        "ts3009b"
+      ],
+      "test_meetings": [
+        "ts3009c",
+        "ts3009d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3009a": {
+          "ihm": 141,
+          "sdm": 0,
+          "total_utterances": 141,
+          "side": "enroll"
+        },
+        "ts3009b": {
+          "ihm": 282,
+          "sdm": 0,
+          "total_utterances": 282,
+          "side": "enroll"
+        },
+        "ts3009c": {
+          "ihm": 335,
+          "sdm": 335,
+          "total_utterances": 670,
+          "side": "test"
+        },
+        "ts3009d": {
+          "ihm": 373,
+          "sdm": 373,
+          "total_utterances": 746,
+          "side": "test"
+        }
+      }
+    },
+    "mtd035uid": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 270,
+      "test_total_ihm_plus_sdm": 898,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 242460,
+      "component_ihm_enroll_to_ihm_test": 121230,
+      "component_ihm_enroll_to_sdm_test": 121230,
+      "unique_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c",
+        "ts3009d"
+      ],
+      "enroll_meetings": [
+        "ts3009a",
+        "ts3009b"
+      ],
+      "test_meetings": [
+        "ts3009c",
+        "ts3009d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3009a": {
+          "ihm": 82,
+          "sdm": 0,
+          "total_utterances": 82,
+          "side": "enroll"
+        },
+        "ts3009b": {
+          "ihm": 188,
+          "sdm": 0,
+          "total_utterances": 188,
+          "side": "enroll"
+        },
+        "ts3009c": {
+          "ihm": 248,
+          "sdm": 248,
+          "total_utterances": 496,
+          "side": "test"
+        },
+        "ts3009d": {
+          "ihm": 201,
+          "sdm": 201,
+          "total_utterances": 402,
+          "side": "test"
+        }
+      }
+    },
+    "mtd036me": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 489,
+      "test_total_ihm_plus_sdm": 1020,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 498780,
+      "component_ihm_enroll_to_ihm_test": 249390,
+      "component_ihm_enroll_to_sdm_test": 249390,
+      "unique_meetings": [
+        "ts3009a",
+        "ts3009b",
+        "ts3009c",
+        "ts3009d"
+      ],
+      "enroll_meetings": [
+        "ts3009a",
+        "ts3009b"
+      ],
+      "test_meetings": [
+        "ts3009c",
+        "ts3009d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3009a": {
+          "ihm": 141,
+          "sdm": 0,
+          "total_utterances": 141,
+          "side": "enroll"
+        },
+        "ts3009b": {
+          "ihm": 348,
+          "sdm": 0,
+          "total_utterances": 348,
+          "side": "enroll"
+        },
+        "ts3009c": {
+          "ihm": 287,
+          "sdm": 287,
+          "total_utterances": 574,
+          "side": "test"
+        },
+        "ts3009d": {
+          "ihm": 223,
+          "sdm": 223,
+          "total_utterances": 446,
+          "side": "test"
+        }
+      }
+    },
+    "mtd037pm": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 315,
+      "test_total_ihm_plus_sdm": 1052,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 331380,
+      "component_ihm_enroll_to_ihm_test": 165690,
+      "component_ihm_enroll_to_sdm_test": 165690,
+      "unique_meetings": [
+        "ts3010a",
+        "ts3010b",
+        "ts3010c",
+        "ts3010d"
+      ],
+      "enroll_meetings": [
+        "ts3010a",
+        "ts3010b"
+      ],
+      "test_meetings": [
+        "ts3010c",
+        "ts3010d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3010a": {
+          "ihm": 107,
+          "sdm": 0,
+          "total_utterances": 107,
+          "side": "enroll"
+        },
+        "ts3010b": {
+          "ihm": 208,
+          "sdm": 0,
+          "total_utterances": 208,
+          "side": "enroll"
+        },
+        "ts3010c": {
+          "ihm": 268,
+          "sdm": 268,
+          "total_utterances": 536,
+          "side": "test"
+        },
+        "ts3010d": {
+          "ihm": 258,
+          "sdm": 258,
+          "total_utterances": 516,
+          "side": "test"
+        }
+      }
+    },
+    "mtd041pm": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 479,
+      "test_total_ihm_plus_sdm": 1218,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 583422,
+      "component_ihm_enroll_to_ihm_test": 291711,
+      "component_ihm_enroll_to_sdm_test": 291711,
+      "unique_meetings": [
+        "ts3011a",
+        "ts3011b",
+        "ts3011c",
+        "ts3011d"
+      ],
+      "enroll_meetings": [
+        "ts3011a",
+        "ts3011b"
+      ],
+      "test_meetings": [
+        "ts3011c",
+        "ts3011d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3011a": {
+          "ihm": 192,
+          "sdm": 0,
+          "total_utterances": 192,
+          "side": "enroll"
+        },
+        "ts3011b": {
+          "ihm": 287,
+          "sdm": 0,
+          "total_utterances": 287,
+          "side": "enroll"
+        },
+        "ts3011c": {
+          "ihm": 289,
+          "sdm": 289,
+          "total_utterances": 578,
+          "side": "test"
+        },
+        "ts3011d": {
+          "ihm": 320,
+          "sdm": 320,
+          "total_utterances": 640,
+          "side": "test"
+        }
+      }
+    },
+    "mtd042id": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 399,
+      "test_total_ihm_plus_sdm": 1158,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 462042,
+      "component_ihm_enroll_to_ihm_test": 231021,
+      "component_ihm_enroll_to_sdm_test": 231021,
+      "unique_meetings": [
+        "ts3011a",
+        "ts3011b",
+        "ts3011c",
+        "ts3011d"
+      ],
+      "enroll_meetings": [
+        "ts3011a",
+        "ts3011b"
+      ],
+      "test_meetings": [
+        "ts3011c",
+        "ts3011d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3011a": {
+          "ihm": 113,
+          "sdm": 0,
+          "total_utterances": 113,
+          "side": "enroll"
+        },
+        "ts3011b": {
+          "ihm": 286,
+          "sdm": 0,
+          "total_utterances": 286,
+          "side": "enroll"
+        },
+        "ts3011c": {
+          "ihm": 329,
+          "sdm": 329,
+          "total_utterances": 658,
+          "side": "test"
+        },
+        "ts3011d": {
+          "ihm": 250,
+          "sdm": 250,
+          "total_utterances": 500,
+          "side": "test"
+        }
+      }
+    },
+    "mtd044me": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 116,
+      "test_total_ihm_plus_sdm": 310,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 35960,
+      "component_ihm_enroll_to_ihm_test": 17980,
+      "component_ihm_enroll_to_sdm_test": 17980,
+      "unique_meetings": [
+        "ts3011a",
+        "ts3011b",
+        "ts3011c",
+        "ts3011d"
+      ],
+      "enroll_meetings": [
+        "ts3011a",
+        "ts3011b"
+      ],
+      "test_meetings": [
+        "ts3011c",
+        "ts3011d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3011a": {
+          "ihm": 17,
+          "sdm": 0,
+          "total_utterances": 17,
+          "side": "enroll"
+        },
+        "ts3011b": {
+          "ihm": 99,
+          "sdm": 0,
+          "total_utterances": 99,
+          "side": "enroll"
+        },
+        "ts3011c": {
+          "ihm": 78,
+          "sdm": 78,
+          "total_utterances": 156,
+          "side": "test"
+        },
+        "ts3011d": {
+          "ihm": 77,
+          "sdm": 77,
+          "total_utterances": 154,
+          "side": "test"
+        }
+      }
+    },
+    "mtd046id": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 289,
+      "test_total_ihm_plus_sdm": 1148,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 331772,
+      "component_ihm_enroll_to_ihm_test": 165886,
+      "component_ihm_enroll_to_sdm_test": 165886,
+      "unique_meetings": [
+        "ts3012a",
+        "ts3012b",
+        "ts3012c",
+        "ts3012d"
+      ],
+      "enroll_meetings": [
+        "ts3012a",
+        "ts3012b"
+      ],
+      "test_meetings": [
+        "ts3012c",
+        "ts3012d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3012a": {
+          "ihm": 31,
+          "sdm": 0,
+          "total_utterances": 31,
+          "side": "enroll"
+        },
+        "ts3012b": {
+          "ihm": 258,
+          "sdm": 0,
+          "total_utterances": 258,
+          "side": "enroll"
+        },
+        "ts3012c": {
+          "ihm": 327,
+          "sdm": 327,
+          "total_utterances": 654,
+          "side": "test"
+        },
+        "ts3012d": {
+          "ihm": 247,
+          "sdm": 247,
+          "total_utterances": 494,
+          "side": "test"
+        }
+      }
+    },
+    "mtd047uid": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 213,
+      "test_total_ihm_plus_sdm": 728,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 155064,
+      "component_ihm_enroll_to_ihm_test": 77532,
+      "component_ihm_enroll_to_sdm_test": 77532,
+      "unique_meetings": [
+        "ts3012a",
+        "ts3012b",
+        "ts3012c",
+        "ts3012d"
+      ],
+      "enroll_meetings": [
+        "ts3012a",
+        "ts3012b"
+      ],
+      "test_meetings": [
+        "ts3012c",
+        "ts3012d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3012a": {
+          "ihm": 47,
+          "sdm": 0,
+          "total_utterances": 47,
+          "side": "enroll"
+        },
+        "ts3012b": {
+          "ihm": 166,
+          "sdm": 0,
+          "total_utterances": 166,
+          "side": "enroll"
+        },
+        "ts3012c": {
+          "ihm": 218,
+          "sdm": 218,
+          "total_utterances": 436,
+          "side": "test"
+        },
+        "ts3012d": {
+          "ihm": 146,
+          "sdm": 146,
+          "total_utterances": 292,
+          "side": "test"
+        }
+      }
+    },
+    "mtd048me": {
+      "n_enroll_meetings": 2,
+      "n_test_meetings": 2,
+      "enroll_total_ihm": 305,
+      "test_total_ihm_plus_sdm": 998,
+      "same_meeting_exclusion": 0,
+      "positive_pairs": 304390,
+      "component_ihm_enroll_to_ihm_test": 152195,
+      "component_ihm_enroll_to_sdm_test": 152195,
+      "unique_meetings": [
+        "ts3012a",
+        "ts3012b",
+        "ts3012c",
+        "ts3012d"
+      ],
+      "enroll_meetings": [
+        "ts3012a",
+        "ts3012b"
+      ],
+      "test_meetings": [
+        "ts3012c",
+        "ts3012d"
+      ],
+      "meeting_utterance_counts": {
+        "ts3012a": {
+          "ihm": 65,
+          "sdm": 0,
+          "total_utterances": 65,
+          "side": "enroll"
+        },
+        "ts3012b": {
+          "ihm": 240,
+          "sdm": 0,
+          "total_utterances": 240,
+          "side": "enroll"
+        },
+        "ts3012c": {
+          "ihm": 239,
+          "sdm": 239,
+          "total_utterances": 478,
+          "side": "test"
+        },
+        "ts3012d": {
+          "ihm": 260,
+          "sdm": 260,
+          "total_utterances": 520,
+          "side": "test"
+        }
+      }
     }
   },
   "negative_pairs_teammate_detail": [
     {
-      "speaker_1": "fee039",
-      "speaker_2": "fee040",
-      "raw": 709420,
-      "excluded_shared_meeting": 205608,
-      "surviving": 503812
-    },
-    {
-      "speaker_1": "fee041",
-      "speaker_2": "fee043",
-      "raw": 1769768,
-      "excluded_shared_meeting": 445388,
-      "surviving": 1324380
-    },
-    {
-      "speaker_1": "fee050",
-      "speaker_2": "fee051",
-      "raw": 587884,
-      "excluded_shared_meeting": 175664,
-      "surviving": 412220
-    },
-    {
-      "speaker_1": "fee050",
-      "speaker_2": "fee052",
-      "raw": 720192,
-      "excluded_shared_meeting": 207488,
-      "surviving": 512704
-    },
-    {
-      "speaker_1": "fee051",
-      "speaker_2": "fee052",
-      "raw": 910272,
-      "excluded_shared_meeting": 266040,
-      "surviving": 644232
-    },
-    {
-      "speaker_1": "fee057",
-      "speaker_2": "fee060",
-      "raw": 3082884,
-      "excluded_shared_meeting": 845336,
-      "surviving": 2237548
-    },
-    {
-      "speaker_1": "fee083",
-      "speaker_2": "fee085",
-      "raw": 4561216,
-      "excluded_shared_meeting": 1178496,
-      "surviving": 3382720
-    },
-    {
-      "speaker_1": "fee083",
-      "speaker_2": "fee096",
-      "raw": 9150020,
-      "excluded_shared_meeting": 2837740,
-      "surviving": 6312280
-    },
-    {
-      "speaker_1": "fee083",
-      "speaker_2": "feo084",
-      "raw": 533368,
-      "excluded_shared_meeting": 137808,
-      "surviving": 395560
-    },
-    {
-      "speaker_1": "fee085",
-      "speaker_2": "feo084",
-      "raw": 115072,
-      "excluded_shared_meeting": 115072,
-      "surviving": 0
-    },
-    {
-      "speaker_1": "feo065",
-      "speaker_2": "feo066",
-      "raw": 1282400,
-      "excluded_shared_meeting": 357724,
-      "surviving": 924676
-    },
-    {
       "speaker_1": "feo070",
       "speaker_2": "feo072",
-      "raw": 3386168,
-      "excluded_shared_meeting": 827136,
-      "surviving": 2559032
-    },
-    {
-      "speaker_1": "fio084",
-      "speaker_2": "fio089",
-      "raw": 1111920,
-      "excluded_shared_meeting": 298316,
-      "surviving": 813604
-    },
-    {
-      "speaker_1": "mee009",
-      "speaker_2": "mee010",
-      "raw": 940460,
-      "excluded_shared_meeting": 253160,
-      "surviving": 687300
-    },
-    {
-      "speaker_1": "mee009",
-      "speaker_2": "mee011",
-      "raw": 1466480,
-      "excluded_shared_meeting": 407680,
-      "surviving": 1058800
-    },
-    {
-      "speaker_1": "mee009",
-      "speaker_2": "mee012",
-      "raw": 2049884,
-      "excluded_shared_meeting": 586836,
-      "surviving": 1463048
-    },
-    {
-      "speaker_1": "mee010",
-      "speaker_2": "mee011",
-      "raw": 542800,
-      "excluded_shared_meeting": 159520,
-      "surviving": 383280
-    },
-    {
-      "speaker_1": "mee010",
-      "speaker_2": "mee012",
-      "raw": 758740,
-      "excluded_shared_meeting": 210140,
-      "surviving": 548600
-    },
-    {
-      "speaker_1": "mee011",
-      "speaker_2": "mee012",
-      "raw": 1183120,
-      "excluded_shared_meeting": 342252,
-      "surviving": 840868
-    },
-    {
-      "speaker_1": "mee017",
-      "speaker_2": "meo020",
-      "raw": 1510912,
-      "excluded_shared_meeting": 458336,
-      "surviving": 1052576
-    },
-    {
-      "speaker_1": "mee025",
-      "speaker_2": "mee027",
-      "raw": 1595800,
-      "excluded_shared_meeting": 420436,
-      "surviving": 1175364
-    },
-    {
-      "speaker_1": "mee033",
-      "speaker_2": "mee035",
-      "raw": 1106496,
-      "excluded_shared_meeting": 281204,
-      "surviving": 825292
-    },
-    {
-      "speaker_1": "mee054",
-      "speaker_2": "mee056",
-      "raw": 2027520,
-      "excluded_shared_meeting": 580712,
-      "surviving": 1446808
-    },
-    {
-      "speaker_1": "mee075",
-      "speaker_2": "mee076",
-      "raw": 291624,
-      "excluded_shared_meeting": 291624,
-      "surviving": 0
-    },
-    {
-      "speaker_1": "mee075",
-      "speaker_2": "meo074",
-      "raw": 345256,
-      "excluded_shared_meeting": 345256,
-      "surviving": 0
-    },
-    {
-      "speaker_1": "mee076",
-      "speaker_2": "meo074",
-      "raw": 143376,
-      "excluded_shared_meeting": 143376,
-      "surviving": 0
+      "raw": 841816,
+      "excluded_shared_meeting": 59850,
+      "surviving": 781966
     },
     {
       "speaker_1": "mie034",
       "speaker_2": "mio050",
-      "raw": 4728500,
-      "excluded_shared_meeting": 770040,
-      "surviving": 3958460
+      "raw": 1175580,
+      "excluded_shared_meeting": 385020,
+      "surviving": 790560
     },
     {
       "speaker_1": "mie034",
       "speaker_2": "mio097",
-      "raw": 4686040,
-      "excluded_shared_meeting": 1256000,
-      "surviving": 3430040
-    },
-    {
-      "speaker_1": "mie034",
-      "speaker_2": "mio105",
-      "raw": 220020,
-      "excluded_shared_meeting": 114000,
-      "surviving": 106020
-    },
-    {
-      "speaker_1": "mie080",
-      "speaker_2": "mie083",
-      "raw": 2102756,
-      "excluded_shared_meeting": 461196,
-      "surviving": 1641560
-    },
-    {
-      "speaker_1": "mie085",
-      "speaker_2": "mio086",
-      "raw": 604752,
-      "excluded_shared_meeting": 154800,
-      "surviving": 449952
+      "raw": 1196080,
+      "excluded_shared_meeting": 628000,
+      "surviving": 568080
     },
     {
       "speaker_1": "mio019",
       "speaker_2": "mio022",
-      "raw": 2728000,
-      "excluded_shared_meeting": 524744,
-      "surviving": 2203256
+      "raw": 641520,
+      "excluded_shared_meeting": 52272,
+      "surviving": 589248
     },
     {
       "speaker_1": "mio020",
       "speaker_2": "mio024",
-      "raw": 2002260,
-      "excluded_shared_meeting": 448512,
-      "surviving": 1553748
-    },
-    {
-      "speaker_1": "mio022",
-      "speaker_2": "mio050",
-      "raw": 4312000,
-      "excluded_shared_meeting": 226920,
-      "surviving": 4085080
-    },
-    {
-      "speaker_1": "mio024",
-      "speaker_2": "mio066",
-      "raw": 1196052,
-      "excluded_shared_meeting": 734228,
-      "surviving": 461824
-    },
-    {
-      "speaker_1": "mio025",
-      "speaker_2": "mio049",
-      "raw": 629136,
-      "excluded_shared_meeting": 212144,
-      "surviving": 416992
-    },
-    {
-      "speaker_1": "mio025",
-      "speaker_2": "mio075",
-      "raw": 724608,
-      "excluded_shared_meeting": 266000,
-      "surviving": 458608
-    },
-    {
-      "speaker_1": "mio049",
-      "speaker_2": "mio075",
-      "raw": 304288,
-      "excluded_shared_meeting": 105088,
-      "surviving": 199200
+      "raw": 471120,
+      "excluded_shared_meeting": 224256,
+      "surviving": 246864
     },
     {
       "speaker_1": "mio050",
       "speaker_2": "mio082",
-      "raw": 4552100,
-      "excluded_shared_meeting": 623908,
-      "surviving": 3928192
+      "raw": 1152798,
+      "excluded_shared_meeting": 58362,
+      "surviving": 1094436
     },
     {
       "speaker_1": "mio055",
       "speaker_2": "mio077",
-      "raw": 2123520,
-      "excluded_shared_meeting": 287840,
-      "surviving": 1835680
+      "raw": 613820,
+      "excluded_shared_meeting": 13536,
+      "surviving": 600284
     },
     {
       "speaker_1": "mio077",
       "speaker_2": "mio097",
-      "raw": 5438720,
-      "excluded_shared_meeting": 821080,
-      "surviving": 4617640
-    },
-    {
-      "speaker_1": "mio077",
-      "speaker_2": "mio098",
-      "raw": 1671040,
-      "excluded_shared_meeting": 552040,
-      "surviving": 1119000
-    },
-    {
-      "speaker_1": "mio097",
-      "speaker_2": "mio098",
-      "raw": 1811288,
-      "excluded_shared_meeting": 381952,
-      "surviving": 1429336
-    },
-    {
-      "speaker_1": "mio097",
-      "speaker_2": "mio105",
-      "raw": 276792,
-      "excluded_shared_meeting": 143184,
-      "surviving": 133608
-    },
-    {
-      "speaker_1": "mtd0010id",
-      "speaker_2": "mtd012me",
-      "raw": 704160,
-      "excluded_shared_meeting": 204948,
-      "surviving": 499212
-    },
-    {
-      "speaker_1": "mtd021pm",
-      "speaker_2": "mtd023uid",
-      "raw": 4886784,
-      "excluded_shared_meeting": 1315172,
-      "surviving": 3571612
-    },
-    {
-      "speaker_1": "mtd025pm",
-      "speaker_2": "mtd027id",
-      "raw": 3774860,
-      "excluded_shared_meeting": 1046484,
-      "surviving": 2728376
-    },
-    {
-      "speaker_1": "mtd029pm",
-      "speaker_2": "mtd030id",
-      "raw": 2980160,
-      "excluded_shared_meeting": 809584,
-      "surviving": 2170576
-    },
-    {
-      "speaker_1": "mtd029pm",
-      "speaker_2": "mtd031uid",
-      "raw": 3896720,
-      "excluded_shared_meeting": 1005756,
-      "surviving": 2890964
-    },
-    {
-      "speaker_1": "mtd029pm",
-      "speaker_2": "mtd032me",
-      "raw": 5172400,
-      "excluded_shared_meeting": 1378164,
-      "surviving": 3794236
-    },
-    {
-      "speaker_1": "mtd030id",
-      "speaker_2": "mtd031uid",
-      "raw": 1616848,
-      "excluded_shared_meeting": 445708,
-      "surviving": 1171140
-    },
-    {
-      "speaker_1": "mtd030id",
-      "speaker_2": "mtd032me",
-      "raw": 2146160,
-      "excluded_shared_meeting": 661668,
-      "surviving": 1484492
-    },
-    {
-      "speaker_1": "mtd031uid",
-      "speaker_2": "mtd032me",
-      "raw": 2806220,
-      "excluded_shared_meeting": 741104,
-      "surviving": 2065116
-    },
-    {
-      "speaker_1": "mtd033pm",
-      "speaker_2": "mtd034id",
-      "raw": 6378840,
-      "excluded_shared_meeting": 1658592,
-      "surviving": 4720248
-    },
-    {
-      "speaker_1": "mtd033pm",
-      "speaker_2": "mtd035uid",
-      "raw": 4055160,
-      "excluded_shared_meeting": 1055700,
-      "surviving": 2999460
-    },
-    {
-      "speaker_1": "mtd033pm",
-      "speaker_2": "mtd036me",
-      "raw": 5634360,
-      "excluded_shared_meeting": 1451016,
-      "surviving": 4183344
-    },
-    {
-      "speaker_1": "mtd034id",
-      "speaker_2": "mtd035uid",
-      "raw": 3252756,
-      "excluded_shared_meeting": 890524,
-      "surviving": 2362232
-    },
-    {
-      "speaker_1": "mtd034id",
-      "speaker_2": "mtd036me",
-      "raw": 4519476,
-      "excluded_shared_meeting": 1189364,
-      "surviving": 3330112
-    },
-    {
-      "speaker_1": "mtd035uid",
-      "speaker_2": "mtd036me",
-      "raw": 2873124,
-      "excluded_shared_meeting": 771940,
-      "surviving": 2101184
-    },
-    {
-      "speaker_1": "mtd041pm",
-      "speaker_2": "mtd042id",
-      "raw": 4256256,
-      "excluded_shared_meeting": 1115436,
-      "surviving": 3140820
-    },
-    {
-      "speaker_1": "mtd041pm",
-      "speaker_2": "mtd044me",
-      "raw": 1179392,
-      "excluded_shared_meeting": 315436,
-      "surviving": 863956
-    },
-    {
-      "speaker_1": "mtd042id",
-      "speaker_2": "mtd044me",
-      "raw": 1060152,
-      "excluded_shared_meeting": 300588,
-      "surviving": 759564
-    },
-    {
-      "speaker_1": "mtd046id",
-      "speaker_2": "mtd047uid",
-      "raw": 1991804,
-      "excluded_shared_meeting": 606532,
-      "surviving": 1385272
-    },
-    {
-      "speaker_1": "mtd046id",
-      "speaker_2": "mtd048me",
-      "raw": 2775408,
-      "excluded_shared_meeting": 825232,
-      "surviving": 1950176
-    },
-    {
-      "speaker_1": "mtd047uid",
-      "speaker_2": "mtd048me",
-      "raw": 1855632,
-      "excluded_shared_meeting": 531828,
-      "surviving": 1323804
+      "raw": 1563260,
+      "excluded_shared_meeting": 221100,
+      "surviving": 1342160
     }
   ],
-  "enroll_vs_test_cross_check_detail": {
-    "checked": true,
-    "enroll_rows_read": 69196,
-    "mismatches_found": 0,
-    "mismatches": []
+  "disjointness_check_detail": {
+    "n_speakers_in_enroll": 91,
+    "n_speakers_in_test": 91,
+    "speakers_only_in_enroll": [],
+    "speakers_only_in_test": [],
+    "speakers_with_enroll_test_meeting_overlap": 0,
+    "overlap_detail": [],
+    "fully_disjoint_for_every_speaker": true
   }
 }
