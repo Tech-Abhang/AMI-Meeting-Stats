@@ -1,0 +1,27 @@
+{
+  "resolved_root": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/audio",
+  "decode_failures": [],
+  "eval_male_speakers": 70,
+  "eval_female_speakers": 30,
+  "eligible_speakers_used_in_enroll_test": 91,
+  "dropped_speakers_only_1_meeting": [
+    "fee085",
+    "fee096",
+    "feo084",
+    "mee075",
+    "mee076",
+    "meo074",
+    "mio066",
+    "mio098",
+    "mio105"
+  ],
+  "train_male_speakers": 60,
+  "train_female_speakers": 30,
+  "enroll_rows": 27186,
+  "test_rows": 77562,
+  "test_rows_by_mic": {
+    "ihm": 38781,
+    "sdm": 38781
+  },
+  "output_file": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/eval_xlsx_out/eval_enroll_test.xlsx"
+}
