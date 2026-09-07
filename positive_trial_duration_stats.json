@@ -1,0 +1,26 @@
+{
+  "input_csv": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/positive_trials.csv",
+  "total_rows": 27301776,
+  "valid_duration_diff_rows": 27301776,
+  "blank_or_unparseable_rows": 0,
+  "mean": 2.498291015625,
+  "std": 2.500338077545166,
+  "min": 0.0,
+  "max": 33.09000015258789,
+  "median": 1.7100000381469727,
+  "percentiles": {
+    "p10": 0.20000000298023224,
+    "p25": 0.6299999952316284,
+    "p50": 1.7100000381469727,
+    "p75": 3.630000114440918,
+    "p90": 5.900000095367432,
+    "p95": 7.420000076293945,
+    "p99": 10.789999961853027
+  },
+  "bucket_breakdown": {
+    "<1": 9534430,
+    "1-3": 9154340,
+    "3-10": 8218794,
+    ">10": 394212
+  }
+}
