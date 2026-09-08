@@ -1,0 +1,29 @@
+{
+  "source_csv": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/positive_trials.csv",
+  "source_csv_bytes": 3664289597,
+  "source_csv_human": "3.41 GB",
+  "rows": 27301776,
+  "unique_paths": 104748,
+  "blank_or_unparseable_duration_rows": 0,
+  "encode_seconds": 58.1,
+  "output": {
+    "parquet_file": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/encoded_trials/positive_trials.parquet",
+    "parquet_bytes": 34575629,
+    "parquet_human": "32.97 MB",
+    "lookup_file": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/encoded_trials/path_lookup.csv",
+    "lookup_bytes": 7425373,
+    "lookup_human": "7.08 MB",
+    "total_bytes": 42001002,
+    "total_human": "40.06 MB",
+    "compression": "zstd"
+  },
+  "size_ratio": "87.2x smaller",
+  "space_saved_human": "3.37 GB",
+  "how_to_decode": {
+    "enroll_path": "look up enroll_id in path_lookup.csv",
+    "test_path": "look up test_id in path_lookup.csv",
+    "duration_diff_seconds": "duration_diff_cs / 100.0",
+    "missing_marker": "duration_diff_cs == -1 means the original value was blank/unparseable",
+    "lossless": "every original value is exactly recoverable -- nothing was rounded away"
+  }
+}
