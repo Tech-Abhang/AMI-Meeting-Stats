@@ -1,0 +1,537 @@
+{
+  "input_csv": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/positive_trials.csv",
+  "total_rows": 27301776,
+  "valid_duration_diff_rows": 27301776,
+  "blank_or_unparseable_rows": 0,
+  "mean": 2.498291015625,
+  "std": 2.500338077545166,
+  "min": 0.0,
+  "max": 33.09000015258789,
+  "median": 1.7100000381469727,
+  "percentiles": {
+    "p1": 0.019999999552965164,
+    "p5": 0.09000000357627869,
+    "p10": 0.20000000298023224,
+    "p15": 0.33000001311302185,
+    "p20": 0.47999998927116394,
+    "p25": 0.6299999952316284,
+    "p30": 0.8100000023841858,
+    "p35": 1.0,
+    "p40": 1.2100000381469727,
+    "p45": 1.4500000476837158,
+    "p50": 1.7100000381469727,
+    "p55": 2.0,
+    "p60": 2.3299999237060547,
+    "p65": 2.700000047683716,
+    "p70": 3.130000114440918,
+    "p75": 3.630000114440918,
+    "p80": 4.230000019073486,
+    "p85": 4.949999809265137,
+    "p90": 5.900000095367432,
+    "p95": 7.420000076293945,
+    "p99": 10.789999961853027
+  },
+  "quantile_bins": {
+    "description": "Equal-COUNT bins -- each bin holds roughly the same number of positive trials. Width in seconds varies: narrow where data is dense (small diffs), wide where data is sparse (large diffs). Use these edges/counts as the target when duration-matching negatives -- no bin is starved of data by construction.",
+    "n_bins_requested": 20,
+    "n_bins_actual": 20,
+    "bins": [
+      {
+        "index": 0,
+        "lower_seconds": 0.0,
+        "upper_seconds": 0.09,
+        "width_seconds": 0.09,
+        "count": 1233870
+      },
+      {
+        "index": 1,
+        "lower_seconds": 0.09,
+        "upper_seconds": 0.2,
+        "width_seconds": 0.11,
+        "count": 1395776
+      },
+      {
+        "index": 2,
+        "lower_seconds": 0.2,
+        "upper_seconds": 0.33,
+        "width_seconds": 0.13,
+        "count": 1398878
+      },
+      {
+        "index": 3,
+        "lower_seconds": 0.33,
+        "upper_seconds": 0.48,
+        "width_seconds": 0.15,
+        "count": 1423944
+      },
+      {
+        "index": 4,
+        "lower_seconds": 0.48,
+        "upper_seconds": 0.63,
+        "width_seconds": 0.15,
+        "count": 1297864
+      },
+      {
+        "index": 5,
+        "lower_seconds": 0.63,
+        "upper_seconds": 0.81,
+        "width_seconds": 0.18,
+        "count": 1421374
+      },
+      {
+        "index": 6,
+        "lower_seconds": 0.81,
+        "upper_seconds": 1.0,
+        "width_seconds": 0.19,
+        "count": 1362724
+      },
+      {
+        "index": 7,
+        "lower_seconds": 1.0,
+        "upper_seconds": 1.21,
+        "width_seconds": 0.21,
+        "count": 1353606
+      },
+      {
+        "index": 8,
+        "lower_seconds": 1.21,
+        "upper_seconds": 1.45,
+        "width_seconds": 0.24,
+        "count": 1395056
+      },
+      {
+        "index": 9,
+        "lower_seconds": 1.45,
+        "upper_seconds": 1.71,
+        "width_seconds": 0.26,
+        "count": 1347024
+      },
+      {
+        "index": 10,
+        "lower_seconds": 1.71,
+        "upper_seconds": 2.0,
+        "width_seconds": 0.29,
+        "count": 1351616
+      },
+      {
+        "index": 11,
+        "lower_seconds": 2.0,
+        "upper_seconds": 2.33,
+        "width_seconds": 0.33,
+        "count": 1379350
+      },
+      {
+        "index": 12,
+        "lower_seconds": 2.33,
+        "upper_seconds": 2.7,
+        "width_seconds": 0.37,
+        "count": 1358514
+      },
+      {
+        "index": 13,
+        "lower_seconds": 2.7,
+        "upper_seconds": 3.13,
+        "width_seconds": 0.43,
+        "count": 1363464
+      },
+      {
+        "index": 14,
+        "lower_seconds": 3.13,
+        "upper_seconds": 3.63,
+        "width_seconds": 0.5,
+        "count": 1376168
+      },
+      {
+        "index": 15,
+        "lower_seconds": 3.63,
+        "upper_seconds": 4.23,
+        "width_seconds": 0.6,
+        "count": 1377528
+      },
+      {
+        "index": 16,
+        "lower_seconds": 4.23,
+        "upper_seconds": 4.95,
+        "width_seconds": 0.72,
+        "count": 1358722
+      },
+      {
+        "index": 17,
+        "lower_seconds": 4.95,
+        "upper_seconds": 5.9,
+        "width_seconds": 0.95,
+        "count": 1373106
+      },
+      {
+        "index": 18,
+        "lower_seconds": 5.9,
+        "upper_seconds": 7.42,
+        "width_seconds": 1.52,
+        "count": 1365760
+      },
+      {
+        "index": 19,
+        "lower_seconds": 7.42,
+        "upper_seconds": 33.09,
+        "width_seconds": 25.67,
+        "count": 1367432
+      }
+    ]
+  },
+  "equal_width_bins": {
+    "description": "Equal-WIDTH bins -- fixed seconds-wide slices from min to max. Easy to read in plain seconds, but counts vary a lot: packed near small diffs, nearly empty far out in the tail. Kept here for comparison against the quantile bins above.",
+    "n_bins": 50,
+    "bins": [
+      {
+        "index": 0,
+        "lower_seconds": 0.0,
+        "upper_seconds": 0.6618,
+        "width_seconds": 0.6618,
+        "count": 7079102
+      },
+      {
+        "index": 1,
+        "lower_seconds": 0.6618,
+        "upper_seconds": 1.3236,
+        "width_seconds": 0.6618,
+        "count": 4526552
+      },
+      {
+        "index": 2,
+        "lower_seconds": 1.3236,
+        "upper_seconds": 1.9854,
+        "width_seconds": 0.6618,
+        "count": 3331748
+      },
+      {
+        "index": 3,
+        "lower_seconds": 1.9854,
+        "upper_seconds": 2.6472,
+        "width_seconds": 0.6618,
+        "count": 2609194
+      },
+      {
+        "index": 4,
+        "lower_seconds": 2.6472,
+        "upper_seconds": 3.309,
+        "width_seconds": 0.6618,
+        "count": 2059578
+      },
+      {
+        "index": 5,
+        "lower_seconds": 3.309,
+        "upper_seconds": 3.9708,
+        "width_seconds": 0.6618,
+        "count": 1687144
+      },
+      {
+        "index": 6,
+        "lower_seconds": 3.9708,
+        "upper_seconds": 4.6326,
+        "width_seconds": 0.6618,
+        "count": 1359404
+      },
+      {
+        "index": 7,
+        "lower_seconds": 4.6326,
+        "upper_seconds": 5.2944,
+        "width_seconds": 0.6618,
+        "count": 1096542
+      },
+      {
+        "index": 8,
+        "lower_seconds": 5.2944,
+        "upper_seconds": 5.9562,
+        "width_seconds": 0.6618,
+        "count": 891830
+      },
+      {
+        "index": 9,
+        "lower_seconds": 5.9562,
+        "upper_seconds": 6.618,
+        "width_seconds": 0.6618,
+        "count": 677854
+      },
+      {
+        "index": 10,
+        "lower_seconds": 6.618,
+        "upper_seconds": 7.2798,
+        "width_seconds": 0.6618,
+        "count": 524066
+      },
+      {
+        "index": 11,
+        "lower_seconds": 7.2798,
+        "upper_seconds": 7.9416,
+        "width_seconds": 0.6618,
+        "count": 387176
+      },
+      {
+        "index": 12,
+        "lower_seconds": 7.9416,
+        "upper_seconds": 8.6034,
+        "width_seconds": 0.6618,
+        "count": 286500
+      },
+      {
+        "index": 13,
+        "lower_seconds": 8.6034,
+        "upper_seconds": 9.2652,
+        "width_seconds": 0.6618,
+        "count": 218998
+      },
+      {
+        "index": 14,
+        "lower_seconds": 9.2652,
+        "upper_seconds": 9.927,
+        "width_seconds": 0.6618,
+        "count": 158586
+      },
+      {
+        "index": 15,
+        "lower_seconds": 9.927,
+        "upper_seconds": 10.5888,
+        "width_seconds": 0.6618,
+        "count": 108366
+      },
+      {
+        "index": 16,
+        "lower_seconds": 10.5888,
+        "upper_seconds": 11.2506,
+        "width_seconds": 0.6618,
+        "count": 77956
+      },
+      {
+        "index": 17,
+        "lower_seconds": 11.2506,
+        "upper_seconds": 11.9124,
+        "width_seconds": 0.6618,
+        "count": 55208
+      },
+      {
+        "index": 18,
+        "lower_seconds": 11.9124,
+        "upper_seconds": 12.5742,
+        "width_seconds": 0.6618,
+        "count": 42326
+      },
+      {
+        "index": 19,
+        "lower_seconds": 12.5742,
+        "upper_seconds": 13.236,
+        "width_seconds": 0.6618,
+        "count": 26888
+      },
+      {
+        "index": 20,
+        "lower_seconds": 13.236,
+        "upper_seconds": 13.8978,
+        "width_seconds": 0.6618,
+        "count": 20810
+      },
+      {
+        "index": 21,
+        "lower_seconds": 13.8978,
+        "upper_seconds": 14.5596,
+        "width_seconds": 0.6618,
+        "count": 16806
+      },
+      {
+        "index": 22,
+        "lower_seconds": 14.5596,
+        "upper_seconds": 15.2214,
+        "width_seconds": 0.6618,
+        "count": 11684
+      },
+      {
+        "index": 23,
+        "lower_seconds": 15.2214,
+        "upper_seconds": 15.8832,
+        "width_seconds": 0.6618,
+        "count": 8176
+      },
+      {
+        "index": 24,
+        "lower_seconds": 15.8832,
+        "upper_seconds": 16.545,
+        "width_seconds": 0.6618,
+        "count": 6528
+      },
+      {
+        "index": 25,
+        "lower_seconds": 16.545,
+        "upper_seconds": 17.2068,
+        "width_seconds": 0.6618,
+        "count": 5864
+      },
+      {
+        "index": 26,
+        "lower_seconds": 17.2068,
+        "upper_seconds": 17.8686,
+        "width_seconds": 0.6618,
+        "count": 4990
+      },
+      {
+        "index": 27,
+        "lower_seconds": 17.8686,
+        "upper_seconds": 18.5304,
+        "width_seconds": 0.6618,
+        "count": 3734
+      },
+      {
+        "index": 28,
+        "lower_seconds": 18.5304,
+        "upper_seconds": 19.1922,
+        "width_seconds": 0.6618,
+        "count": 2318
+      },
+      {
+        "index": 29,
+        "lower_seconds": 19.1922,
+        "upper_seconds": 19.854,
+        "width_seconds": 0.6618,
+        "count": 1888
+      },
+      {
+        "index": 30,
+        "lower_seconds": 19.854,
+        "upper_seconds": 20.5158,
+        "width_seconds": 0.6618,
+        "count": 1396
+      },
+      {
+        "index": 31,
+        "lower_seconds": 20.5158,
+        "upper_seconds": 21.1776,
+        "width_seconds": 0.6618,
+        "count": 1488
+      },
+      {
+        "index": 32,
+        "lower_seconds": 21.1776,
+        "upper_seconds": 21.8394,
+        "width_seconds": 0.6618,
+        "count": 1218
+      },
+      {
+        "index": 33,
+        "lower_seconds": 21.8394,
+        "upper_seconds": 22.5012,
+        "width_seconds": 0.6618,
+        "count": 944
+      },
+      {
+        "index": 34,
+        "lower_seconds": 22.5012,
+        "upper_seconds": 23.163,
+        "width_seconds": 0.6618,
+        "count": 1452
+      },
+      {
+        "index": 35,
+        "lower_seconds": 23.163,
+        "upper_seconds": 23.8248,
+        "width_seconds": 0.6618,
+        "count": 1524
+      },
+      {
+        "index": 36,
+        "lower_seconds": 23.8248,
+        "upper_seconds": 24.4866,
+        "width_seconds": 0.6618,
+        "count": 1464
+      },
+      {
+        "index": 37,
+        "lower_seconds": 24.4866,
+        "upper_seconds": 25.1484,
+        "width_seconds": 0.6618,
+        "count": 1442
+      },
+      {
+        "index": 38,
+        "lower_seconds": 25.1484,
+        "upper_seconds": 25.8102,
+        "width_seconds": 0.6618,
+        "count": 738
+      },
+      {
+        "index": 39,
+        "lower_seconds": 25.8102,
+        "upper_seconds": 26.472,
+        "width_seconds": 0.6618,
+        "count": 424
+      },
+      {
+        "index": 40,
+        "lower_seconds": 26.472,
+        "upper_seconds": 27.1338,
+        "width_seconds": 0.6618,
+        "count": 366
+      },
+      {
+        "index": 41,
+        "lower_seconds": 27.1338,
+        "upper_seconds": 27.7956,
+        "width_seconds": 0.6618,
+        "count": 82
+      },
+      {
+        "index": 42,
+        "lower_seconds": 27.7956,
+        "upper_seconds": 28.4574,
+        "width_seconds": 0.6618,
+        "count": 76
+      },
+      {
+        "index": 43,
+        "lower_seconds": 28.4574,
+        "upper_seconds": 29.1192,
+        "width_seconds": 0.6618,
+        "count": 84
+      },
+      {
+        "index": 44,
+        "lower_seconds": 29.1192,
+        "upper_seconds": 29.781,
+        "width_seconds": 0.6618,
+        "count": 108
+      },
+      {
+        "index": 45,
+        "lower_seconds": 29.781,
+        "upper_seconds": 30.4428,
+        "width_seconds": 0.6618,
+        "count": 156
+      },
+      {
+        "index": 46,
+        "lower_seconds": 30.4428,
+        "upper_seconds": 31.1046,
+        "width_seconds": 0.6618,
+        "count": 162
+      },
+      {
+        "index": 47,
+        "lower_seconds": 31.1046,
+        "upper_seconds": 31.7664,
+        "width_seconds": 0.6618,
+        "count": 148
+      },
+      {
+        "index": 48,
+        "lower_seconds": 31.7664,
+        "upper_seconds": 32.4282,
+        "width_seconds": 0.6618,
+        "count": 214
+      },
+      {
+        "index": 49,
+        "lower_seconds": 32.4282,
+        "upper_seconds": 33.09,
+        "width_seconds": 0.6618,
+        "count": 474
+      }
+    ]
+  }
+}
