@@ -1,0 +1,515 @@
+{
+  "xlsx": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/eval_xlsx_out/eval_enroll_test2.xlsx",
+  "ratio": 10,
+  "n_bins": 50,
+  "candidates_seen": 1224707432,
+  "candidates_discarded_out_of_range": 38,
+  "elapsed_minutes": 28.94,
+  "total_negative_rows": 273017760,
+  "upper_bound_target": 273017760,
+  "shortfall_total": 0,
+  "output_file": "/media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/negative_trials.joblib",
+  "output_size_mb": 1606.33,
+  "bins": [
+    {
+      "bin_index": 0,
+      "lower_seconds": 0.0,
+      "upper_seconds": 0.6618,
+      "positive_count": 7079102,
+      "target_negative_count": 70791020,
+      "actual_negative_count": 70791020,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 303062366
+    },
+    {
+      "bin_index": 1,
+      "lower_seconds": 0.6618,
+      "upper_seconds": 1.3236,
+      "positive_count": 4526552,
+      "target_negative_count": 45265520,
+      "actual_negative_count": 45265520,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 197644798
+    },
+    {
+      "bin_index": 2,
+      "lower_seconds": 1.3236,
+      "upper_seconds": 1.9854,
+      "positive_count": 3331748,
+      "target_negative_count": 33317480,
+      "actual_negative_count": 33317480,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 148005640
+    },
+    {
+      "bin_index": 3,
+      "lower_seconds": 1.9854,
+      "upper_seconds": 2.6472,
+      "positive_count": 2609194,
+      "target_negative_count": 26091940,
+      "actual_negative_count": 26091940,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 116712396
+    },
+    {
+      "bin_index": 4,
+      "lower_seconds": 2.6472,
+      "upper_seconds": 3.309,
+      "positive_count": 2059578,
+      "target_negative_count": 20595780,
+      "actual_negative_count": 20595780,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 93947560
+    },
+    {
+      "bin_index": 5,
+      "lower_seconds": 3.309,
+      "upper_seconds": 3.9708,
+      "positive_count": 1687144,
+      "target_negative_count": 16871440,
+      "actual_negative_count": 16871440,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 78354346
+    },
+    {
+      "bin_index": 6,
+      "lower_seconds": 3.9708,
+      "upper_seconds": 4.6326,
+      "positive_count": 1359404,
+      "target_negative_count": 13594040,
+      "actual_negative_count": 13594040,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 63412228
+    },
+    {
+      "bin_index": 7,
+      "lower_seconds": 4.6326,
+      "upper_seconds": 5.2944,
+      "positive_count": 1096542,
+      "target_negative_count": 10965420,
+      "actual_negative_count": 10965420,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 52148418
+    },
+    {
+      "bin_index": 8,
+      "lower_seconds": 5.2944,
+      "upper_seconds": 5.9562,
+      "positive_count": 891830,
+      "target_negative_count": 8918300,
+      "actual_negative_count": 8918300,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 42235732
+    },
+    {
+      "bin_index": 9,
+      "lower_seconds": 5.9562,
+      "upper_seconds": 6.618,
+      "positive_count": 677854,
+      "target_negative_count": 6778540,
+      "actual_negative_count": 6778540,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 32566604
+    },
+    {
+      "bin_index": 10,
+      "lower_seconds": 6.618,
+      "upper_seconds": 7.2798,
+      "positive_count": 524066,
+      "target_negative_count": 5240660,
+      "actual_negative_count": 5240660,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 25466392
+    },
+    {
+      "bin_index": 11,
+      "lower_seconds": 7.2798,
+      "upper_seconds": 7.9416,
+      "positive_count": 387176,
+      "target_negative_count": 3871760,
+      "actual_negative_count": 3871760,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 19081816
+    },
+    {
+      "bin_index": 12,
+      "lower_seconds": 7.9416,
+      "upper_seconds": 8.6034,
+      "positive_count": 286500,
+      "target_negative_count": 2865000,
+      "actual_negative_count": 2865000,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 13939582
+    },
+    {
+      "bin_index": 13,
+      "lower_seconds": 8.6034,
+      "upper_seconds": 9.2652,
+      "positive_count": 218998,
+      "target_negative_count": 2189980,
+      "actual_negative_count": 2189980,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 10599346
+    },
+    {
+      "bin_index": 14,
+      "lower_seconds": 9.2652,
+      "upper_seconds": 9.927,
+      "positive_count": 158586,
+      "target_negative_count": 1585860,
+      "actual_negative_count": 1585860,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 7866742
+    },
+    {
+      "bin_index": 15,
+      "lower_seconds": 9.927,
+      "upper_seconds": 10.5888,
+      "positive_count": 108366,
+      "target_negative_count": 1083660,
+      "actual_negative_count": 1083660,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 5392480
+    },
+    {
+      "bin_index": 16,
+      "lower_seconds": 10.5888,
+      "upper_seconds": 11.2506,
+      "positive_count": 77956,
+      "target_negative_count": 779560,
+      "actual_negative_count": 779560,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 3788368
+    },
+    {
+      "bin_index": 17,
+      "lower_seconds": 11.2506,
+      "upper_seconds": 11.9124,
+      "positive_count": 55208,
+      "target_negative_count": 552080,
+      "actual_negative_count": 552080,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 2506550
+    },
+    {
+      "bin_index": 18,
+      "lower_seconds": 11.9124,
+      "upper_seconds": 12.5742,
+      "positive_count": 42326,
+      "target_negative_count": 423260,
+      "actual_negative_count": 423260,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 1918396
+    },
+    {
+      "bin_index": 19,
+      "lower_seconds": 12.5742,
+      "upper_seconds": 13.236,
+      "positive_count": 26888,
+      "target_negative_count": 268880,
+      "actual_negative_count": 268880,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 1317304
+    },
+    {
+      "bin_index": 20,
+      "lower_seconds": 13.236,
+      "upper_seconds": 13.8978,
+      "positive_count": 20810,
+      "target_negative_count": 208100,
+      "actual_negative_count": 208100,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 1020198
+    },
+    {
+      "bin_index": 21,
+      "lower_seconds": 13.8978,
+      "upper_seconds": 14.5596,
+      "positive_count": 16806,
+      "target_negative_count": 168060,
+      "actual_negative_count": 168060,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 820746
+    },
+    {
+      "bin_index": 22,
+      "lower_seconds": 14.5596,
+      "upper_seconds": 15.2214,
+      "positive_count": 11684,
+      "target_negative_count": 116840,
+      "actual_negative_count": 116840,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 567252
+    },
+    {
+      "bin_index": 23,
+      "lower_seconds": 15.2214,
+      "upper_seconds": 15.8832,
+      "positive_count": 8176,
+      "target_negative_count": 81760,
+      "actual_negative_count": 81760,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 401644
+    },
+    {
+      "bin_index": 24,
+      "lower_seconds": 15.8832,
+      "upper_seconds": 16.545,
+      "positive_count": 6528,
+      "target_negative_count": 65280,
+      "actual_negative_count": 65280,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 328964
+    },
+    {
+      "bin_index": 25,
+      "lower_seconds": 16.545,
+      "upper_seconds": 17.2068,
+      "positive_count": 5864,
+      "target_negative_count": 58640,
+      "actual_negative_count": 58640,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 266162
+    },
+    {
+      "bin_index": 26,
+      "lower_seconds": 17.2068,
+      "upper_seconds": 17.8686,
+      "positive_count": 4990,
+      "target_negative_count": 49900,
+      "actual_negative_count": 49900,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 265964
+    },
+    {
+      "bin_index": 27,
+      "lower_seconds": 17.8686,
+      "upper_seconds": 18.5304,
+      "positive_count": 3734,
+      "target_negative_count": 37340,
+      "actual_negative_count": 37340,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 202104
+    },
+    {
+      "bin_index": 28,
+      "lower_seconds": 18.5304,
+      "upper_seconds": 19.1922,
+      "positive_count": 2318,
+      "target_negative_count": 23180,
+      "actual_negative_count": 23180,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 130138
+    },
+    {
+      "bin_index": 29,
+      "lower_seconds": 19.1922,
+      "upper_seconds": 19.854,
+      "positive_count": 1888,
+      "target_negative_count": 18880,
+      "actual_negative_count": 18880,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 101652
+    },
+    {
+      "bin_index": 30,
+      "lower_seconds": 19.854,
+      "upper_seconds": 20.5158,
+      "positive_count": 1396,
+      "target_negative_count": 13960,
+      "actual_negative_count": 13960,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 74624
+    },
+    {
+      "bin_index": 31,
+      "lower_seconds": 20.5158,
+      "upper_seconds": 21.1776,
+      "positive_count": 1488,
+      "target_negative_count": 14880,
+      "actual_negative_count": 14880,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 77946
+    },
+    {
+      "bin_index": 32,
+      "lower_seconds": 21.1776,
+      "upper_seconds": 21.8394,
+      "positive_count": 1218,
+      "target_negative_count": 12180,
+      "actual_negative_count": 12180,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 51288
+    },
+    {
+      "bin_index": 33,
+      "lower_seconds": 21.8394,
+      "upper_seconds": 22.5012,
+      "positive_count": 944,
+      "target_negative_count": 9440,
+      "actual_negative_count": 9440,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 42892
+    },
+    {
+      "bin_index": 34,
+      "lower_seconds": 22.5012,
+      "upper_seconds": 23.163,
+      "positive_count": 1452,
+      "target_negative_count": 14520,
+      "actual_negative_count": 14520,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 63730
+    },
+    {
+      "bin_index": 35,
+      "lower_seconds": 23.163,
+      "upper_seconds": 23.8248,
+      "positive_count": 1524,
+      "target_negative_count": 15240,
+      "actual_negative_count": 15240,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 66184
+    },
+    {
+      "bin_index": 36,
+      "lower_seconds": 23.8248,
+      "upper_seconds": 24.4866,
+      "positive_count": 1464,
+      "target_negative_count": 14640,
+      "actual_negative_count": 14640,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 64076
+    },
+    {
+      "bin_index": 37,
+      "lower_seconds": 24.4866,
+      "upper_seconds": 25.1484,
+      "positive_count": 1442,
+      "target_negative_count": 14420,
+      "actual_negative_count": 14420,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 51238
+    },
+    {
+      "bin_index": 38,
+      "lower_seconds": 25.1484,
+      "upper_seconds": 25.8102,
+      "positive_count": 738,
+      "target_negative_count": 7380,
+      "actual_negative_count": 7380,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 27202
+    },
+    {
+      "bin_index": 39,
+      "lower_seconds": 25.8102,
+      "upper_seconds": 26.472,
+      "positive_count": 424,
+      "target_negative_count": 4240,
+      "actual_negative_count": 4240,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 14200
+    },
+    {
+      "bin_index": 40,
+      "lower_seconds": 26.472,
+      "upper_seconds": 27.1338,
+      "positive_count": 366,
+      "target_negative_count": 3660,
+      "actual_negative_count": 3660,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 12080
+    },
+    {
+      "bin_index": 41,
+      "lower_seconds": 27.1338,
+      "upper_seconds": 27.7956,
+      "positive_count": 82,
+      "target_negative_count": 820,
+      "actual_negative_count": 820,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 5888
+    },
+    {
+      "bin_index": 42,
+      "lower_seconds": 27.7956,
+      "upper_seconds": 28.4574,
+      "positive_count": 76,
+      "target_negative_count": 760,
+      "actual_negative_count": 760,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 7228
+    },
+    {
+      "bin_index": 43,
+      "lower_seconds": 28.4574,
+      "upper_seconds": 29.1192,
+      "positive_count": 84,
+      "target_negative_count": 840,
+      "actual_negative_count": 840,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 9074
+    },
+    {
+      "bin_index": 44,
+      "lower_seconds": 29.1192,
+      "upper_seconds": 29.781,
+      "positive_count": 108,
+      "target_negative_count": 1080,
+      "actual_negative_count": 1080,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 12746
+    },
+    {
+      "bin_index": 45,
+      "lower_seconds": 29.781,
+      "upper_seconds": 30.4428,
+      "positive_count": 156,
+      "target_negative_count": 1560,
+      "actual_negative_count": 1560,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 16838
+    },
+    {
+      "bin_index": 46,
+      "lower_seconds": 30.4428,
+      "upper_seconds": 31.1046,
+      "positive_count": 162,
+      "target_negative_count": 1620,
+      "actual_negative_count": 1620,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 11684
+    },
+    {
+      "bin_index": 47,
+      "lower_seconds": 31.1046,
+      "upper_seconds": 31.7664,
+      "positive_count": 148,
+      "target_negative_count": 1480,
+      "actual_negative_count": 1480,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 9844
+    },
+    {
+      "bin_index": 48,
+      "lower_seconds": 31.7664,
+      "upper_seconds": 32.4282,
+      "positive_count": 214,
+      "target_negative_count": 2140,
+      "actual_negative_count": 2140,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 5898
+    },
+    {
+      "bin_index": 49,
+      "lower_seconds": 32.4282,
+      "upper_seconds": 33.09,
+      "positive_count": 474,
+      "target_negative_count": 4740,
+      "actual_negative_count": 4740,
+      "shortfall": 0,
+      "candidates_seen_for_this_bin": 10846
+    }
+  ]
+}

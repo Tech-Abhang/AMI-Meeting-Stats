@@ -1,3 +1,4 @@
 audio/
 annotations/
 positive_trials.csv
+negative_trials.joblib
