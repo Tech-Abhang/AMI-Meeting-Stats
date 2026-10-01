@@ -3,3 +3,5 @@ annotations/
 positive_trials.csv
 negative_trials.joblib
 negative_trials_v2.joblib
+*.parquet
+*.joblib
