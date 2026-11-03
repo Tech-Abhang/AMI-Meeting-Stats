@@ -82,6 +82,7 @@ import argparse
 import csv
 import sys
 import time
+from collections import deque
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -110,15 +111,59 @@ def load_path_lookup(path_lookup_csv):
     return id_to_path_list
 
 
-def load_wav(path, np, librosa):
+def load_wav(path, np, librosa, tile_min_samples=0):
     """Same preprocessing as the reference notebook's load_timit_wav:
-    mono, 16kHz, DC-offset removed, peak-normalized to just under 1.0."""
+    mono, 16kHz, DC-offset removed, peak-normalized to just under 1.0.
+
+    tile_min_samples > 0 (EXPERIMENTAL, off by default): clips shorter than
+    this are repeated end-to-end until they reach it, so ECAPA's pooling sees
+    a longer signal. Only touches the embedding input; trials are untouched."""
     audio, _ = librosa.load(str(path), sr=16000, mono=True)
     audio = audio - np.mean(audio)
     peak = np.max(np.abs(audio))
     if peak > 0:
         audio = audio / (1.01 * peak)
+    if tile_min_samples > 0 and 0 < len(audio) < tile_min_samples:
+        reps = -(-tile_min_samples // len(audio))  # ceil
+        audio = np.tile(audio, reps)[:tile_min_samples]
     return audio
+
+
+def guess_duration_s(stored_path, audio_root):
+    """Seconds, from the filename's trailing 'begin-end' in centiseconds
+    (e.g. ..._h03_0000408-0000459.wav = 0.51 s). Free: no disk access.
+    Falls back to file size (16-bit mono 16 kHz = 32000 bytes/s) if the
+    name doesn't parse."""
+    stem = Path(stored_path).stem
+    try:
+        b, e = stem.rsplit("_", 1)[-1].split("-")
+        d = (int(e) - int(b)) / 100.0
+        if d > 0:
+            return d
+    except Exception:
+        pass
+    try:
+        return max(_resolve_path(audio_root, stored_path).stat().st_size - 44, 0) / 32000.0
+    except Exception:
+        return 0.0
+
+
+def plan_batches(ids, durations, max_items, max_batch_seconds):
+    """Sort ids by duration, then greedily cut batches so that
+    (items x longest clip in batch) <= max_batch_seconds and items <= max_items.
+    Neighbours in sorted order have near-identical length, so padding is
+    close to zero -- that is the whole point."""
+    order = sorted(ids, key=lambda i: durations[i])
+    batches, cur = [], []
+    for i in order:
+        d = max(durations[i], 0.05)
+        if cur and (len(cur) >= max_items or (len(cur) + 1) * d > max_batch_seconds):
+            batches.append(cur)
+            cur = []
+        cur.append(i)
+    if cur:
+        batches.append(cur)
+    return batches
 
 
 def main():
@@ -146,7 +191,21 @@ def main():
                      help="Run the model on this many real files before "
                           "committing to the full set. 0 to skip.")
     ap.add_argument("--progress-every", type=int, default=2000)
+    ap.add_argument("--sort-by-length", action="store_true",
+                     help="FIX 1: batch files of near-identical length together "
+                          "(duration read from the filename) so there is almost no "
+                          "zero-padding. Output order is still by file id.")
+    ap.add_argument("--max-batch-seconds", type=float, default=240.0,
+                     help="With --sort-by-length: cap on (items x longest clip) per "
+                          "batch. Keeps long-clip batches inside GPU memory.")
+    ap.add_argument("--tile-min-seconds", type=float, default=0.0,
+                     help="EXPERIMENTAL: repeat clips shorter than this many seconds "
+                          "until they reach it (e.g. 2.0). 0 = off. Write to a "
+                          "DIFFERENT --out so you can compare against the plain run.")
+    ap.add_argument("--prefetch", type=int, default=3,
+                     help="Batches loaded ahead of the GPU.")
     args = ap.parse_args()
+    tile_samples = int(args.tile_min_seconds * 16000)
 
     lookup_path = Path(args.path_lookup_csv)
     audio_root = Path(args.audio_root)
@@ -239,6 +298,8 @@ def main():
     errors = []
     t0 = time.time()
     n_processed = 0
+    last_ckpt = 0
+    padded_sec = real_sec = 0.0  # to report how much padding was actually used
 
     def save_checkpoint():
         np.save(out_path, embeddings)
@@ -246,57 +307,83 @@ def main():
 
     def _try_load(fid):
         try:
-            wav = load_wav(_resolve_path(audio_root, id_to_path[fid]), np, librosa)
+            wav = load_wav(_resolve_path(audio_root, id_to_path[fid]), np, librosa, tile_samples)
             return fid, torch.tensor(wav, dtype=torch.float32), None
         except Exception as e:
             return fid, None, str(e)
 
-    pool = ThreadPoolExecutor(max_workers=args.workers)
+    # ---- plan the batches ----
+    if args.sort_by_length:
+        durs = {fid: max(guess_duration_s(id_to_path[fid], audio_root), args.tile_min_seconds)
+                for fid in todo}
+        batches = plan_batches(todo, durs, args.batch_size, args.max_batch_seconds)
+        d = np.array([durs[f] for f in todo])
+        print(f"Length-sorted batching: {len(batches):,} batches. Clip length "
+              f"min/median/max = {d.min():.2f}/{np.median(d):.2f}/{d.max():.2f} s.",
+              file=sys.stderr)
+    else:
+        batches = [todo[i:i + args.batch_size] for i in range(0, len(todo), args.batch_size)]
+        print(f"Plain id-order batching: {len(batches):,} batches (padding NOT minimised).",
+              file=sys.stderr)
+    if args.tile_min_seconds > 0:
+        print(f"EXPERIMENTAL: tiling clips shorter than {args.tile_min_seconds}s.", file=sys.stderr)
 
-    for batch_start in range(0, len(todo), args.batch_size):
-        batch_ids = todo[batch_start:batch_start + args.batch_size]
-        # Load+decode this batch's files concurrently (I/O + librosa decode
-        # release the GIL for most of their work, so threads genuinely help
-        # here) instead of one file at a time.
+    pool = ThreadPoolExecutor(max_workers=args.workers)
+    pending = deque()
+    batch_iter = iter(batches)
+
+    def _enqueue():
+        nxt = next(batch_iter, None)
+        if nxt is not None:
+            pending.append((nxt, [pool.submit(_try_load, f) for f in nxt]))
+
+    for _ in range(max(1, args.prefetch)):
+        _enqueue()
+
+    while pending:
+        batch_ids, futs = pending.popleft()
+        _enqueue()  # keep the loader ahead of the GPU
+
         waveforms, ok_ids = [], []
-        for fid, wav_t, err in pool.map(_try_load, batch_ids):
+        for fu in futs:
+            fid, wav_t, err = fu.result()
             if err is None:
                 waveforms.append(wav_t)
                 ok_ids.append(fid)
             else:
                 errors.append((fid, id_to_path[fid], err))
 
-        if not waveforms:
-            continue
-
-        try:
-            max_len = max(len(w) for w in waveforms)
-            padded = torch.stack([F.pad(w, (0, max_len - len(w))) for w in waveforms])
-            # relative lengths (0-1 fraction of max_len) -- SpeechBrain's
-            # documented convention, see module docstring
-            rel_lens = torch.tensor([len(w) / max_len for w in waveforms], dtype=torch.float32)
-            with torch.no_grad():
-                emb_batch = spk_model.encode_batch(padded.to(args.device), wav_lens=rel_lens.to(args.device))
-            emb_batch = emb_batch.squeeze(1).cpu().numpy()
-            for fid, emb in zip(ok_ids, emb_batch):
-                embeddings[fid] = emb
-                done[fid] = True
-        except Exception as e:
-            # whole batch failed -- fall back to one file at a time so a
-            # single bad file doesn't lose the rest of the batch
-            for fid in ok_ids:
-                try:
-                    wav = load_wav(_resolve_path(audio_root, id_to_path[fid]), np, librosa)
-                    wav_t = torch.tensor(wav, dtype=torch.float32).unsqueeze(0).to(args.device)
-                    with torch.no_grad():
-                        emb = spk_model.encode_batch(wav_t).squeeze().cpu().numpy()
+        if waveforms:
+            try:
+                max_len = max(len(w) for w in waveforms)
+                padded = torch.stack([F.pad(w, (0, max_len - len(w))) for w in waveforms])
+                # relative lengths (0-1 fraction of max_len), SpeechBrain convention
+                rel_lens = torch.tensor([len(w) / max_len for w in waveforms], dtype=torch.float32)
+                with torch.no_grad():
+                    emb_batch = spk_model.encode_batch(padded.to(args.device),
+                                                       wav_lens=rel_lens.to(args.device))
+                emb_batch = emb_batch.squeeze(1).cpu().numpy()
+                for fid, emb in zip(ok_ids, emb_batch):
                     embeddings[fid] = emb
                     done[fid] = True
-                except Exception as e2:
-                    errors.append((fid, id_to_path[fid], str(e2)))
+                padded_sec += max_len * len(waveforms) / 16000.0
+                real_sec += sum(len(w) for w in waveforms) / 16000.0
+            except Exception as e:
+                # whole batch failed -- fall back to one file at a time
+                for fid in ok_ids:
+                    try:
+                        wav = load_wav(_resolve_path(audio_root, id_to_path[fid]), np, librosa, tile_samples)
+                        wav_t = torch.tensor(wav, dtype=torch.float32).unsqueeze(0).to(args.device)
+                        with torch.no_grad():
+                            emb = spk_model.encode_batch(wav_t).squeeze().cpu().numpy()
+                        embeddings[fid] = emb
+                        done[fid] = True
+                    except Exception as e2:
+                        errors.append((fid, id_to_path[fid], str(e2)))
 
         n_processed += len(batch_ids)
-        if n_processed % args.progress_every < args.batch_size:
+        if n_processed - last_ckpt >= args.progress_every:
+            last_ckpt = n_processed
             elapsed = time.time() - t0
             rate = n_processed / elapsed if elapsed > 0 else 0
             remaining = (len(todo) - n_processed) / rate if rate > 0 else float("inf")
@@ -315,6 +402,9 @@ def main():
     elapsed_total = time.time() - t0
     print(f"\nDone. {n_processed:,} files attempted in {elapsed_total/60:.1f} minutes. "
           f"{len(errors)} errored.", file=sys.stderr)
+    if real_sec > 0:
+        print(f"Padding used: {100*(padded_sec-real_sec)/padded_sec:.1f}% of all samples fed to "
+              f"the model were zeros.", file=sys.stderr)
     print(f"Saved: {out_path.resolve()}  (shape {embeddings.shape})", file=sys.stderr)
     print(f"Saved: {done_path.resolve()}", file=sys.stderr)
     if errors:
