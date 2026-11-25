@@ -1,0 +1,337 @@
+104,748 file ids.
+Total audio in lookup: 71.7 h.
+
+Loading ReDimNet b6 / vox2 / ft_lm on cuda:0 ...
+Using cache found in /home/iiitd/.cache/torch/hub/IDRnD_ReDimNet_master
+  15,015,473 parameters.
+Embedding dimension: 192
+0 already done, 104,748 to do.
+2,797 same-length batches.
+  ... 2,025/104,748  35.2 files/s  ~48.6 min left
+  ... 4,067/104,748  34.6 files/s  ~48.5 min left
+  ... 6,075/104,748  34.7 files/s  ~47.4 min left
+  ... 8,129/104,748  34.9 files/s  ~46.1 min left
+  ... 10,165/104,748  35.2 files/s  ~44.8 min left
+  ... 12,166/104,748  35.5 files/s  ~43.4 min left
+  ... 14,185/104,748  35.6 files/s  ~42.4 min left
+  ... 16,240/104,748  35.8 files/s  ~41.3 min left
+  ... 18,283/104,748  35.8 files/s  ~40.2 min left
+  ... 20,337/104,748  35.8 files/s  ~39.3 min left
+  ... 22,344/104,748  35.9 files/s  ~38.3 min left
+  ... 24,394/104,748  35.2 files/s  ~38.0 min left
+  ... 26,433/104,748  34.8 files/s  ~37.6 min left
+  ... 28,440/104,748  34.3 files/s  ~37.1 min left
+  ... 30,447/104,748  34.0 files/s  ~36.4 min left
+  ... 32,497/104,748  33.7 files/s  ~35.7 min left
+  ... 34,497/104,748  33.6 files/s  ~34.9 min left
+  ... 36,558/104,748  33.5 files/s  ~33.9 min left
+  ... 38,574/104,748  33.7 files/s  ~32.8 min left
+  ... 40,583/104,748  33.8 files/s  ~31.6 min left
+  ... 42,618/104,748  33.9 files/s  ~30.5 min left
+  ... 44,655/104,748  34.0 files/s  ~29.4 min left
+  ... 46,686/104,748  34.1 files/s  ~28.4 min left
+  ... 48,739/104,748  34.2 files/s  ~27.3 min left
+  ... 50,765/104,748  34.3 files/s  ~26.2 min left
+  ... 52,794/104,748  34.3 files/s  ~25.2 min left
+  ... 54,849/104,748  34.3 files/s  ~24.3 min left
+  ... 56,908/104,748  34.2 files/s  ~23.3 min left
+  ... 58,957/104,748  34.1 files/s  ~22.3 min left
+  ... 60,982/104,748  34.1 files/s  ~21.4 min left
+  ... 62,992/104,748  33.9 files/s  ~20.5 min left
+  ... 64,992/104,748  33.7 files/s  ~19.6 min left
+  ... 67,017/104,748  33.5 files/s  ~18.8 min left
+  ... 69,018/104,748  33.3 files/s  ~17.9 min left
+  ... 71,059/104,748  32.9 files/s  ~17.1 min left
+  ... 73,099/104,748  32.6 files/s  ~16.2 min left
+  ... 75,132/104,748  32.1 files/s  ~15.4 min left
+  ... 77,166/104,748  31.7 files/s  ~14.5 min left
+  ... 79,180/104,748  31.2 files/s  ~13.7 min left
+  ... 81,185/104,748  30.7 files/s  ~12.8 min left
+  ... 83,190/104,748  30.1 files/s  ~12.0 min left
+  ... 85,193/104,748  29.7 files/s  ~11.0 min left
+  ... 87,200/104,748  27.5 files/s  ~10.6 min left
+  ... 89,206/104,748  27.1 files/s  ~9.5 min left
+  ... 91,219/104,748  25.7 files/s  ~8.8 min left
+  ... 93,245/104,748  25.0 files/s  ~7.7 min left
+  ... 95,262/104,748  24.6 files/s  ~6.4 min left
+  ... 97,270/104,748  22.6 files/s  ~5.5 min left
+  ... 99,290/104,748  21.6 files/s  ~4.2 min left
+  ... 101,305/104,748  20.3 files/s  ~2.8 min left
+  ... 103,310/104,748  19.4 files/s  ~1.2 min left
+
+Done: 104,748 files in 94.5 min, 4 failed. Padding used: 0.0% (exact-length batches; 663 files differed by a sample from their filename length and were batched separately).
+Saved /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/embeddings_redimnet_b6_vox2_ft_lm.npy (104748, 192) and /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/embeddings_redimnet_b6_vox2_ft_lm_done.npy
+Errors -> redimnet_b6/embeddings_errors.csv
+Loading redimnet_b6/embeddings_redimnet_b6_vox2_ft_lm.npy / redimnet_b6/embeddings_redimnet_b6_vox2_ft_lm_done.npy ...
+  104,748 file ids, embedding dim 192, 104,744 with a real embedding (4 missing/errored).
+
+Loading encoded_trials/path_lookup.csv ...
+  104,748 paths.
+
+Loading encoded_trials/positive_trials.parquet ...
+  27,301,776 rows. Columns: ['enroll_id', 'test_id', 'duration_diff_cs']
+  enroll='enroll_id', test='test_id' (key_type=id)
+
+Scoring positive trials ...
+  [positive] 5,000,000/27,301,776 rows scored (180,087 rows/s)
+  [positive] 10,000,000/27,301,776 rows scored (194,854 rows/s)
+  [positive] 15,000,000/27,301,776 rows scored (218,456 rows/s)
+  [positive] 20,000,000/27,301,776 rows scored (237,982 rows/s)
+  [positive] 25,000,000/27,301,776 rows scored (248,374 rows/s)
+  [positive] 27,301,776/27,301,776 rows scored (262,693 rows/s)
+  [positive] done. 1,064/27,301,776 rows are NaN (enroll or test file had no embedding).
+  saved /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/positive_cosine_scores.npy
+
+Loading encoded_trials/negative_trials_v2.joblib ...
+  273,017,760 rows. Columns: ['enroll_path', 'test_path', 'duration_diff']
+  enroll='enroll_path', test='test_path' (key_type=path)
+
+Scoring negative trials ...
+  [negative] 5,000,000/273,017,760 rows scored (194,632 rows/s)
+  [negative] 10,000,000/273,017,760 rows scored (207,465 rows/s)
+  [negative] 15,000,000/273,017,760 rows scored (238,711 rows/s)
+  [negative] 20,000,000/273,017,760 rows scored (251,188 rows/s)
+  [negative] 25,000,000/273,017,760 rows scored (263,050 rows/s)
+  [negative] 30,000,000/273,017,760 rows scored (279,486 rows/s)
+  [negative] 35,000,000/273,017,760 rows scored (286,239 rows/s)
+  [negative] 40,000,000/273,017,760 rows scored (291,447 rows/s)
+  [negative] 45,000,000/273,017,760 rows scored (301,404 rows/s)
+  [negative] 50,000,000/273,017,760 rows scored (305,556 rows/s)
+  [negative] 55,000,000/273,017,760 rows scored (307,962 rows/s)
+  [negative] 60,000,000/273,017,760 rows scored (314,698 rows/s)
+  [negative] 65,000,000/273,017,760 rows scored (316,832 rows/s)
+  [negative] 70,000,000/273,017,760 rows scored (318,299 rows/s)
+  [negative] 75,000,000/273,017,760 rows scored (323,506 rows/s)
+  [negative] 80,000,000/273,017,760 rows scored (324,917 rows/s)
+  [negative] 85,000,000/273,017,760 rows scored (325,788 rows/s)
+  [negative] 90,000,000/273,017,760 rows scored (329,692 rows/s)
+  [negative] 95,000,000/273,017,760 rows scored (330,524 rows/s)
+  [negative] 100,000,000/273,017,760 rows scored (331,010 rows/s)
+  [negative] 105,000,000/273,017,760 rows scored (334,352 rows/s)
+  [negative] 110,000,000/273,017,760 rows scored (335,011 rows/s)
+  [negative] 115,000,000/273,017,760 rows scored (335,215 rows/s)
+  [negative] 120,000,000/273,017,760 rows scored (337,914 rows/s)
+  [negative] 125,000,000/273,017,760 rows scored (337,785 rows/s)
+  [negative] 130,000,000/273,017,760 rows scored (337,972 rows/s)
+  [negative] 135,000,000/273,017,760 rows scored (340,457 rows/s)
+  [negative] 140,000,000/273,017,760 rows scored (340,520 rows/s)
+  [negative] 145,000,000/273,017,760 rows scored (340,671 rows/s)
+  [negative] 150,000,000/273,017,760 rows scored (342,411 rows/s)
+  [negative] 155,000,000/273,017,760 rows scored (342,596 rows/s)
+  [negative] 160,000,000/273,017,760 rows scored (342,629 rows/s)
+  [negative] 165,000,000/273,017,760 rows scored (344,474 rows/s)
+  [negative] 170,000,000/273,017,760 rows scored (344,598 rows/s)
+  [negative] 175,000,000/273,017,760 rows scored (344,535 rows/s)
+  [negative] 180,000,000/273,017,760 rows scored (345,956 rows/s)
+  [negative] 185,000,000/273,017,760 rows scored (345,568 rows/s)
+  [negative] 190,000,000/273,017,760 rows scored (345,369 rows/s)
+  [negative] 195,000,000/273,017,760 rows scored (346,919 rows/s)
+  [negative] 200,000,000/273,017,760 rows scored (346,883 rows/s)
+  [negative] 205,000,000/273,017,760 rows scored (346,688 rows/s)
+  [negative] 210,000,000/273,017,760 rows scored (347,959 rows/s)
+  [negative] 215,000,000/273,017,760 rows scored (347,939 rows/s)
+  [negative] 220,000,000/273,017,760 rows scored (347,834 rows/s)
+  [negative] 225,000,000/273,017,760 rows scored (349,138 rows/s)
+  [negative] 230,000,000/273,017,760 rows scored (348,895 rows/s)
+  [negative] 235,000,000/273,017,760 rows scored (348,813 rows/s)
+  [negative] 240,000,000/273,017,760 rows scored (350,058 rows/s)
+  [negative] 245,000,000/273,017,760 rows scored (349,763 rows/s)
+  [negative] 250,000,000/273,017,760 rows scored (349,867 rows/s)
+  [negative] 255,000,000/273,017,760 rows scored (350,989 rows/s)
+  [negative] 260,000,000/273,017,760 rows scored (350,936 rows/s)
+  [negative] 265,000,000/273,017,760 rows scored (350,878 rows/s)
+  [negative] 270,000,000/273,017,760 rows scored (351,887 rows/s)
+  [negative] 273,017,760/273,017,760 rows scored (353,707 rows/s)
+  [negative] done. 17,430/273,017,760 rows are NaN (enroll or test file had no embedding).
+  saved /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/negative_cosine_scores.npy
+
+All done. These two .npy files are score arrays ALIGNED BY ROW POSITION to positive_trials.parquet and negative_trials_v2.joblib -- don't reorder or filter those tables without regenerating these.
+Loading encoded_trials/path_lookup.csv ...
+  104,748 ids.
+
+Loading redimnet_b6/positive_cosine_scores.npy / redimnet_b6/negative_cosine_scores.npy ...
+
+Loading test-file column from encoded_trials/positive_trials.parquet ...
+Loading test-file column from encoded_trials/negative_trials_v2.joblib ...
+  overall     Target=27,300,712  Non-Target=273,000,330  EER=25.16%
+  ihm_ihm     Target=13,650,356  Non-Target=136,500,189  EER=19.77%
+  ihm_sdm     Target=13,650,356  Non-Target=136,500,141  EER=29.88%
+  saved /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/eer_overall.png
+  saved /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/eer_ihm_ihm.png
+  saved /media/iiitd/My Passport Sachin/PhoneBus/data/AMI_Meeting_Corpus/redimnet_b6/eer_ihm_sdm.png
+
+Summary: overall EER=25.16%, ihm-ihm EER=19.77%, ihm-sdm EER=29.88%
+
+104,748 files. Unparseable durations: 0. Clip length median 1.54s; <1s: 37%, 1-2s: 20%, 2-4s: 21%, >=4s: 21% of files
+
+Positive trials ...
+Negative trials ...
+Score range used for histograms: [-0.278, 0.872]
+
+Binning positive scores ...
+    20,000,000/27,301,776
+    27,301,776/27,301,776
+Binning negative scores ...
+    20,000,000/273,017,760
+    40,000,000/273,017,760
+    60,000,000/273,017,760
+    80,000,000/273,017,760
+    100,000,000/273,017,760
+    120,000,000/273,017,760
+    140,000,000/273,017,760
+    160,000,000/273,017,760
+    180,000,000/273,017,760
+    200,000,000/273,017,760
+    220,000,000/273,017,760
+    240,000,000/273,017,760
+    260,000,000/273,017,760
+    273,017,760/273,017,760
+
+Saved redimnet_b6/eer_by_duration.csv and redimnet_b6/eer_by_duration.png
+
+mic       shorter clip     #genuine     #impostor      EER  med.genuine  med.impostor
+ihm_ihm            <1s    8,158,709    82,158,190   24.99%        0.245         0.071
+ihm_sdm            <1s    8,158,709    82,160,385   35.41%        0.149         0.059
+overall            <1s   16,317,418   164,318,575   30.62%        0.196         0.065
+ihm_ihm           1-2s    2,929,138    28,845,276    9.59%        0.460         0.080
+ihm_sdm           1-2s    2,929,138    28,845,040   21.96%        0.318         0.071
+overall           1-2s    5,858,276    57,690,316   16.36%        0.395         0.076
+ihm_ihm           2-4s    1,891,524    18,836,257    3.82%        0.612         0.087
+ihm_sdm           2-4s    1,891,524    18,835,040   11.44%        0.498         0.080
+overall           2-4s    3,783,048    37,671,297    7.92%        0.557         0.083
+ihm_ihm           >=4s      670,985     6,660,466    1.49%        0.721         0.088
+ihm_sdm           >=4s      670,985     6,659,676    4.38%        0.630         0.083
+overall           >=4s    1,341,970    13,320,142    2.99%        0.676         0.086
+overall            ALL   27,300,712   273,000,330   25.16%        0.284         0.070
+104,748 files, 0 with unparseable duration.
+
+Loading positive trials ...
+Loading negative trials ...
+Score range for histograms: [-0.278, 0.872]
+
+Binning positive scores ...
+    20,000,000/27,301,776
+    27,301,776/27,301,776
+Binning negative scores ...
+    20,000,000/273,017,760
+    40,000,000/273,017,760
+    60,000,000/273,017,760
+    80,000,000/273,017,760
+    100,000,000/273,017,760
+    120,000,000/273,017,760
+    140,000,000/273,017,760
+    160,000,000/273,017,760
+    180,000,000/273,017,760
+    200,000,000/273,017,760
+    220,000,000/273,017,760
+    240,000,000/273,017,760
+    260,000,000/273,017,760
+    273,017,760/273,017,760
+Saved redimnet_b6/eer_dur_1_diff_abs.png
+Saved redimnet_b6/eer_dur_1b_diff_signed.png
+Saved redimnet_b6/eer_dur_2_enroll_ge4.png
+Saved redimnet_b6/eer_dur_3_test_ge4.png
+Saved redimnet_b6/eer_dur.csv
+
+== EER vs |enroll length - test length| ==
+                                         ihm_ihm                   ihm_sdm                   overall
+<0.5s                    24.45% (2,822,945g)       35.13% (2,822,945g)       30.15% (5,645,890g)    
+0.5-1s                   21.29% (1,949,680g)       32.18% (1,949,680g)       27.11% (3,899,360g)    
+1-2s                     19.13% (2,721,802g)       29.45% (2,721,802g)       24.65% (5,443,604g)    
+2-4s                     17.39% (3,176,169g)       26.89% (3,176,169g)       22.46% (6,352,338g)    
+>=4s                     17.30% (2,979,760g)       26.73% (2,979,760g)       22.32% (5,959,520g)    
+
+== EER vs (test length - enroll length) ==
+                                         ihm_ihm                   ihm_sdm                   overall
+test >2s shorter         16.59% (3,320,212g)       30.67% (3,320,212g)       24.36% (6,640,424g)    
+test 0.5-2s shorter      19.39% (2,293,171g)       32.20% (2,293,171g)       26.36% (4,586,342g)    
+similar (+-0.5s)         24.43% (2,839,212g)       35.12% (2,839,212g)       30.14% (5,678,424g)    
+test 0.5-2s longer       20.64% (2,370,499g)       28.99% (2,370,499g)       25.03% (4,740,998g)    
+test >2s longer          18.21% (2,827,262g)       21.77% (2,827,262g)       20.05% (5,654,524g)    
+
+== Enroll clip >= 4 s, test clip varies ==
+                                         ihm_ihm                   ihm_sdm                   overall
+<1s                      20.79% (1,134,058g)       36.02% (1,134,058g)       29.48% (2,268,116g)    
+1-2s                      6.81% (  661,532g)       22.87% (  661,532g)       15.97% (1,323,064g)    
+2-4s                      2.93% (  695,602g)       12.18% (  695,602g)        8.01% (1,391,204g)    
+>=4s                      1.49% (  670,985g)        4.38% (  670,985g)        2.99% (1,341,970g)    
+
+== Test clip >= 4 s, enroll clip varies ==
+                                         ihm_ihm                   ihm_sdm                   overall
+<1s                      21.87% (  947,723g)       24.31% (  947,723g)       23.14% (1,895,446g)    
+1-2s                      8.25% (  506,785g)       11.57% (  506,785g)        9.98% (1,013,570g)    
+2-4s                      3.38% (  567,896g)        6.55% (  567,896g)        5.02% (1,135,792g)    
+>=4s                      1.49% (  670,985g)        4.38% (  670,985g)        2.99% (1,341,970g)    
+104,748 files, 0 with unparseable duration.
+
+Loading positive trials ...
+Loading negative trials ...
+Score range for histograms: [-0.278, 0.872]
+
+Binning positive scores ...
+    20,000,000/27,301,776
+    27,301,776/27,301,776
+Binning negative scores ...
+    20,000,000/273,017,760
+    40,000,000/273,017,760
+    60,000,000/273,017,760
+    80,000,000/273,017,760
+    100,000,000/273,017,760
+    120,000,000/273,017,760
+    140,000,000/273,017,760
+    160,000,000/273,017,760
+    180,000,000/273,017,760
+    200,000,000/273,017,760
+    220,000,000/273,017,760
+    240,000,000/273,017,760
+    260,000,000/273,017,760
+    273,017,760/273,017,760
+Saved redimnet_b6/eer_dur_4_both_ge4.png and redimnet_b6/eer_dur_4_both_ge4.csv
+
+== Enroll >= 4 s AND test >= 4 s ==
+mic             EER     #genuine     #impostor
+ihm_ihm       1.49%      670,985     6,660,466
+ihm_sdm       4.38%      670,985     6,659,676
+overall       2.99%    1,341,970    13,320,142
+
+== Overall EER, enroll length (rows) x test length (columns) ==
+enroll \ test        <1s      1-2s      2-4s      >=4s
+<1s                36.8%     30.5%     26.1%     23.1%
+1-2s               32.3%     21.4%     14.6%     10.0%
+2-4s               30.3%     17.8%     10.0%      5.0%
+>=4s               29.5%     16.0%      8.0%      3.0%
+104,748 files, 0 with unparseable duration.
+
+Loading positive trials ...
+Loading negative trials ...
+Score range for histograms: [-0.278, 0.872]
+
+Binning positive scores ...
+    20,000,000/27,301,776
+    27,301,776/27,301,776
+Binning negative scores ...
+    20,000,000/273,017,760
+    40,000,000/273,017,760
+    60,000,000/273,017,760
+    80,000,000/273,017,760
+    100,000,000/273,017,760
+    120,000,000/273,017,760
+    140,000,000/273,017,760
+    160,000,000/273,017,760
+    180,000,000/273,017,760
+    200,000,000/273,017,760
+    220,000,000/273,017,760
+    240,000,000/273,017,760
+    260,000,000/273,017,760
+    273,017,760/273,017,760
+Saved redimnet_b6/eer_dur_5_both_ge4_diff.png and redimnet_b6/eer_dur_5_both_ge4_diff.csv
+
+== Enroll >= 4 s AND test >= 4 s: EER by |enroll - test| ==
+|diff|                         ihm_ihm                     ihm_sdm                     overall
+<0.5s         1.69% ( 117,734g/ 1,201,450i)    4.92% ( 117,734g/ 1,201,380i)    3.38% ( 235,468g/ 2,402,830i)
+0.5-1s        1.55% ( 101,754g/ 1,031,746i)    4.56% ( 101,754g/ 1,031,199i)    3.14% ( 203,508g/ 2,062,945i)
+1-2s          1.50% ( 157,559g/ 1,587,507i)    4.29% ( 157,559g/ 1,587,582i)    2.95% ( 315,118g/ 3,175,089i)
+2-4s          1.40% ( 175,814g/ 1,740,959i)    4.10% ( 175,814g/ 1,741,590i)    2.80% ( 351,628g/ 3,482,549i)
+>=4s          1.34% ( 118,124g/ 1,098,804i)    4.13% ( 118,124g/ 1,097,925i)    2.78% ( 236,248g/ 2,196,729i)
+
+ECAPA baseline: overall 28.46%  ihm-ihm 24.21%  ihm-sdm 31.87%
